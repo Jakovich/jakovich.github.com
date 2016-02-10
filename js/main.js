@@ -19,7 +19,7 @@ $(function() {
 	/*navigation*/
 	$(window).scroll(function() {
 		var scrollTop = $(this).scrollTop();
-		if ($(window).width() <= 490) {
+		if ($(window).width() <= 1024) {
 			if (scrollTop > 100) {
 				$("nav.mobile_nav").animate({'top':'0px'},400);
 			}
