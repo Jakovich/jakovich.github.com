@@ -549,7 +549,7 @@ th {
   background-color: #d6e4ed;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile.jpg");
   background-position: center bottom;
-  background-size: 335px, auto;
+  background-size: 330px, auto;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 65px;
@@ -1747,6 +1747,6 @@ img {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
-    background-size: auto, 768px auto;
+    background-size: 335px auto, 768px auto;
   }
 }
