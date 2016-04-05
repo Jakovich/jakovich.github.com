@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), url("../fonts/ptsans.woff") format("woff");
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff") format("woff");
+  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -459,7 +459,7 @@ th {
 }
 .page-header__logo {
   position: absolute;
-  bottom: -36px;
+  bottom: -37px;
   left: 50%;
   margin-left: -54px;
 }
@@ -1390,6 +1390,7 @@ img {
   }
   .form__explic {
     display: inline-block;
+    vertical-align: middle;
     margin-left: auto;
     line-height: 55px;
   }
