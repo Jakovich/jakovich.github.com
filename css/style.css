@@ -1,12 +1,12 @@
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans"), url("../fonts/'ptsans.woff") format("woff");
+  src: local("PT Sans"), url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PT Sans";
-  src: local("PT Sans Bold"), url("../fonts/'ptsansbold.woff") format("woff");
+  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -434,7 +434,7 @@ th {
   text-align: center;
 }
 .main-nav::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -621,7 +621,7 @@ th {
   margin-bottom: 28px;
 }
 .advantage__item::before {
-  content: '';
+  content: "";
   width: 40px;
   height: 40px;
   left: 22px;
@@ -635,13 +635,13 @@ th {
   line-height: 23px;
 }
 .advantage__item--home::before {
-  background-image: url('../img/icons/icon-house.svg');
+  background-image: url("../img/icons/icon-house.svg");
 }
 .advantage__item--food::before {
-  background-image: url('../img/icons/icon-burger.svg');
+  background-image: url("../img/icons/icon-burger.svg");
 }
 .advantage__item--souvenir::before {
-  background-image: url('../img/icons/icon-gift.svg');
+  background-image: url("../img/icons/icon-gift.svg");
 }
 .reason__item {
   text-align: center;
@@ -763,10 +763,10 @@ th {
   background-repeat: no-repeat;
 }
 .form-field__contact-wrap:nth-child(2)::before {
-  background-image: url('../img/icons/icon-phone.svg');
+  background-image: url("../img/icons/icon-phone.svg");
 }
 .form-field__contact-wrap:nth-child(3)::before {
-  background-image: url('../img/icons/icon-mail.svg');
+  background-image: url("../img/icons/icon-mail.svg");
 }
 .form__explic {
   display: none;
@@ -912,7 +912,7 @@ th {
 }
 .photo__likes::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 22px;
   height: 20px;
   left: 0;
@@ -990,7 +990,7 @@ th {
   margin-bottom: 5px;
   width: 320px;
   height: 350px;
-  background-image: url('../img/icons/icon-map-marker.svg'), url("../img/bg-map-mobile.jpg");
+  background-image: url("../img/icons/icon-map-marker.svg"), url("../img/bg-map-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1029,7 +1029,7 @@ th {
 }
 body {
   background-color: #f2f2f2;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -1281,7 +1281,7 @@ img {
     margin-bottom: 30px;
   }
   .form-field--name::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     bottom: 10px;
@@ -1325,7 +1325,7 @@ img {
   .form-field--contact .form-field__title::after,
   .form-field--sights .form-field__title::after,
   .form-field--comment .form-field__title::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 1px;
     width: 125px;
@@ -1474,7 +1474,7 @@ img {
     margin-bottom: 0;
     width: 768px;
     height: 350px;
-    background-image: url('../img/icons/icon-map-marker.svg'), url("../img/bg-map-tablet.jpg");
+    background-image: url("../img/icons/icon-map-marker.svg"), url("../img/bg-map-tablet.jpg");
   }
   .popup {
     width: 640px;
@@ -1686,7 +1686,7 @@ img {
     margin-top: 70px;
     width: 1200px;
     height: 350px;
-    background-image: url('../img/icons/icon-map-marker.svg'), url("../img/bg-map-desktop.jpg");
+    background-image: url("../img/icons/icon-map-marker.svg"), url("../img/bg-map-desktop.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
@@ -1713,7 +1713,7 @@ img {
   }
   .reason__item--short::after {
     position: absolute;
-    content: '';
+    content: "";
     height: 1px;
     background-color: #d6d6d6;
     right: 20px;
