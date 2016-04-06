@@ -895,6 +895,7 @@ th {
 }
 .photo__img {
   display: block;
+  width: 100%;
 }
 .photo__title {
   font-size: 14px;
@@ -1648,6 +1649,9 @@ img {
   .form-field__contact-wrap:nth-child(2) {
     width: 42%;
     margin-right: 72px;
+  }
+  .photo__img {
+    height: 400px;
   }
   .media {
     padding: 0;
