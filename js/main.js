@@ -1,19 +1,36 @@
+"use strict";
 (function() {
-  var menu = document.querySelector(".main-nav__wrapper");
-  var menuClose = menu.querySelector(".main-nav__close");
-  var menuToogle = document.querySelector(".main-nav__toogle");
+var personalNav = document.querySelector(".personal-nav");
+var codeItem = personalNav.querySelector(".personal-nav__item--code");
+var codePopupFriend = personalNav.querySelector(".popup--friend");
+var codePopupLock = personalNav.querySelector(".popup--lock");
+var personalItems = personalNav.querySelectorAll(".personal-nav__item");
 
-  onload = function() {
-    menu.classList.add("main-nav__wrapper--closed");
-  };
+codeItem.onmouseover = function() {
+  codePopupFriend.style.display = "block";
+};
 
-  menuToogle.addEventListener("click", function (event) {
-    event.preventDefault;
-    menu.classList.remove("main-nav__wrapper--closed");
-  });
+codeItem.onmouseout = function() {
+  codePopupFriend.style.display = "none";
+};
 
-  menuClose.addEventListener("click", function (){
-    menu.classList.add("main-nav__wrapper--closed");
-  });
-  
+for (var i = 0; i < personalItems.length; i++ ) {
+  removeDotes(personalItems[i]);
+  if (personalItems[i].classList.contains("personal__item--active")) {
+    addDotes(personalItems[i]);
+  }
+}
+
+function addDotes(item) {
+    var spanDot = document.createElement("span");
+    spanDot.className = "personal__item--dot";
+    item.appendChild(spanDot);
+}
+
+function removeDotes(item) {
+    if (item.classList.contains("personal__item--dot")){
+      item.classList.remove("personal__item--dot");
+    }
+}
+
 })();
