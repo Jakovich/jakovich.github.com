@@ -1520,7 +1520,7 @@ textarea {
 }
 .kitchen-goods__slider {
   width: 1012px;
-  padding: 0 50px;
+  padding: 0 48px;
   margin: 30px auto;
   position: relative;
 }
@@ -1597,7 +1597,8 @@ textarea {
   border-radius: 20px;
   cursor: pointer;
   padding: 0 13px;
-  margin-left: 15px;
+  float: right;
+  margin-top: 2px;
 }
 .kitchen-goods__select {
   color: #989898;
@@ -1654,6 +1655,76 @@ textarea {
   height: 218px;
   text-align: center;
   margin-bottom: 96px;
+}
+.personal-orders {
+  float: left;
+  width: 765px;
+  margin-left: 148px;
+}
+.personl-orders__inner {
+  font-size: 0;
+  padding-bottom: 60px;
+}
+.personl-orders__inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.personal-orders__title {
+  font-size: 20px;
+  color: #ec7037;
+  text-align: left;
+  padding-left: 220px;
+  margin-bottom: 10px;
+  padding-top: 25px;
+}
+.personal-orders__table {
+  padding: 0;
+  display: inline-block;
+  border: 1px solid #dadada;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #868686;
+  text-align: left;
+  vertical-align: top;
+}
+.personal-orders__table th {
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.personal-orders__table th div {
+  padding-left: 7px;
+}
+.personal-orders__table td div {
+  border: 1px dashed  #dadada;
+  border-radius: 16px;
+  min-height: 30px;
+  background-color: #ffffff;
+  padding: 0 10px;
+  padding-top: 5px;
+}
+.personal-orders__table tr:last-child td {
+  padding-bottom: 45px;
+}
+.personal-orders__date {
+  padding: 3px 15px;
+  width: 140px;
+  border-right: 1px solid #dadada ;
+}
+.personal-orders__composition {
+  width: 340px;
+  background-color: #ffffff;
+  padding: 3px 35px;
+  box-shadow: -8px 0 6px -6px rgba(0, 0, 0, 0.4) inset;
+}
+.personal-orders__price {
+  width: 120px;
+  padding: 3px 15px;
 }
 body {
   font-family: "Century Gothic", "Arial", sans-serif;
