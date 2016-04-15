@@ -43,14 +43,14 @@
 
       <main class="page-main">
        <div class="wrapper wrapper--personal">
-       <div class="personl-orders__inner">
+       <div class="personl-carts__inner">
         <nav class="personal-nav">
           <header class="personal-nav__title">Личный кабинет</header>
          <ul class="personal-nav__items">
            <li class="personal-nav__item personal-nav__item--code"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
            <li class="personal-nav__item"><a href="#">Мои&nbsp;данные</a></li>
-           <li class="personal-nav__item"><a href="personal-cards.html">Мои&nbsp;карты</a></li>
-           <li class="personal-nav__item personal__item--active"><a href="personal-orders.html">Мои&nbsp;заказы</a></li>
+           <li class="personal-nav__item personal__item--active"><a href="personal-cards.html">Мои&nbsp;карты</a></li>
+           <li class="personal-nav__item"><a href="personal-orders.html">Мои&nbsp;заказы</a></li>
            <li class="personal-nav__item"><a href="personal-points.html">Мои&nbsp;баллы</a></li>
            <li class="personal-nav__item"><a href="#">Подписка</a></li>
            <li class="personal-nav__item"><a href="#">Выход</a></li>
@@ -64,63 +64,62 @@
 
         </nav>
         
-        <section class="personal-orders">
-          <h2 class="personal-orders__title">Мои заказы</h2>
-          <table class="personal-orders__table">
+        <section class="personal-cards">
+          <h2 class="personal-cards__title">Мои карты</h2>
+          
+            <div class="personal-cards__list">
+             <div class="personal-cards__exist">
+              <div class="personal-cards__item">
+                <input type="radio" name="card" value="card1" id="card1" checked>
+                <label for="card1">карта Visa 5550 0000 0000 9999</label>
+              </div>
+              <div class="personal-cards__item">
+                <input type="radio" name="card" value="card2" id="card2">
+                <label for="card2">карта Visa 5550 0000 0000 9999</label>
+              </div>
+            </div>
+          
+            <form action="post" class="personal-cards__add">
+              <div class="add-card">
+               <legend class="add-card__title">Добавить</legend>
+                <input class="add-cart__item add-cart__item--number" type="type" name="card-number" placeholder="Номер карты" id="card-number">
+                <select class="add-cart__item add-cart__item--select" name="card-month" id="card-month">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <select class="add-cart__item add-cart__item--select" name="card-year" id="card-year">
+                  <option value="2016">16</option>
+                  <option value="2017">17</option>
+                  <option value="2018">18</option>
+                  <option value="2019">19</option>
+                  <option value="2020">20</option>
+                  <option value="2021">21</option>
+                  <option value="2022">22</option>
+                  <option value="2023">23</option>
+                  <option value="2024">24</option>
+                  <option value="2025">25</option>
+                  <option value="2026">26</option>
+                  <option value="2027">27</option>
+                </select>
+                <input class="add-cart__item add-cart__item--css" type="text" placeholder="CSS">
+                <input class="add-cart__item add-cart__item--name" type="text" name="card-name" placeholder="Имя держателя" id="card-name">
+              </div>
+          
+              <button type="submit">Привязать карту</button>
+            </form>
+          </div>
+                    
 
-            <thead>
-              <tr>
-                <th class="personal-orders__date"><div>Дата заказа</div></th>
-                <th class="personal-orders__composition"><div>Состав заказа</div></th>
-                <th class="personal-orders__price"><div>Стоимость</div></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="personal-orders__date"><div>18.06.15</div></td>
-                <td class="personal-orders__composition"><div>5 ужинов в неделю на двоих</div></td>
-                <td class="personal-orders__price"><div>3200 руб.</div></td>
-              </tr>
-               <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-              <tr>
-                <td class="personal-orders__date"><div></div></td>
-                <td class="personal-orders__composition"><div></div></td>
-                <td class="personal-orders__price"><div></div></td>
-              </tr>
-
-              
-            </tbody>
-            
-          </table>
              
          
               

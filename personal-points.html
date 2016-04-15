@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   </head>
-  <body>
+  <body class="body--personal">
     
       <header class="page-header">
         
@@ -15,7 +15,7 @@
           <div class="main-nav__user">
             <div class="wrapper">
               <div class="user-nav">
-                <div class="page-header__logo">
+                <div class="page-header__logo page-header__logo--personal">
                 <a href="#"><img src="img/logo.png" width="233" height="211" alt="ТВОЕ МЕНЮ"></a>
                 </div>
                 <ul class="user-nav__items">
@@ -44,16 +44,16 @@
       </header>
 
       <main class="page-main">
-       <div class="wrapper">
+       <div class="wrapper wrapper--personal">
        <div class="personl-points__inner">
         <nav class="personal-nav">
           <header class="personal-nav__title">Личный кабинет</header>
          <ul class="personal-nav__items">
            <li class="personal-nav__item personal-nav__item--code"><a href="#">Ваш код <span class="personal-nav__code">5336855</span></a></li>
            <li class="personal-nav__item"><a href="#">Мои&nbsp;данные</a></li>
-           <li class="personal-nav__item"><a href="#">Мои&nbsp;карты</a></li>
-           <li class="personal-nav__item"><a href="#">Мои&nbsp;заказы</a></li>
-           <li class="personal-nav__item personal__item--active"><a href="#">Мои&nbsp;баллы</a></li>
+           <li class="personal-nav__item"><a href="personal-cards.html">Мои&nbsp;карты</a></li>
+           <li class="personal-nav__item"><a href="personal-orders.html">Мои&nbsp;заказы</a></li>
+           <li class="personal-nav__item personal__item--active"><a href="personal-points.html">Мои&nbsp;баллы</a></li>
            <li class="personal-nav__item"><a href="#">Подписка</a></li>
            <li class="personal-nav__item"><a href="#">Выход</a></li>
         </ul>
@@ -70,13 +70,41 @@
           <h2 class="personal-points__title">Мои баллы</h2>
           <div class="personal-points__stat">
             <div class="personal-points__info">Сейчас у Вас <span>15 баллов</span></div>
-            <div class="personal-points__info">До первого подарка не хватает <span>15 баллов</span></div>
+            <div class="personal-points__info">До первого подарка не хватает <span>15</span> баллов</div>
           </div>
-           <div class="personal-points__diagram">
-           <div class="personal-points__diagram-axis">
-             <img src="img/gift-axis.png" alt="">
+          <div class="personal-points__diagram">
+          <div class="personal-points__diagram-inner">
+           <div class="personal-points__diagram-numbers">
+           <div class="personal-points__diagram-number personal-points__diagram-number--0">
+             <span>0</span> баллов
            </div>
-           </div
+           <div class="personal-points__diagram-number personal-points__diagram-number--30">
+             <span>30</span> баллов
+           </div>
+           <div class="personal-points__diagram-number personal-points__diagram-number--50">
+             <span>50</span> баллов
+           </div>
+           <div class="personal-points__diagram-number personal-points__diagram-number--70">
+             <span>70</span> баллов
+           </div>
+           <div class="personal-points__diagram-number personal-points__diagram-number--100">
+             <span>100</span> баллов
+           </div>
+            </div>
+            <div class="personal-points__diagram-axis">
+              <img src="img/gift-axis.png" alt="">
+            </div>
+            <div class="personal-points__diagram-gifts">
+              <div class="personal-points__diagram-gift personal-points__diagram-gift--surprise">Подарок</div>
+              <div class="personal-points__diagram-gift personal-points__diagram-gift--smoothie">Пакет со смузи на неделю на двоих</div>
+              <div class="personal-points__diagram-gift personal-points__diagram-gift--sandwich">Сэндвич-start на неделю на двоих</div>
+              <div class="personal-points__diagram-gift personal-points__diagram-gift--box">Коробка с 5-ю ужинами на двоих</div>
+            </div>
+            <div class="personal-points__diagram-pointer">
+              Вы здесь
+            </div>
+          </div>
+          </div>
               
  
 
