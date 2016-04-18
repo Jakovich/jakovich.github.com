@@ -622,7 +622,7 @@ textarea {
   color: #595959;
   text-align: center;
   width: 410px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .contacts__inner {
   display: table;
@@ -638,6 +638,7 @@ textarea {
 }
 .social-links--comming-soon {
   border: none;
+  display: block;
 }
 .social-link {
   display: inline-block;
@@ -682,6 +683,16 @@ textarea {
   color: #ffffff;
   font-size: 24px;
   border-right: 1px solid #ffffff;
+}
+.contacts__tel--comming-soon {
+  display: block;
+  width: auto;
+  border: none;
+  font-size: 24px;
+  line-height: 28px;
+  color: #595959;
+  margin-top: 10px;
+  text-align: center;
 }
 .contacts__explic {
   color: #ffffff;
@@ -1735,7 +1746,7 @@ textarea {
   padding-top: 260px;
   background-image: url("../img/bg-comming_soon.jpg");
   background-size: cover;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .comming-soon__text {
   font-size: 28px;
@@ -2693,6 +2704,63 @@ textarea {
 }
 .subscribe-variant__total .total-sum {
   color: #ea5f1f;
+}
+.personal-info {
+  float: left;
+  width: 765px;
+  margin-left: 148px;
+}
+.personal-info_inner {
+  padding-bottom: 60px;
+}
+.personal-info_inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.personal-info__title {
+  font-size: 20px;
+  color: #ec7037;
+}
+.personal-info__table {
+  padding: 0;
+  border: 1px solid #dadada;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #868686;
+  text-align: left;
+  vertical-align: top;
+}
+.personal-info__table div {
+  padding-left: 7px;
+}
+.personal-info__table tr:last-child td {
+  padding-bottom: 45px;
+}
+.personal-info__table tr:first-child td {
+  padding-top: 45px;
+}
+.personal-info__data div {
+  border: 1px dashed  #dadada;
+  border-radius: 16px;
+  min-height: 30px;
+  background-color: #ffffff;
+  padding: 0 10px;
+  padding-top: 5px;
+}
+.personal-info__name {
+  padding: 3px 15px;
+  width: 140px;
+  border-right: 1px solid #dadada ;
+}
+.personal-info__data {
+  width: 340px;
+  background-color: #ffffff;
+  padding: 3px 35px;
 }
 body {
   font-family: "Century Gothic", "Arial", sans-serif;
