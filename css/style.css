@@ -693,6 +693,7 @@ textarea {
   color: #595959;
   margin-top: 10px;
   text-align: center;
+  padding-left: 4px;
 }
 .contacts__explic {
   color: #ffffff;
