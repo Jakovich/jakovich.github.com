@@ -472,6 +472,9 @@ textarea {
 .insurance-form select:hover {
   box-shadow: 1px 2px 2px #eee;
 }
+.insurance-form select::-ms-expand {
+  display: none;
+}
 .insurance-form option {
   padding: 2px 0;
   padding-left: 17px;
@@ -934,8 +937,8 @@ textarea {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .to-service__items {
   display: -webkit-flex;
@@ -949,19 +952,22 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px #c6c6c6 solid;
-  padding-bottom: 30px;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  padding-bottom: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.to-service__items:last-child {
+  margin-bottom: 0;
 }
 .to-service__item {
   font-size: 18px;
   line-height: 28px;
   padding-left: 85px;
-  -webkit-flex-basis: 210px;
-      -ms-flex-preferred-size: 210px;
-          flex-basis: 210px;
+  -webkit-flex-basis: 220px;
+      -ms-flex-preferred-size: 220px;
+          flex-basis: 220px;
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 .to-service__item::before {
   position: absolute;
@@ -972,6 +978,7 @@ textarea {
 }
 .to-service__item--level::before {
   background-image: url("../img/icon-level.png");
+  top: -15px;
   width: 67px;
   height: 55px;
 }
@@ -1025,15 +1032,15 @@ textarea {
 .to-service__items--big {
   padding: 0 160px;
   border: 0;
-  margin-top: 60px;
+  margin-top: 35px;
 }
 .to-service__items--big .to-service__item {
   padding-left: 0;
   padding-top: 120px;
   text-align: center;
-  -webkit-flex-basis: 235px;
-      -ms-flex-preferred-size: 235px;
-          flex-basis: 235px;
+  -webkit-flex-basis: 240px;
+      -ms-flex-preferred-size: 240px;
+          flex-basis: 240px;
 }
 .to-service__items--big .to-service__item::before {
   top: 0;
@@ -1057,15 +1064,28 @@ textarea {
   left: 52px;
 }
 .to-intro {
-  background-image: url("../img/bg-intro-to1.jpg");
   background-position: center top;
-  padding: 70px 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-intro-to1.jpg");
+  padding: 0;
   text-align: center;
+  position: relative;
+}
+.to-intro video {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .to-intro__text {
   font-size: 37px;
   color: #ffffff;
-  margin-bottom: 50px;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .to-intro__text p {
   margin: 0;
@@ -1074,23 +1094,54 @@ textarea {
   color: #ff9c28;
 }
 .to-intro__form {
+  position: absolute;
   display: inline-block;
+  top: 235px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.masthead-overlay {
+  background-color: #000;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.to-intro__marks {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .to-frequency {
   background-color: #ffffff;
   color: #6b6b6b;
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .to-frequency::after {
   content: "";
   display: table;
   clear: both;
 }
+.to-frequency__inner {
+  margin: 0;
+}
+.to-frequency__inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .to-frequency__text {
-  font-size: 37px;
-  padding: 0 90px;
+  font-size: 30px;
+  padding: 0;
   margin: 0;
 }
 .to-frequency__text--uppercase {
@@ -1100,13 +1151,13 @@ textarea {
   font-size: 28px;
 }
 .to-frequency__text--reference {
-  margin-top: 110px;
+  margin-top: 30px;
   font-size: 18px;
   float: right;
 }
 .to-counter {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .to-test {
   background-image: url("../img/bg-intro-to2.jpg");
@@ -1208,6 +1259,9 @@ textarea {
   font-size: 24px;
   opacity: 0;
 }
+.to-test__diagram-text {
+  opacity: 0;
+}
 .to-test__diagram {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1222,7 +1276,8 @@ textarea {
   text-align: center;
   width: 323px;
   height: 323px;
-  background-image: url("../img/diagram-time.png");
+  background-image: url("../../img/sprite-diagram.png");
+  background-position: 0px 0px;
 }
 .to-video {
   background-color: #ffffff;
@@ -1502,6 +1557,11 @@ div.menu {
 }
 .menu div.children a.open {
   color: #dc1632;
+}
+.main-header--to div#header {
+  height: 80px;
+  padding-bottom: 0;
+  padding-top: 20px;
 }
 .main-footer {
   background: #3b3b3b none repeat scroll 0 0;
