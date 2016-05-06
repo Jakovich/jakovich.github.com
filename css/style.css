@@ -1064,28 +1064,16 @@ textarea {
   left: 52px;
 }
 .to-intro {
+  background-image: url("../img/bg-intro-to1.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url("../img/bg-intro-to1.jpg");
-  padding: 0;
+  padding-top: 40px;
   text-align: center;
-  position: relative;
-}
-.to-intro video {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 .to-intro__text {
   font-size: 37px;
   color: #ffffff;
-  width: 100%;
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-bottom: 50px;
 }
 .to-intro__text p {
   margin: 0;
@@ -1094,30 +1082,7 @@ textarea {
   color: #ff9c28;
 }
 .to-intro__form {
-  position: absolute;
   display: inline-block;
-  top: 235px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-.masthead-overlay {
-  background-color: #000;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  opacity: 0.5;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-.to-intro__marks {
-  position: absolute;
-  top: 470px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 .to-frequency {
   background-color: #ffffff;
@@ -2096,8 +2061,7 @@ a#PlayNext {
   }
 }
 #pinContainer {
-  min-width: 1355px;
-  width: 100%;
+  width: 1335px;
   height: 100%;
   overflow: hidden;
   -webkit-perspective: 1000;
