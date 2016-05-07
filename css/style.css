@@ -1348,12 +1348,14 @@ This must be run when you have at least 2 sprites.
       -ms-flex-align: center;
           align-items: center;
   min-width: 1355px;
-  min-height: 650px;
+  min-height: 670px;
 }
 .to-intro__text {
+  position: relative;
   font-size: 37px;
   color: #ffffff;
   margin-bottom: 50px;
+  z-index: 5;
 }
 .to-intro__text p {
   margin: 0;
@@ -1362,11 +1364,16 @@ This must be run when you have at least 2 sprites.
   color: #ff9c28;
 }
 .to-intro__form {
+  position: relative;
   display: inline-block;
+  z-index: 5;
 }
-.masthead-overlay {
+.to-intro__marks {
+  position: relative;
+  z-index: 5;
+}
+.video-overlay {
   background-color: #000;
-  bottom: 0;
   left: 0;
   opacity: 0.5;
   position: absolute;
@@ -1374,7 +1381,8 @@ This must be run when you have at least 2 sprites.
   top: 0;
   width: 100%;
   min-width: 1355px;
-  min-height: 660px;
+  min-height: 670px;
+  height: 100%;
   z-index: 0;
 }
 .to-frequency {
