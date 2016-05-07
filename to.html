@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Максимум ТО</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   
   
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -21,7 +20,7 @@
         <div class="layout2" id="header">
           <div class="layout">
             <div id="logo">
-              <img title="Автосалон «Максимум» " src="img/logo.png" class="logo">
+              <img title="Автосалон «Максимум» " src="img/logo.png" class="logo" alt="">
             </div>
             <div class="header-phone-address">
               <div onclick="Form.showModal()" class="header-phone-order"></div>					
@@ -83,7 +82,7 @@
     <div id="slideContainer">
       <section class="panel to-intro">
         
-      <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/URn9Ewdas00',containment:'.to-intro', autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false, addRaster:true}"></a>
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/URn9Ewdas00',containment:'.to-intro', autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false, addRaster:true}"></a>
 		
 		<div class="masthead-overlay"></div>
         <div class="wrapper">
@@ -92,8 +91,8 @@
             <p>Проверьте, не проехали ли вы очередные 15 000 километров</p>
           </div>
           <div class="to-intro__form">
-            <form action="post" class="insurance-form insurance-form--to">
-              <select name="mark" id="mark">
+            <form action="post" name="subscribe-to" class="insurance-form insurance-form--to">
+              <select name="mark">
                 <option disabled selected>Модель</option>
                 <option value="Honda">Honda</option>
                 <option value="Ford">Ford</option>
@@ -163,7 +162,7 @@
       <div class="to-test__subtitle">
         <p class="to-test__subtitle-text">Проверка автомобиля на линии диагностики совместно с мастером консультантом.</p>
         <p class="to-test__subtitle-text to-test__subtitle-text--uppercase">Автомобиль изучается в трех положениях:</p>
-     </div> 
+      </div> 
       <div class="to-test__items">
         <div class="to-test__item to-test__item--no-up">Без подъема</div>
         <div class="to-test__item to-test__item--middle-up">В приподнятом состоянии</div>
@@ -174,16 +173,16 @@
         <div class="to-test__ecplics__items">
           <div class="to-test__ecplic-item" id="forthShow">Вместе составим план ремонта&nbsp;автомобиля</div>
           <div class="to-test__ecplic-item" id="thirdShow">Совместно снимем и&nbsp; расшифруем&nbsp;показатели оборудования линии диагностики</div>
-      </div>
+        </div>
      
       
         <div class="to-test__diagram"><div class="to-test__diagram-text">15 минут</div></div>
 
-      <div class="to-test__ecplics__items">
-        <div class="to-test__ecplic-item" id="firstShow">Подробно расскажем про&nbsp;состояние автомобиля</div>
-        <div class="to-test__ecplic-item" id="secondShow">Ответим на любые вопросы</div>
+        <div class="to-test__ecplics__items">
+          <div class="to-test__ecplic-item" id="firstShow">Подробно расскажем про&nbsp;состояние автомобиля</div>
+          <div class="to-test__ecplic-item" id="secondShow">Ответим на любые вопросы</div>
+        </div>
       </div>
-    </div>
     </div>   
   </section>
   
@@ -192,19 +191,19 @@
       <h3 class="to-video__title">С Вами работают</h3>
       <div class="to-video__items">
         <div class="to-video__item">
-          <video src="" poster="img/video-poster-Ford,Mitsubishi.jpg"></video>
+          <video src="/" poster="img/video-poster-Ford,Mitsubishi.jpg"></video>
           <div class="to-video__explic">
             Ford, Mitsubishi
           </div>
         </div>
         <div class="to-video__item">
-          <video src="" poster="img/video-poster-Honda.jpg"></video>
+          <video src="/" poster="img/video-poster-Honda.jpg"></video>
           <div class="to-video__explic">
             Honda
           </div>
         </div>
         <div class="to-video__item">
-          <video src="" poster="img/video-poster-Suzuki,Honda.jpg"></video>
+          <video src="/" poster="img/video-poster-Suzuki,Honda.jpg"></video>
           <div class="to-video__explic">
             Suzuki, Honda
           </div>
@@ -219,8 +218,8 @@
     <div class="wrapper">
       <div class="to-subscribe__inner">
         <div class="to-subscribe__form">
-          <form action="post" class="insurance-form insurance-form--to">
-            <select name="mark" id="mark">
+          <form action="post" name="subscribe-to2" class="insurance-form insurance-form--to">
+            <select name="mark">
               <option disabled selected>Модель</option>
               <option value="Honda">Honda</option>
               <option value="Ford">Ford</option>
@@ -244,7 +243,7 @@
     </div>
   </section>
   
-    <section class="address">
+  <section class="address">
     <div class="wrapper">
       <div class="maps">
         <div class="map-item"><div style="font-weight: bold; font-size: 1.4em; color: rgb(220, 22, 50); font-family: 'PT Sans'; line-height: normal;" class="zag">Максимум Лахта</div>

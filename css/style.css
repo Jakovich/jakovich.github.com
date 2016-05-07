@@ -364,6 +364,241 @@ textarea {
   font: inherit;
   /* 2 */
 }
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
 .wrapper {
   width: 1315px;
   padding: 0 20px;
@@ -412,7 +647,8 @@ textarea {
   top: 0;
 }
 .casco-intro__advantage--reliable::before {
-  background-image: url("../img/icon-reliable-company.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: 0px -122px;
   width: 126px;
   height: 107px;
   left: 18px;
@@ -423,13 +659,15 @@ textarea {
           flex-basis: 184px;
 }
 .casco-intro__advantage--losses::before {
-  background-image: url("../img/icon-away-losses.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: 0px -231px;
   width: 104px;
   height: 107px;
   left: 38px;
 }
 .casco-intro__advantage--sale::before {
-  background-image: url("../img/icon-assurance-sale.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: -257px -114px;
   width: 108px;
   height: 108px;
   left: 22px;
@@ -574,22 +812,28 @@ textarea {
   height: 83px;
 }
 .insurance-help__item--onroad::before {
-  background-image: url("../img/icon-onroad-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: -88px -85px;
 }
 .insurance-help__item--evacuation::before {
-  background-image: url("../img/icon-evacuation-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: 0px 0px;
 }
 .insurance-help__item--info::before {
-  background-image: url("../img/icon-info-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: -88px 0px;
 }
 .insurance-help__item--juridic::before {
-  background-image: url("../img/icon-juridic-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: 0px -85px;
 }
 .insurance-help__item--quantity::before {
-  background-image: url("../img/icon-quantity-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: -176px 0px;
 }
 .insurance-help__item--time::before {
-  background-image: url("../img/icon-time-red.png");
+  background-image: url('../../img/sprite-help.png');
+  background-position: -176px -85px;
 }
 .insurance-help__form {
   padding-bottom: 60px;
@@ -661,17 +905,20 @@ textarea {
   top: -15px;
 }
 .casco-service__item--view::before {
-  background-image: url("../img/icon-service-view.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: -138px 0px;
   width: 117px;
   height: 118px;
 }
 .casco-service__item--estimate::before {
-  background-image: url("../img/icon-service-estimate.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: 0px 0px;
   width: 136px;
   height: 120px;
 }
 .casco-service__item--spares::before {
-  background-image: url("../img/icon-service-spares.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: -257px 0px;
   width: 114px;
   height: 112px;
   top: -7px;
@@ -680,7 +927,8 @@ textarea {
   width: 165px;
 }
 .casco-service__item--repair::before {
-  background-image: url("../img/icon-service-repair.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: -106px -231px;
   width: 118px;
   height: 74px;
   top: 30px;
@@ -689,7 +937,8 @@ textarea {
   width: 170px;
 }
 .casco-service__item--happy::before {
-  background-image: url("../img/icon-service-happy.png");
+  background-image: url('../../img/sprite-casco.png');
+  background-position: -128px -122px;
   width: 127px;
   height: 95px;
   top: 9px;
@@ -871,19 +1120,22 @@ textarea {
   top: 0;
 }
 .osago-service__advantage--help::before {
-  background-image: url("../img/icon-direct-help.png");
+  background-image: url('../../img/sprite-osago.png');
+  background-position: -176px 0px;
   width: 86px;
   height: 109px;
   left: 70px;
 }
 .osago-service__advantage--sale::before {
-  background-image: url("../img/icon-nocrash-sale.png");
+  background-image: url('../../img/sprite-osago.png');
+  background-position: 0px -95px;
   width: 114px;
   height: 107px;
   left: 38px;
 }
 .osago-service__advantage--formal::before {
-  background-image: url("../img/icon-quick-formal.png");
+  background-image: url('../../img/sprite-osago.png');
+  background-position: 0px 0px;
   width: 174px;
   height: 93px;
   left: 22px;
@@ -931,6 +1183,13 @@ textarea {
   background-color: #f8f8f8;
   color: #6a6a6a;
   padding: 10px 0;
+  padding-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .to-service__title {
   font-size: 23px;
@@ -977,55 +1236,64 @@ textarea {
   top: 0;
 }
 .to-service__item--level::before {
-  background-image: url("../img/icon-level.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -140px -224px;
   top: -15px;
   width: 67px;
   height: 55px;
 }
 .to-service__item--clutch::before {
-  background-image: url("../img/icon-clutch.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -69px -224px;
   width: 69px;
   top: -5px;
   height: 56px;
 }
 .to-service__item--battery::before {
-  background-image: url("../img/icon-battery.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -312px -128px;
   top: -10px;
   width: 65px;
   height: 48px;
 }
 .to-service__item--belt::before {
-  background-image: url("../img/icon-belt.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -312px -60px;
   width: 55px;
   height: 66px;
   top: -15px;
 }
 .to-service__item--light::before {
   top: 3px;
-  background-image: url("../img/icon-light.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -312px -178px;
   width: 67px;
   height: 55px;
 }
 .to-service__item--brake::before {
-  background-image: url("../img/icon-brake.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -312px 0px;
   width: 66px;
   height: 58px;
 }
 .to-service__item--suspension::before {
   top: -7px;
-  background-image: url("../img/icon-suspension.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: 0px -224px;
   width: 67px;
   height: 64px;
 }
 .to-service__item--wheel::before {
   top: -15px;
-  background-image: url("../img/icon-wheel.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -226px -141px;
   width: 69px;
   height: 65px;
 }
 .to-service__item--parking-brake::before {
   top: -10px;
-  background-image: url("../img/icon-parking-brake.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -209px -224px;
   width: 72px;
   height: 40px;
 }
@@ -1046,19 +1314,22 @@ textarea {
   top: 0;
 }
 .to-service__item--oil::before {
-  background-image: url("../img/icon-oil.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -120px 0px;
   width: 104px;
   height: 101px;
   left: 72px;
 }
 .to-service__item--eco-filter::before {
-  background-image: url("../img/icon-eco-filter.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: 0px -118px;
   width: 96px;
   height: 104px;
   left: 60px;
 }
 .to-service__item--air-filter::before {
-  background-image: url("../img/icon-air-filter.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: 0px 0px;
   width: 118px;
   height: 116px;
   left: 52px;
@@ -1067,8 +1338,15 @@ textarea {
   background-image: url("../img/bg-intro-to1.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 40px;
+  background-size: cover;
+  padding-top: 60px;
   text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .to-intro__text {
   font-size: 37px;
@@ -1084,12 +1362,29 @@ textarea {
 .to-intro__form {
   display: inline-block;
 }
+.masthead-overlay {
+  background-color: #000;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
 .to-frequency {
   background-color: #ffffff;
   color: #6b6b6b;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 60px;
   padding-bottom: 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .to-frequency::after {
   content: "";
@@ -1177,19 +1472,22 @@ textarea {
 .to-test__item--no-up::before {
   top: 25px;
   left: 45px;
-  background-image: url("../img/icon-no-up.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -226px -82px;
   width: 83px;
   height: 57px;
 }
 .to-test__item--middle-up::before {
   left: 43px;
-  background-image: url("../img/icon-middle-up.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -226px 0px;
   width: 84px;
   height: 80px;
 }
 .to-test__item--up::before {
   left: 34px;
-  background-image: url("../img/icon-up.png");
+  background-image: url('../../img/sprite-to.png');
+  background-position: -98px -118px;
   width: 100px;
   height: 83px;
 }
@@ -1317,19 +1615,29 @@ textarea {
   margin: 0 15px;
 }
 .to-marks__item--honda {
-  background-image: url("../img/logo-honda.png");
+  background-image: url('../../img/sprite-marks.png');
+  background-position: -86px 0px;
 }
 .to-marks__item--ford {
-  background-image: url("../img/logo-ford.png");
+  background-image: url('../../img/sprite-marks.png');
+  background-position: 0px 0px;
 }
 .to-marks__item--mitsubishi {
-  background-image: url("../img/logo-mitsubishi.png");
+  background-image: url('../../img/sprite-marks.png');
+  background-position: -86px -86px;
 }
 .to-marks__item--huyndai {
-  background-image: url("../img/logo-hyundai.png");
+  background-image: url('../../img/sprite-marks.png');
+  background-position: 0px -86px;
 }
 .to-marks__item--suzuki {
-  background-image: url("../img/logo-suzuki.png");
+  background-image: url('../../img/sprite-marks.png');
+  background-position: -172px 0px;
+}
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 50;
 }
 .main-header .layout {
   padding: 0;
@@ -1522,6 +1830,10 @@ div.menu {
 }
 .menu div.children a.open {
   color: #dc1632;
+}
+.main-header--to {
+  position: absolute;
+  width: 100%;
 }
 .main-header--to div#header {
   height: 80px;
@@ -2061,7 +2373,7 @@ a#PlayNext {
   }
 }
 #pinContainer {
-  min-width: 1355px;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   -webkit-perspective: 1000;
@@ -2079,7 +2391,6 @@ a#PlayNext {
 .panel {
   height: 100%;
   width: 33.33%;
-  min-width: 1355px;
   float: left;
 }
 body {
