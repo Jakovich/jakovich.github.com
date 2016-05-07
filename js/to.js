@@ -1,5 +1,11 @@
 $(function () { // wait for document ready
 		// init
+  if ($(window).width() <= 1354) {
+    $("#pinContainer").removeAttr("id");
+    $("#slideContainer").removeAttr("id");
+    $(".panel").removeClass("panel");
+  }
+  
   var controller = new ScrollMagic.Controller();
 
 		// define movement of panels
@@ -19,7 +25,7 @@ $(function () { // wait for document ready
   new ScrollMagic.Scene({
     triggerElement: "#pinContainer",
     triggerHook: "onLeave",
-    duration: "500%"
+    duration: "200%"
   })
     .setPin("#pinContainer")
     .setTween(wipeAnimation)

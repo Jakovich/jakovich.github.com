@@ -1339,7 +1339,7 @@ This must be run when you have at least 2 sprites.
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 80px;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1347,6 +1347,8 @@ This must be run when you have at least 2 sprites.
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 1355px;
+  min-height: 650px;
 }
 .to-intro__text {
   font-size: 37px;
@@ -2374,6 +2376,7 @@ a#PlayNext {
 }
 #pinContainer {
   width: 100%;
+  min-width: 1355px;
   height: 100%;
   overflow: hidden;
   -webkit-perspective: 1000;
@@ -2391,6 +2394,7 @@ a#PlayNext {
 .panel {
   height: 100%;
   width: 33.33%;
+  min-width: 1355px;
   float: left;
 }
 body {
