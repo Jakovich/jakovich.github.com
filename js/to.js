@@ -1,10 +1,10 @@
 $(function () { // wait for document ready
 		// init
-  if ($(window).width() <= 1354) {
+  /*if ($(window).width() <= 1354) {
     $("#pinContainer").removeAttr("id");
     $("#slideContainer").removeAttr("id");
     $(".panel").removeClass("panel");
-  }
+  }*/
   
   var controller = new ScrollMagic.Controller();
 

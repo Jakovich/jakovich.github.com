@@ -1374,6 +1374,8 @@ This must be run when you have at least 2 sprites.
   right: 0;
   top: 0;
   width: 100%;
+  min-width: 1355px;
+  min-height: 650px;
 }
 .to-frequency {
   background-color: #ffffff;
@@ -1836,6 +1838,7 @@ div.menu {
 .main-header--to {
   position: absolute;
   width: 100%;
+  min-width: 1355px;
 }
 .main-header--to div#header {
   height: 80px;
