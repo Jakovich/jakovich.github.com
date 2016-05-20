@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+ 
   <div id="pinContainer">
     <header class="main-header main-header--to">
       <div class="wrapper">
@@ -87,16 +88,16 @@
 		<div class="video-overlay"></div>
         <div class="wrapper">
           <div class="to-intro__text">
-            <p>Последний раз вы были на ТО<br><span class="to-day">300</span> дней назад</p> 
+            <p>Последний раз вы были на ТО<br><span class="to-counter">300</span> дней назад</p> 
             <p>Проверьте, не проехали ли вы очередные 15 000 километров</p>
           </div>
           <div class="to-intro__form">
             <form action="post" name="subscribe-to" class="insurance-form insurance-form--to">
               <select name="mark">
-                <option disabled selected>Модель</option>
+                <option disabled selected>Марка</option>
                 <option value="Honda">Honda</option>
                 <option value="Ford">Ford</option>
-                <option value="Hyndai">Hyndai</option>
+                <option value="Hyndai">Hyundai</option>
                 <option value="Mitsubishi">Mitsubishi</option>
                 <option value="Suzuki">Suzuki</option>
               </select>
@@ -156,6 +157,7 @@
       </section>
     </div>
   </div>
+  
   <section class="to-test">
     <div class="wrapper">
       <h3 class="to-test__title">Диалоговая приемка</h3>
@@ -191,23 +193,183 @@
       <h3 class="to-video__title">С Вами работают</h3>
       <div class="to-video__items">
         <div class="to-video__item">
-          <video src="/" poster="img/video-poster-Ford,Mitsubishi.jpg"></video>
+          <div class="to-video__yt">
+          
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+src="https://www.youtube.com/embed/Z5bLV3n8qyg?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
           <div class="to-video__explic">
             Ford, Mitsubishi
           </div>
         </div>
         <div class="to-video__item">
-          <video src="/" poster="img/video-poster-Honda.jpg"></video>
+         <div class="to-video__yt">
+          <iframe id="ytplayer" type="text/html" width="397" height="284"
+src="https://www.youtube.com/embed/7FqCieh44T0?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
           <div class="to-video__explic">
-            Honda
+            Huyndai
           </div>
         </div>
         <div class="to-video__item">
-          <video src="/" poster="img/video-poster-Suzuki,Honda.jpg"></video>
+         <div class="to-video__yt">
+          <iframe id="ytplayer" type="text/html" width="397" height="284"
+src="https://www.youtube.com/embed/bK75X3_e9wM?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
           <div class="to-video__explic">
             Suzuki, Honda
           </div>
         </div>
+      </div>
+      <div class="to-video__items" style="display: none">
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+        
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/34d4Gv5h5hU?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Ford, Mitsubishi
+          </div>
+        </div>
+        <div class="to-video__item">
+
+          
+          <div class="to-video__yt">
+            
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/Ihf6Ijn2ul8?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+          
+          <div class="to-video__explic">
+            Huyndai
+          </div>
+        </div>
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/qIFQr-p4q6Y?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Suzuki, Honda
+          </div>
+        </div>
+      </div>
+      
+      <div class="to-video__items" style="display: none">
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+            
+            <iframe id="ytplayer" data-src="https://www.youtube.com/embed/zsytyRfJ2lQ?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" type="text/html" width="397" height="284" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Ford, Mitsubishi
+          </div>
+        </div>
+        <div class="to-video__item">
+
+          
+          <div class="to-video__yt">
+            
+            <iframe id="ytplayer" type="text/html" width="397" height="284" data-src="https://www.youtube.com/embed/3nJrbdeQvPE?modestbranding=1&rel=0&showinfo=0&color=white&theme=light"
+ frameborder="0" allowfullscreen></iframe>
+          </div>
+          
+          <div class="to-video__explic">
+            Huyndai
+          </div>
+        </div>
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+          <iframe data-src="https://www.youtube.com/embed/1sNR_iNANqM?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" id="ytplayer" type="text/html" width="397" height="284"
+ frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Suzuki, Honda
+          </div>
+        </div>
+      </div>
+         
+      <div class="to-video__items" style="display: none">
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+  
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/hw4inGHws4s?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Ford, Mitsubishi
+          </div>
+        </div>
+        
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+
+            <iframe id="ytplayer" type="text/html" width="397" height="284" data-src="https://www.youtube.com/embed/fMCNeDv_z3o?modestbranding=1&rel=0&showinfo=0&color=white&theme=light"
+ frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Suzuki, Honda
+          </div>
+        </div>
+        
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+          
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/HAmFn0_rrbE?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Ford, Mitsubishi
+          </div>
+        </div>
+      </div>
+         
+      <div class="to-video__items" style="display: none">
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+            
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/rz9kaSG-oAU?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+        
+          </div>
+
+          <div class="to-video__explic">
+            Ford, Mitsubishi
+          </div>
+        </div>
+        
+        <div class="to-video__item">
+          
+          <div class="to-video__yt">
+            
+            <iframe id="ytplayer" type="text/html" width="397" height="284"
+data-src="https://www.youtube.com/embed/G6Xp5OuQG-g?modestbranding=1&rel=0&showinfo=0&color=white&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="to-video__explic">
+            Suzuki, Honda
+          </div>
+        </div>
+        
       </div>
           
       <div class="to-video__link">Смотреть еще</div> 
@@ -220,10 +382,10 @@
         <div class="to-subscribe__form">
           <form action="post" name="subscribe-to2" class="insurance-form insurance-form--to">
             <select name="mark">
-              <option disabled selected>Модель</option>
+              <option disabled selected>Марка</option>
               <option value="Honda">Honda</option>
               <option value="Ford">Ford</option>
-              <option value="Hyndai">Hyndai</option>
+              <option value="Hyndai">Hyundai</option>
               <option value="Mitsubishi">Mitsubishi</option>
               <option value="Suzuki">Suzuki</option>
             </select>
@@ -348,8 +510,7 @@
     </div>
   </footer>
   
-  <script src="js/video.js"></script>
-  <script src="js/to.js"></script>
-  <script src="js/to-anim.js"></script>
+  
+  <script src="js/to.min.js"></script>
 </body>
 </html>

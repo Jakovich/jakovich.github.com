@@ -1339,6 +1339,7 @@ This must be run when you have at least 2 sprites.
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   padding-top: 70px;
   text-align: center;
   display: -webkit-flex;
@@ -1379,9 +1380,9 @@ This must be run when you have at least 2 sprites.
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   min-width: 1355px;
-  min-height: 670px;
   height: 100%;
   z-index: 0;
 }
@@ -1568,18 +1569,23 @@ This must be run when you have at least 2 sprites.
   text-align: center;
 }
 .to-video__items {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 40px;
+}
+.to-video__items::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .to-video__item {
   margin: 30px 0;
+  float: left;
+  width: 397px;
+  margin-right: 62px;
 }
-.to-video__item video {
+.to-video__item:nth-child(3n) {
+  margin-right: 0;
+}
+.to-video__item to-video__yt {
   width: 397px;
   height: 284px;
 }
@@ -1660,7 +1666,7 @@ This must be run when you have at least 2 sprites.
   clear: both;
 }
 div#header {
-  height: 90px;
+  height: 70px;
   padding-bottom: 0;
   padding-top: 40px;
 }
@@ -2388,7 +2394,8 @@ a#PlayNext {
 #pinContainer {
   width: 100%;
   min-width: 1355px;
-  height: 100%;
+  height: 101%;
+  padding-bottom: 25px;
   overflow: hidden;
   -webkit-perspective: 1000;
   perspective: 1000;
@@ -2407,6 +2414,9 @@ a#PlayNext {
   width: 33.33%;
   min-width: 1355px;
   float: left;
+}
+.slider-wrapper {
+  height: 100%;
 }
 body {
   font-family: "PT Sans", "Arial", sans-serif;
