@@ -1491,7 +1491,6 @@ This must be run when you have at least 2 sprites.
   top: 0px;
   z-index: 50;
   opacity: 0.8;
-  display: none;
 }
 .popup-menu__inner {
   display: -webkit-flex;
@@ -1720,9 +1719,9 @@ This must be run when you have at least 2 sprites.
 }
 .contacts-boss {
   float: right;
-  width: 450px;
+  width: 440px;
   padding-top: 130px;
-  margin-right: -80px;
+  margin-right: -70px;
   position: relative;
 }
 .contacts-boss__title {
@@ -6999,5 +6998,5 @@ body {
   font-family: "Century Gothic", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
-  min-width: 1300px;
+  min-width: 1310px;
 }
