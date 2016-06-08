@@ -5818,6 +5818,7 @@ th.basket-total__recipe {
   -webkit-flex-basis: 356px;
       -ms-flex-preferred-size: 356px;
           flex-basis: 356px;
+  width: 356px;
 }
 .together-intro__circle {
   margin-top: 30px;
@@ -6013,6 +6014,7 @@ th.basket-total__recipe {
   -webkit-flex-basis: 505px;
       -ms-flex-preferred-size: 505px;
           flex-basis: 505px;
+  width: 505px;
   margin: 0 25px;
 }
 .together-points__explic-item:first-child {
@@ -6042,6 +6044,7 @@ th.basket-total__recipe {
       -ms-flex-preferred-size: 80px;
           flex-basis: 80px;
   position: relative;
+  width: 80px;
 }
 .together-points__item::before {
   position: absolute;
