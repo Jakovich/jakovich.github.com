@@ -6997,6 +6997,9 @@ th.basket-total__recipe {
 .menu-sandwich__title a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+html * {
+  max-height: 1000000px;
+}
 body {
   font-family: "Century Gothic", "Arial", sans-serif;
   font-weight: normal;
