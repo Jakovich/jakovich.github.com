@@ -823,14 +823,19 @@ This must be run when you have at least 2 sprites.
 .user-nav--index {
   padding-top: 1px;
 }
+.user-nav--index::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .user-nav--index .page-header__logo {
   left: 50%;
   margin-left: -120px;
 }
 .user-nav--index .user-nav__items {
-  width: 500px;
+  width: 400px;
   text-align: left;
-  margin-left: 770px;
+  float: right;
   padding-bottom: 15px;
   margin-top: -4px;
 }
@@ -1486,6 +1491,7 @@ This must be run when you have at least 2 sprites.
   top: 0px;
   z-index: 50;
   opacity: 0.8;
+  display: none;
 }
 .popup-menu__inner {
   display: -webkit-flex;
@@ -6993,5 +6999,5 @@ body {
   font-family: "Century Gothic", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
-  min-width: 1350px;
+  min-width: 1300px;
 }
