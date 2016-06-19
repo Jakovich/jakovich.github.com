@@ -198,8 +198,8 @@ body {
 }
 .container, .top-nav, #content-wrp, main, .partners, .news-block {
     margin: 0 auto;
-    min-width: 1000px;
-    width: 80%;
+    /*min-width: 1000px;*/
+    /*width: 80%;*/
 }
 h1, h2, h3, h4, h5, h6 {
     color: #000;
@@ -1163,7 +1163,7 @@ main .content h2 {
 }
 #constructor .total-wrp {
     padding-top: 50px;
-    width: 740px;
+    /*width: 740px;*/
 }
 #constructor .total-wrp a {
     display: inline-block;
