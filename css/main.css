@@ -24,6 +24,8 @@ audio:not([controls]) {
 html {
     font-family: sans-serif;
 }
+
+
 body {
     margin: 0;
 }
@@ -2965,5 +2967,9 @@ h2, h3 {
   
   #constructor .checkbox-wrp {
     width: 150px;
+  }
+  
+  .step {
+    min-width: 650px;
   }
 }
