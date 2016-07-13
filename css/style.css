@@ -1,0 +1,284 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.main-header__contacts {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.main-header__phone {
+  font-size: 18px;
+  color: #4e2924;
+}
+
+.main-header__phone span {
+  font-size: 13px;
+}
+
+
+
+.main-header__logo img {
+  display: block;
+  margin: 15px auto;
+}
+
+.main-header__link a {
+  margin-top: 10px;
+  color: #502825;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: 2px solid #603913;
+  padding: 8px 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-header__link a:hover {
+  color: #aa3e36;
+  border: 2px solid #aa3e36;
+}
+
+.main-nav {
+  background-color: #bb9e65;
+  min-height: 58px;
+}
+
+.main-nav__inner {
+  position: relative;
+}
+
+.main-nav .icon-bar {
+  color: #603913;
+  background-color: #603913;
+}
+
+.main-header .navbar {
+  margin-bottom: 0;
+  position: relative;
+}
+
+ul.nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.nav > li > a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+  color: #fff7e8;
+}
+
+.navbar-toggle {
+  top: 5px;
+  right: 0;
+  position: absolute;
+  z-index: 50;
+}
+
+.explic {
+  max-width: 440px;
+  text-align: center;
+  padding: 18px 24px;
+  border-left: 3px solid #e9d2cb;
+  background-color: #fff7e8;
+  font-size: 12px;
+  font-style: italic;
+  color: #4e2924;
+  margin: 20px auto;
+}
+
+.doors-slider {
+  width: 1030px;
+  padding: 0 48px;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+}
+
+.doors-slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.doors-slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.doors-items {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.doors-items__wrapper {
+  position: relative;
+  padding: 4px;
+  left: 0;
+  top: 0;
+  width: 10000000px;
+}
+
+.doors-items__wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.doors-slider__nav {
+  position: absolute;
+  width: 31px;
+  height: 55px;
+  background-image: url("../img/icon-arrow.png");
+  top: 140px;
+  
+  cursor: pointer;
+}
+
+.doors-slider__nav--prev {
+  left: 0;
+}
+
+.doors-slider__nav--next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.doors-item {
+  text-align: center;
+  margin-bottom: 25px;
+  float: left;
+  padding-right: 35px;
+}
+
+.doors-item__title {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  line-height: 16px;
+  width: 125px;
+  color: #502825;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.doors-item__price {
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 6px 35px;
+  color: #502825;
+  font-size: 13px;
+  text-align: center;
+  border: 2px solid #603913;
+}
+
+.doors-item__color {
+  margin-top: 15px;
+  background-color: #fff7e8;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0;
+}
+
+.doors-item__color-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 0 4px;
+}
+
+.doors-link {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4f2823;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  width: 275px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.doors-link:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #6e362f;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+	
+  .container {
+    max-width: 480px;
+  }
+  
+  ul.nav {
+    display: block;
+  }
+
+  .nav li {
+    display: block;
+    text-align:center;
+    padding-bottom:15px;
+    padding-top:15px;
+  }
+  
+  .main-header__contacts {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .main-header__logo img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .doors-slider {
+    width: 810px;
+  }
+  
+  .doors-item {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .main-menu {
+    padding: 0;
+  }
+  ul.nav {
+    margin-bottom: 20px;
+  }
+  
+  .doors-slider {
+    width: 537px;
+  }
+  
+  .doors-item {
+    padding-right: 30px;
+  }
+	
+}
+
+@media screen and (max-width: 766px) {
+  .doors-slider {
+    width: 224px;
+  }
+}
+
+
