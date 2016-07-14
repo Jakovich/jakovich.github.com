@@ -1354,6 +1354,9 @@ This must be run when you have at least 2 sprites.
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
 }
+#colorbox {
+  left: 50%;
+}
 #cboxWrapper {
   max-width: none;
 }
@@ -1570,7 +1573,7 @@ This must be run when you have at least 2 sprites.
 }
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-   min-width: 808px;
+  min-width: 808px;
 }
 img {
   max-width: 100%;
