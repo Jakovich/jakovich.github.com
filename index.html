@@ -2,180 +2,347 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MARIO RIOLI</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="ремонт, ремонт под ключ, ремонт в Москве, сделать ремонт, качественный ремонт">
+    <meta name="description" content="краткое описание">
+    <title>РемонтСтрой - ремонт квартир и офисов в Москве и Подмосковье</title>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="row">
-          <div class="main-header__info">
-            <div class="main-header__logo col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-4 col-sm-4">
-              <img src="img/logo.jpg" alt="MARIO RIOLI" width="234" height="130">
-            </div>
-            <div class="main-header__contacts col-lg-offset-2 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-1 col-sm-3">
-              <div class="main-header__phone"><span>(812)</span> 555-55-55</div>
-              <div class="main-header__phone"><span>(812)</span> 555-55-55</div>
-              <div class="main-header__link"><a href="#">Обратный звонок</a></div>
+    <header class="page-header">
+      <div class="page-header__first-row">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo">
+           
+            <a href="#">
+             <picture>
+                <source media="(max-width:1000px)" srcset="img/logo_sm.png">
+                <img src="img/logo.png" alt="РемонтСтрой">
+              </picture>
+              
+            </a>
+          </div>
+          <div class="page-header__slogan">
+            <p>Ремонт квартир и офисов в&nbsp;Москве и Подмосковье</p>
+          </div>
+          <div class="page-header__call">
+            <div class="call-request">
+              <div class="call-request__number"><span>+7 (495)</span> 374-50-10</div>
+              <a class="call-request__link" href="#">Заказать звонок</a>
             </div>
           </div>
         </div>
       </div>
-        
-      <nav class="main-nav">
-        <div class="container">
-          <div class="main-nav__inner">
-            <button type="button" 
-                     class="navbar-toggle collapsed" 
-                     data-target="#collapsemenu" 
-                     data-toggle="collapse" 
-                     aria-expanded="false">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsemenu">
-              <ul class="main-menu nav">
-                <li><a href="#">Выбрать двери</a></li>
-                <li><a href="#">Выбрать фурнитуру</a></li>
-                <li><a href="#">Наши преимущества</a></li>
-                <li><a href="#">Как мы работаем</a></li>
-                <li><a href="#">Адрес магазина</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
       
+      <div class="page-header__second-row">
+        <div class="page-header__wrapper">
+          <nav class="main-nav">
+            <ul class="main-nav__items">
+              <li class="main-nav__item main-nav__item--active"><a href="#">Кто мы</a></li>
+              <li class="main-nav__item"><a href="#">Наши работы</a></li>
+              <li class="main-nav__item"><a href="#">Наши цены</a></li>
+              <li class="main-nav__item"><a href="#">Отзывы</a></li>
+              <li class="main-nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     
     <main>
-      <div class="container">
-        <div class="explic">
-          Межкомнатные двери от производителя с бесплатной доставкой по Санкт-Петербургу и Ленинградской области
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">
+            <span class="intro__title-row">КАЧЕСТВЕННЫЙ РЕМОНТ</span>
+            <span class="intro__title-row"><span class="intro__title-wh">КВАРТИР И ОФИСОВ</span> "ПОД КЛЮЧ"</span>
+          </h1>
+          <div class="intro__form">
+            <form class="call-master" action="POST" name="call-master">
+              <div class="call-master__title">Вызвать мастера и рассчитать смету БЕСПЛАТНО!</div>
+              <input class="call-master__input" id="input-name" type="text" name="name" placeholder="Ваше имя" required>
+              <label for="input-name"> </label>
+              <input class="call-master__input" id="input-phone" type="tel"  name="phone" placeholder="Ваш номер телефона" required>
+              <label for="input-phone"> </label>
+              <button class="call-master__btn basic-btn" type="submit">Вызвать мастера</button>
+            </form>
+          </div>
         </div>
-        <div class="doors-slider">
-          <div class="doors-items">
-            <div class="doors-items__wrapper">
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-              
-              <div class="doors-item">
-                <h3 class="doors-item__title">PRONTO 600 Греческий Дуб</h3>
-                <div class="doors-item__img">
-                  <img src="img/door-oak.jpg" alt="" width="125" height="260">
-                </div>
-                <div class="doors-item__color">
-                  <button class="doors-item__color-btn" title="белый" data-src="img/door-white.jpg" type="button" style="background: #ffffff"></button>
-                  <button class="doors-item__color-btn" title="береза" data-src="img/door-birch.jpg" type="button" style="background: #baaba3"></button>
-                  <button class="doors-item__color-btn" title="дуб" data-src="img/door-oak.jpg" type="button" style="background: #523a2e"></button>
-                </div>
-                <div class="doors-item__price">9500 &#8381;</div>
-              </div>
-
+      </section>
+        
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <div class="advantages__items">
+            <div class="advantages__item advantages__item--experience">
+              <h3 class="advantages__title">7 летний опыт</h3>
+              <p class="advantages__text">Мы помогаем Вам делать качественный ремонт с 2008 года</p>
+            </div>
+            <div class="advantages__item advantages__item--garanty">
+              <h3 class="advantages__title">Гарантия 3&nbsp;года</h3>
+              <p class="advantages__text">Вы получаете 36 месячную гарантию на все работы по нашему договору</p>
+            </div>
+            <div class="advantages__item advantages__item--team">
+              <h3 class="advantages__title">6&nbsp;постоянных бригад</h3>
+              <p class="advantages__text">Опытных мастера, работающие в сфере ремонта более 10 лет</p>
+            </div>
+            <div class="advantages__item advantages__item--time">
+              <h3 class="advantages__title">Соблюдаем сроки</h3>
+              <p class="advantages__text">И контролируем наших мастеров полностью на всех этапах работ</p>
+            </div>
+            <div class="advantages__item advantages__item--price">
+              <h3 class="advantages__title">Доступные цены</h3>
+              <p class="advantages__text">Наши цены за такое высокое    качество Вас сильно обрадуют</p>
+            </div>
+            <div class="advantages__item advantages__item--clean">
+              <h3 class="advantages__title">Уборка после ремонта</h3>
+              <p class="advantages__text">В конце работы Вы получаете полностью готовое помещение</p>
             </div>
           </div>
-          <div class="doors-slider__nav doors-slider__nav--prev"></div>
-          <div class="doors-slider__nav doors-slider__nav--next"></div>
         </div>
-        <a href="#" class="doors-link">Показать все комплекты</a>
-      </div>
+      </section>
+       
+      <section class="reviews">
+        <div class="reviews__border">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Наши работы и&nbsp;отзывы о&nbsp;нас</h2>
+          <div class="reviews__items">
+            <div class="reviews__item reviews__item--left">
+              <ul class="reviews__images">
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-1-big.jpg">
+                    <img src="img/exmpl-1.jpg" alt="Примеры наших работ" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-2-big.jpg">
+                    <img src="img/exmpl-2.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-3-big.jpg">
+                    <img src="img/exmpl-3.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-4-big.jpg">
+                    <img src="img/exmpl-4.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-5-big.jpg">
+                    <img src="img/exmpl-5.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-6-big.jpg">
+                    <img src="img/exmpl-6.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-7-big.jpg">
+                    <img src="img/exmpl-7.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxExample" href="img/exmpl-8-big.jpg">
+                    <img src="img/exmpl-8.jpg" alt="Пример нашей работы" width="145" height="200">
+                  </a>
+                </li>
+              </ul>
+              <a class="reviews__link" href="#">Посмотреть другие работы</a>
+            </div>
+            <div class="reviews__item reviews__item--right">
+              <ul class="reviews__images">
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+                <li class="reviews__image">
+                  <a class="reviews__cboxFeedback" href="img/feedback-1-big.jpg">
+                    <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
+                  </a>
+                </li>
+              </ul>
+              <a class="reviews__link" href="#">Посмотреть все отзывы</a>
+            </div>
+          </div>
+          <div class="reviews__contacts">Позвоните нам по телефону 
+            <span class="reviews__city-code">(495)</span> 
+            <span class="reviews__tel">374-5010</span>
+          </div>
+        </div>
+        </div>
+      </section> 
+            
+      <section class="description">
+        <div class="description__wrapper">
+          <h2 class="description__title">Как мы делаем <b>качественный ремонт</b> для Вас:</h2>
+          <ol class="description__items">
+            <li class="description-item">Получаем от Вас <span>звонок или заявку</span> и обговариваем удобное время встречи</li>
+            <li class="description-item">Мастер <span>выезжает на Ваш  объект</span> и согласовывает все детали предстоящего ремонта</li>
+            <li class="description-item">Мы <span>производим для Вас рассчеты</span> всех работ и материалов в смете</li>
+            <li class="description-item">На основании сметы <span>заключаем официальный договор</span> со всеми условиями и гарантией</li>
+            <li class="description-item">Приступаем <span>к работе с полным контролем</span> и поэтапным отчетом</li>
+            <li class="description-item">Перед финальной сдачей производим полную <span>уборку и подготовку помещения</span></li>
+            <li class="description-item">Вы принимаете <span>готовый ремонт "под ключ"</span></li>
+            <li class="description-item"><a class="description__link basic-btn" href="#">Оставить заявку</a></li>
+          </ol>
+          
+        </div>
+      </section>
+        
+      <section class="prices">
+        <div class="prices__wrapper">
+          <h2 class="prices__title">Наши цены</h2>
+          <div class="prices__items">
+            <article class="prices__item">
+              <h3 class="prices__name">Косметический ремонт</h3>
+              <div class="prices__amount">цена от <span>1900 руб/м2</span></div>
+              <ul class="prices__explic">
+                <li>Обновление интерьера помещения.</li>
+                <li>Повышение стоимости апартаментов перед продажей.</li>
+                <li>Смена арендатора съемной квартиры.</li>
+                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
+              </ul>
+              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+            </article>
+            <article class="prices__item">
+              <h3 class="prices__name">Капитальный ремонт</h3>
+              <div class="prices__amount">цена от <span>3900 руб/м2</span></div>
+              <ul class="prices__explic">
+                <li>Обновление интерьера помещения.</li>
+                <li>Повышение стоимости апартаментов перед продажей.</li>
+                <li>Смена арендатора съемной квартиры.</li>
+                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
+              </ul>
+              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+            </article>
+            <article class="prices__item">
+              <h3 class="prices__name">Эксклюзивный ремонт</h3>
+              <div class="prices__amount">цена от <span>5900 руб/м2</span></div>
+              <ul class="prices__explic">
+                <li>Обновление интерьера помещения.</li>
+                <li>Повышение стоимости апартаментов перед продажей.</li>
+                <li>Смена арендатора съемной квартиры.</li>
+                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
+              </ul>
+              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+            </article>
+          </div>
+        </div>
+      </section>
+        
+      <section class="reasons">
+       <div class="reasons__wrapper">
+         <h2 class="reasons__title">Почему вы поручите делать ремонт нашим&nbsp;мастерам?</h2>
+         <div class="reasons__text">
+           <p>Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий.</p>
+           <p>Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа соответствующий условий активизации.</p>
+           <p>Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании направлений прогрессивного развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны сложившаяся структура организации позволяет оценить значение новых предложений. Разнообразный и богатый опыт рамки и место обучения кадров позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>         
+         </div>
+         <div class="reasons__contacts">
+           Есть вопросы? Звоните нам: <span>(495) <b>374-5010</b></span>
+         </div>
+       </div>
+      </section>
     </main>
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <footer class="page-footer">
+      <div class="page-footer__first-row">
+        <div class="page-footer__wrapper"> 
+          <nav class="main-nav main-nav--footer">
+            <ul class="main-nav__items">
+              <li class="main-nav__item"><a href="#">Кто мы</a></li>
+              <li class="main-nav__item"><a href="#">Наши работы</a></li>
+              <li class="main-nav__item"><a href="#">Наши цены</a></li>
+              <li class="main-nav__item"><a href="#">Отзывы</a></li>
+              <li class="main-nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="page-footer__second-row">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__copyright">
+            <p>
+              «РемонтСтрой» &ndash; Ремонт квартир и офисов в Москве и Подмосковье<br>
+              129110, г. Москва, Проспект Мира, д. 68, строение 3, офис 10Б<br>
+              &#x24B8; 2008-2015 Все права защищены
+            </p>
+          </div>
+          <div class="page-footer__call">
+            <div class="call-request">
+              <div class="call-request__number">+7 (495) 374-50-10</div>
+              <a class="call-request__link basic-btn" href="#">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="popup-report">
+     `<div class="popup-report__bg"></div>
+      <div class="popup-report__close">x</div>
+      <h3 class="popup-report__title">Оформить заявку</h3>
+      <p class="popup-report__explic">Заполните форму и мы с Вами обязательно свяжемся</p>
+      <form class="popup-report__form" action="POST" name="report">
+        <div class="popup-report__name-wrapper">
+          <label for="report-name">Имя:</label>
+          <input class="popup-report__input" type="text" name="name" id="report-name" placeholder="Введите свое имя" required>   
+        </div>
+        <div class="popup-report__phone-wrapper">
+          <label for="report-phone">Телефон:</label>
+          <input class="popup-report__input" type="text" name="phone" id="report-phone" placeholder="(___) ___ - _____" required>
+        </div>
+        <label for="report-message">Текст сообщения:</label>
+        <textarea class="popup-report__message" name="message_order" id="report-message" cols="30" rows="4" placeholder="Напишите здесь текст сообщения"></textarea>
+        <button class="popup-report__btn" type="submit">Отправить</button>
+      </form>
+      <p class="popup-report__bottom">Не любите отправлять заявки?<br>тогда звоните +7(495) <span>374-5010</span></p>
+      
+    </div>
+    <script src="js/vendor/jquery.colorbox-min.js"></script>
+    <script src="js/vendor/inputmask.min.js"></script>
+    <script src="js/vendor/inputmask.phone.extensions.min.js"></script>
+    <script src="js/vendor/jquery.inputmask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
