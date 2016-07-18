@@ -423,7 +423,7 @@ textarea {
   width: 30px;
   height: 33px;
   background-image: url('../img/index-sprite.png');
-  background-position: -255px -140px;
+  background-position: -249px -77px;
   left: -35px;
   top: 3px;
 }
@@ -456,6 +456,7 @@ textarea {
   }
 }
 .page-header {
+  max-width: 1400px;
   margin: 0 auto;
 }
 .page-header__wrapper {
@@ -520,6 +521,8 @@ textarea {
 }
 .advantages {
   background-color: #e6d8c1;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .advantages__wrapper {
   max-width: 1180px;
@@ -612,6 +615,10 @@ textarea {
     width: 162px;
   }
 }
+.page-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 .page-footer__wrapper {
   max-width: 1180px;
   min-width: 720px;
@@ -645,6 +652,8 @@ textarea {
   background-position: top center;
   background-size: cover;
   padding: 20px 0;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .prices__wrapper {
   max-width: 1180px;
@@ -741,7 +750,7 @@ textarea {
   width: 24px;
   height: 24px;
   background-image: url('../img/index-sprite.png');
-  background-position: -359px -182px;
+  background-position: -279px -77px;
 }
 .prices__link {
   text-align: center;
@@ -1043,6 +1052,8 @@ textarea {
 }
 .reasons {
   background-color: #f7efe4;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .reasons__wrapper {
   max-width: 1180px;
@@ -1078,6 +1089,8 @@ textarea {
 .reviews {
   background-color: #9c7a5c;
   padding: 75px 20px;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 .reviews__border {
   max-width: 1260px;
@@ -1136,7 +1149,7 @@ textarea {
   left: 95px;
   top: 155px;
   background-image: url('../img/index-sprite.png');
-  background-position: -199px -77px;
+  background-position: -344px -182px;
   width: 32px;
   height: 32px;
   z-index: 10;
@@ -1212,6 +1225,9 @@ textarea {
 .call-master__input:focus {
   border: 1px solid #603023;
 }
+.call-master__input--invalid {
+  outline: 1px solid red;
+}
 .call-master label {
   display: block;
   position: relative;
@@ -1225,14 +1241,24 @@ textarea {
   z-index: 5;
 }
 .call-master label[for=input-name]:before {
-  background-position: -249px -77px;
+  background-position: -293px -140px;
   width: 16px;
   height: 20px;
 }
 .call-master label[for=input-phone]:before {
-  background-position: -359px -206px;
+  background-position: -255px -140px;
   width: 20px;
   height: 20px;
+}
+.call-master__errorMsg {
+  position: absolute;
+  color: red;
+  background-color: #ffffff;
+  right: 0;
+  padding: 4px;
+  font-size: 13px;
+  top: -7px;
+  z-index: 5;
 }
 .call-master__btn {
   background-color: #84b72c;
@@ -1268,6 +1294,7 @@ textarea {
   }
 }
 .popup-report {
+  display: none;
   position: fixed;
   top: 100px;
   width: 330px;
@@ -1339,7 +1366,7 @@ textarea {
 }
 .popup-report__name-wrapper {
   float: left;
-  width: 45%;
+  width: 38%;
 }
 .popup-report__input {
   display: block;
@@ -1349,6 +1376,10 @@ textarea {
   font-size: 14px;
   font-style: italic;
   color: #d69346;
+}
+.popup-report__input--invalid {
+  outline: 1px solid red;
+  color: red;
 }
 .popup-report__phone-wrapper {
   float: right;
@@ -1402,6 +1433,17 @@ label[for=report-message] {
 .popup-report__form label {
   color: #e1c78c;
   font-size: 13px;
+  position: relative;
+}
+.popup-report__error {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 32px;
+  background-image: url('../img/index-sprite.png');
+  background-position: -309px -182px;
+  left: -37px;
+  top: 20px;
 }
 .popup-report__overlay {
   position: fixed;
@@ -1415,6 +1457,54 @@ label[for=report-message] {
   opacity: 0.7;
   filter: alpha(opacity=70);
   z-index: 10;
+}
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+.popup-report__shake {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
@@ -1643,7 +1733,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   left: 3px;
   background-image: url('../img/index-sprite.png');
-  background-position: -334px -182px;
+  background-position: -224px -77px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1654,7 +1744,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   right: 3px;
   background-image: url(../img/index-sprite.png);
-  background-position: -309px -182px;
+  background-position: -199px -77px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1664,7 +1754,7 @@ This must be run when you have at least 2 sprites.
   top: 5px;
   right: 5px;
   background-image: url(../img/index-sprite.png);
-  background-position: -231px -77px;
+  background-position: -275px -140px;
   width: 18px;
   height: 20px;
   text-indent: -9999px;
