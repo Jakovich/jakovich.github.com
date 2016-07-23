@@ -391,11 +391,21 @@ textarea {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   position: relative;
 }
 .main-nav__item a:hover {
   color: #d69f47;
+  position: relative;
+}
+.main-nav__item a:hover:before {
+  position: absolute;
+  content: '';
+  left: -3px;
+  right: -3px;
+  height: 5px;
+  background-color: #d69f47;
+  bottom: -16px;
 }
 .main-nav__item--active a {
   color: #d69f47;
@@ -423,7 +433,7 @@ textarea {
   width: 30px;
   height: 33px;
   background-image: url('../img/index-sprite.png');
-  background-position: -249px -77px;
+  background-position: -314px -231px;
   left: -35px;
   top: 3px;
 }
@@ -454,10 +464,10 @@ textarea {
   .call-request__number {
     font-size: 21px;
   }
-}
-.page-header {
-  max-width: 1400px;
-  margin: 0 auto;
+  .call-request__link {
+    padding: 8px 0;
+    font-size: 14px;
+  }
 }
 .page-header__wrapper {
   max-width: 1180px;
@@ -469,7 +479,7 @@ textarea {
   padding: 17px 0;
   background-color: #e4d6c0;
 }
-.page-header__first-row::after {
+.page-header__first-row:after {
   content: "";
   display: table;
   clear: both;
@@ -521,8 +531,6 @@ textarea {
 }
 .advantages {
   background-color: #e6d8c1;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .advantages__wrapper {
   max-width: 1180px;
@@ -535,7 +543,7 @@ textarea {
   padding: 45px 8%;
   padding-bottom: 0;
 }
-.advantages__items::after {
+.advantages__items:after {
   content: "";
   display: table;
   clear: both;
@@ -571,7 +579,11 @@ textarea {
   width: 85px;
   height: 86px;
 }
+.advantages__item--team {
+  margin-right: 0;
+}
 .advantages__item--team:before {
+  top: 10px;
   margin-left: -42.5px;
   background-position: 0px -231px;
   width: 85px;
@@ -588,6 +600,9 @@ textarea {
   background-position: 0px -140px;
   width: 85px;
   height: 91px;
+}
+.advantages__item--clean {
+  margin-right: 0;
 }
 .advantages__item--clean:before {
   margin-left: -37.5px;
@@ -615,9 +630,50 @@ textarea {
     width: 162px;
   }
 }
-.page-footer {
-  max-width: 1400px;
-  margin: 0 auto;
+@media (max-width: 1000px) {
+  .advantages__item {
+    padding-top: 90px;
+  }
+  .advantages__title {
+    font-size: 20px;
+    width: 140px;
+  }
+  .advantages__item--experience:before {
+    margin-left: -34px;
+    background-position: -153px -231px;
+    width: 68px;
+    height: 73px;
+  }
+  .advantages__item--garanty:before {
+    margin-left: -34px;
+    background-position: -221px -231px;
+    width: 68px;
+    height: 69px;
+  }
+  .advantages__item--team:before {
+    margin-left: -34px;
+    background-position: -199px -77px;
+    width: 68px;
+    height: 62px;
+  }
+  .advantages__item--time:before {
+    margin-left: -24.5px;
+    background-position: -255px -140px;
+    width: 49px;
+    height: 73px;
+  }
+  .advantages__item--price:before {
+    margin-left: -34px;
+    background-position: -85px -231px;
+    width: 68px;
+    height: 73px;
+  }
+  .advantages__item--clean:before {
+    margin-left: -30px;
+    background-position: 0px -308px;
+    width: 60px;
+    height: 73px;
+  }
 }
 .page-footer__wrapper {
   max-width: 1180px;
@@ -632,7 +688,7 @@ textarea {
   padding: 18px 0;
   background-color: #e4d6c0;
 }
-.page-footer__second-row::after {
+.page-footer__second-row:after {
   content: "";
   display: table;
   clear: both;
@@ -650,10 +706,11 @@ textarea {
   background-color: #deceb6;
   background-image: url('../img/price-bg.jpg');
   background-position: top center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/price-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/price-bg.jpg', sizingMethod='scale')";
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px 0;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .prices__wrapper {
   max-width: 1180px;
@@ -693,7 +750,7 @@ textarea {
   text-align: center;
   font-size: 0;
 }
-.prices__items::after {
+.prices__items:after {
   content: "";
   display: table;
   clear: both;
@@ -750,7 +807,7 @@ textarea {
   width: 24px;
   height: 24px;
   background-image: url('../img/index-sprite.png');
-  background-position: -279px -77px;
+  background-position: -344px -231px;
 }
 .prices__link {
   text-align: center;
@@ -802,11 +859,12 @@ textarea {
 .intro {
   background-color: #ead9b1;
   background-image: url('../img/intro-bg.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale')";
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
   padding: 35px 0;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .intro__wrapper {
   max-width: 1180px;
@@ -814,7 +872,7 @@ textarea {
   margin: 0 auto;
   padding: 0 15px;
 }
-.intro__wrapper::after {
+.intro__wrapper:after {
   content: "";
   display: table;
   clear: both;
@@ -897,11 +955,12 @@ textarea {
 .description {
   background-color: #603023;
   background-image: url('../img/describe-bg.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale')";
   background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   padding-top: 35px;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .description__wrapper {
   max-width: 1180px;
@@ -909,7 +968,7 @@ textarea {
   margin: 0 auto;
   padding: 0 15px;
 }
-.description__wrapper::after {
+.description__wrapper:after {
   content: "";
   display: table;
   clear: both;
@@ -955,6 +1014,9 @@ textarea {
 .description-item:last-child {
   padding-left: 10px;
 }
+.description-item:last-child:before {
+  display: none;
+}
 .description-item:before {
   position: absolute;
   left: 0;
@@ -971,9 +1033,6 @@ textarea {
   width: 58px;
   height: 58px;
   top: -10px;
-}
-.description-item:last-child:before {
-  display: none;
 }
 .description__link {
   display: block;
@@ -1014,6 +1073,9 @@ textarea {
     height: 45px;
     line-height: 45px;
   }
+  .description-item--last {
+    padding-left: 10px;
+  }
   .description__items {
     width: 560px;
     padding-top: 13px;
@@ -1032,7 +1094,6 @@ textarea {
     padding: 15px 15px;
   }
   .description-item {
-    margin-right: 0;
     width: 140px;
     padding-left: 70px;
   }
@@ -1041,6 +1102,9 @@ textarea {
     width: 45px;
     height: 45px;
     line-height: 45px;
+  }
+  .description-item--last {
+    padding-left: 10px;
   }
   .description__items {
     width: 460px;
@@ -1052,8 +1116,6 @@ textarea {
 }
 .reasons {
   background-color: #f7efe4;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 .reasons__wrapper {
   max-width: 1180px;
@@ -1089,8 +1151,6 @@ textarea {
 .reviews {
   background-color: #9c7a5c;
   padding: 75px 20px;
-  max-width: 1360px;
-  margin: 0 auto;
 }
 .reviews__border {
   max-width: 1260px;
@@ -1118,7 +1178,7 @@ textarea {
 .reviews__items {
   text-align: center;
 }
-.reviews__items::after {
+.reviews__items:after {
   content: "";
   display: table;
   clear: both;
@@ -1241,12 +1301,12 @@ textarea {
   z-index: 5;
 }
 .call-master label[for=input-name]:before {
-  background-position: -293px -140px;
+  background-position: -292px -77px;
   width: 16px;
   height: 20px;
 }
 .call-master label[for=input-phone]:before {
-  background-position: -255px -140px;
+  background-position: -289px -275px;
   width: 20px;
   height: 20px;
 }
@@ -1286,11 +1346,19 @@ textarea {
 @media (max-width: 1000px) {
   .call-master__title {
     font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .call-master__input {
+    font-size: 15px;
   }
 }
 @media (max-width: 850px) {
+  .call-master {
+    padding: 20px 25px;
+  }
   .call-master__title {
     font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 .popup-report {
@@ -1733,7 +1801,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   left: 3px;
   background-image: url('../img/index-sprite.png');
-  background-position: -224px -77px;
+  background-position: -289px -231px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1744,7 +1812,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   right: 3px;
   background-image: url(../img/index-sprite.png);
-  background-position: -199px -77px;
+  background-position: -267px -77px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1754,7 +1822,7 @@ This must be run when you have at least 2 sprites.
   top: 5px;
   right: 5px;
   background-image: url(../img/index-sprite.png);
-  background-position: -275px -140px;
+  background-position: -309px -275px;
   width: 18px;
   height: 20px;
   text-indent: -9999px;

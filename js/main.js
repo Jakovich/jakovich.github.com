@@ -1,6 +1,16 @@
 
 "use strict";
 $(document).ready(function(e) {
+  /*if ($(window).width() < 750) {
+    var $view = $('head').find('meta[name=viewport]');
+    $view.remove();
+  }
+  $(window).resize(function() {
+    if ($(document).width() < 750) {
+      var $view = $('head').find('meta[name=viewport]');
+      $view.remove();
+    }
+  })*/
   //добавление в head ссылки на googleFonts
   $("head").append("<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>");
   
@@ -14,7 +24,7 @@ $(document).ready(function(e) {
   $('.basic-btn').click(function(evt){   
     evt.preventDefault();
     $('.popup-report, .popup-report__overlay').fadeIn(500);
-    $('.popup-report #report-name').focus();
+    
   })
   //закрытие попапа при нажатии на крестик или по затемненному фону
   $('.popup-report__close, .popup-report__overlay').click(function(){
@@ -71,8 +81,8 @@ $(document).ready(function(e) {
   $('#input-phone').inputmask("+7 (999) 999-9999", 
     { "onincomplete": function() {
       validPhone = 0;
-      $(this).addClass('call-master__input--invalid');
-      showErr('input-phone', 'call-master__errorMsg', true, 'Введите номер полностью');
+      /*$(this).addClass('call-master__input--invalid');
+      showErr('input-phone', 'call-master__errorMsg', true, 'Введите номер полностью');*/
       },
       "oncomplete": function() {
       validPhone = 1;
@@ -89,10 +99,13 @@ $(document).ready(function(e) {
   $('#input-name').inputmask("a{2,20} [aa{2,20}]", 
     { 
       "onincomplete": function() {
+      
+        /*$(this).addClass('call-master__input--invalid');
+        showErr('input-name', 'call-master__errorMsg', true, 'Введите имя');*/
         validName = 0;
-      $(this).addClass('call-master__input--invalid');
-      showErr('input-name', 'call-master__errorMsg', true, 'Введите имя');
-      },
+        },
+        
+      
       "oncomplete": function() {
       validName = 1;
       $(this).removeClass('call-master__input--invalid');
@@ -234,13 +247,28 @@ $(document).ready(function(e) {
   }
    
   
-  /*$(document).mouseup(function (e){ // событие клика по веб-документу
-		var callMaster = $(".call-master"); // тут указываем ID элемента
+  $(document).mouseup(function (e){ 
+		var callMaster = $(".call-master"); 
 		if (!callMaster.is(e.target) // если клик был не по нашему блоку
 		    && callMaster.has(e.target).length === 0) { // и не по его дочерним элементам
-			removeErr('input-phone'); // скрываем его
-          console.log('sdf');
+			removeErr('input-phone', 'call-master__errorMsg');
+            removeErr('input-name', 'call-master__errorMsg');
+            $('#input-name').removeClass('call-master__input--invalid');
+            $('#input-phone').removeClass('call-master__input--invalid');
 		}
-	});*/
+	})
+  
+  $(document).mouseup(function (e){ // событие клика по веб-документу
+		var callMaster = $(".popup-report"); // тут указываем ID элемента
+		if (!callMaster.is(e.target) // если клик был не по нашему блоку
+		    && callMaster.has(e.target).length === 0) { // и не по его дочерним элементам
+			removeErr('report-name', 'popup-report__error');
+            removeErr('report-phone', 'popup-report__error');
+            $('#report-name').removeClass('popup-report__input--invalid');
+            $('#report-phone').removeClass('popup-report__input--invalid');
+		}
+	});
+  
+  
 });
 
