@@ -381,10 +381,10 @@ textarea {
   display: inline-block;
   vertical-align: top;
   padding: 7px 3.7%;
-  border-right: 1px solid #744b40;
+  border-left: 1px solid #744b40;
 }
-.main-nav__item:last-child {
-  border-right: none;
+.main-nav__item:first-child {
+  border-left: none;
 }
 .main-nav__item a {
   text-transform: uppercase;
@@ -857,10 +857,10 @@ textarea {
   }
 }
 .intro {
-  background-color: #ead9b1;
+  background-color: #e4d6c0;
   background-image: url('../img/intro-bg.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale')";
+  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale')";*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -955,8 +955,8 @@ textarea {
 .description {
   background-color: #603023;
   background-image: url('../img/describe-bg.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale')";
+  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale')";*/
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
