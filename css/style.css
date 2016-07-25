@@ -1317,7 +1317,7 @@ textarea {
   right: 0;
   padding: 4px;
   font-size: 13px;
-  top: -7px;
+  top: -15px;
   z-index: 5;
 }
 .call-master__btn {
@@ -1359,6 +1359,9 @@ textarea {
   .call-master__title {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+  .call-master__errorMsg {
+    font-size: 13px;
   }
 }
 .popup-report {
