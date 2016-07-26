@@ -433,7 +433,7 @@ textarea {
   width: 30px;
   height: 33px;
   background-image: url('../img/index-sprite.png');
-  background-position: -314px -231px;
+  background-position: -384px -230px;
   left: -35px;
   top: 3px;
 }
@@ -629,14 +629,20 @@ textarea {
   .advantages__title {
     width: 162px;
   }
-}
-@media (max-width: 1000px) {
   .advantages__item {
     padding-top: 90px;
+    margin-bottom: 30px;
+  }
+  .advantages__text {
+    font-size: 14px;
   }
   .advantages__title {
     font-size: 20px;
     width: 140px;
+  }
+  .advantages__items {
+    padding: 40px 8%;
+    padding-bottom: 20px;
   }
   .advantages__item--experience:before {
     margin-left: -34px;
@@ -673,6 +679,55 @@ textarea {
     background-position: 0px -308px;
     width: 60px;
     height: 73px;
+  }
+}
+@media (max-width: 900px) {
+  .advantages__item {
+    padding-top: 68px;
+    margin-bottom: 20px;
+  }
+  .advantages__title {
+    font-size: 19px;
+  }
+  .advantages__items {
+    padding: 30px 8%;
+    padding-bottom: 13px;
+  }
+  .advantages__item--experience:before {
+    margin-left: -28.5px;
+    background-position: -289px -231px;
+    width: 57px;
+    height: 61px;
+  }
+  .advantages__item--garanty:before {
+    margin-left: -28.5px;
+    background-position: -117px -308px;
+    width: 57px;
+    height: 58px;
+  }
+  .advantages__item--team:before {
+    margin-left: -28.5px;
+    background-position: -174px -308px;
+    width: 57px;
+    height: 52px;
+  }
+  .advantages__item--time:before {
+    margin-left: -20.5px;
+    background-position: -384px -61px;
+    width: 41px;
+    height: 61px;
+  }
+  .advantages__item--price:before {
+    margin-left: -28.5px;
+    background-position: -60px -308px;
+    width: 57px;
+    height: 61px;
+  }
+  .advantages__item--clean:before {
+    margin-left: -25px;
+    background-position: -384px 0px;
+    width: 50px;
+    height: 61px;
   }
 }
 .page-footer__wrapper {
@@ -803,11 +858,11 @@ textarea {
   content: '';
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 6px;
   width: 24px;
   height: 24px;
   background-image: url('../img/index-sprite.png');
-  background-position: -344px -231px;
+  background-position: -384px -263px;
 }
 .prices__link {
   text-align: center;
@@ -833,18 +888,23 @@ textarea {
 @media (max-width: 960px) {
   .prices {
     background-image: url('../img/price-bg-sm.jpg');
+    padding: 15px 0;
   }
   .prices__item {
     width: 220px;
+    font-size: 14px;
   }
   .prices__amount {
     font-size: 20px;
   }
   .prices__explic {
-    padding: 0 10px;
+    padding: 0 15px;
   }
   .prices__explic li {
-    padding-left: 30px;
+    padding-left: 35px;
+  }
+  .prices__explic li:before {
+    top: 2px;
   }
   .prices__title {
     font-size: 45px;
@@ -855,12 +915,15 @@ textarea {
   .prices__title:after {
     width: 29%;
   }
+  .prices__name {
+    font-size: 23px;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+  }
 }
 .intro {
   background-color: #e4d6c0;
   background-image: url('../img/intro-bg.jpg');
-  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/intro-bg.jpg', sizingMethod='scale')";*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -924,6 +987,7 @@ textarea {
 @media (max-width: 1000px) {
   .intro {
     background-image: url('../img/intro-bg-md.jpg');
+    padding: 30px 0;
   }
   .intro__title {
     font-size: 32px;
@@ -936,6 +1000,7 @@ textarea {
 @media (max-width: 850px) {
   .intro {
     background-image: url('../img/intro-bg-sm.jpg');
+    padding: 20px 0;
   }
   .intro__title {
     font-size: 27px;
@@ -949,7 +1014,7 @@ textarea {
     background-position: -199px 0px;
   }
   .intro__form {
-    width: 250px;
+    width: 235px;
   }
 }
 .description {
@@ -982,6 +1047,7 @@ textarea {
   color: #ffffff;
   font-style: italic;
   font-size: 34px;
+  font-weight: normal;
 }
 .description__title b {
   color: #e1c78c;
@@ -1010,6 +1076,7 @@ textarea {
 }
 .description-item span {
   color: #e1c78c;
+  font-weight: bold;
 }
 .description-item:last-child {
   padding-left: 10px;
@@ -1077,7 +1144,7 @@ textarea {
     padding-left: 10px;
   }
   .description__items {
-    width: 560px;
+    width: 570px;
     padding-top: 13px;
   }
   .description__link {
@@ -1095,13 +1162,15 @@ textarea {
   }
   .description-item {
     width: 140px;
-    padding-left: 70px;
+    padding-left: 65px;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
   .description-item:before {
-    font-size: 27px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+    font-size: 26px;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
   }
   .description-item--last {
     padding-left: 10px;
@@ -1147,6 +1216,11 @@ textarea {
 }
 .reasons__contacts b {
   color: #603023;
+}
+@media (max-width: 960px) {
+  .reasons__title {
+    font-size: 37px;
+  }
 }
 .reviews {
   background-color: #9c7a5c;
@@ -1209,7 +1283,7 @@ textarea {
   left: 95px;
   top: 155px;
   background-image: url('../img/index-sprite.png');
-  background-position: -344px -182px;
+  background-position: -384px -198px;
   width: 32px;
   height: 32px;
   z-index: 10;
@@ -1245,16 +1319,81 @@ textarea {
   font-style: italic;
 }
 @media (max-width: 1300px) {
+  .reviews__title {
+    font-size: 45px;
+    top: -65px;
+  }
+  .reviews__item {
+    width: 526px;
+  }
+  .reviews__image {
+    width: 130px;
+    height: auto;
+  }
+  .reviews__images:before {
+    left: 80px;
+    top: 140px;
+  }
+}
+@media (max-width: 1180px) {
+  /*.reviews__border {
+    padding-top: 100px;
+  }*/
+  .reviews__title {
+    font-size: 38px;
+    top: -55px;
+  }
+  .reviews__item {
+    width: 446px;
+  }
+  .reviews__image {
+    width: 110px;
+    height: auto;
+  }
+  .reviews__images:before {
+    left: 70px;
+    top: 110px;
+  }
+}
+@media (max-width: 1020px) {
+  .reviews__item {
+    width: 406px;
+  }
+  .reviews__image {
+    width: 100px;
+    height: auto;
+  }
+  .reviews__border {
+    padding-top: 100px;
+  }
+  .reviews__images:before {
+    left: 55px;
+    top: 100px;
+  }
+  .reviews__title {
+    left: 25%;
+    right: 25%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 950px) {
+  .reviews__item {
+    width: 586px;
+  }
   .reviews__item--left {
     margin-right: 0;
   }
-  .reviews__title {
-    font-size: 48px;
+  .reviews__image {
+    width: 145px;
+    height: 200px;
   }
-}
-@media (max-width: 1260px) {
-  .reviews__border {
-    padding-top: 100px;
+  .reviews__images:before {
+    left: 95px;
+    top: 155px;
+  }
+  .reviews__title {
+    left: 25%;
+    right: 25%;
   }
 }
 .call-master {
@@ -1301,12 +1440,12 @@ textarea {
   z-index: 5;
 }
 .call-master label[for=input-name]:before {
-  background-position: -292px -77px;
+  background-position: -408px -263px;
   width: 16px;
   height: 20px;
 }
 .call-master label[for=input-phone]:before {
-  background-position: -289px -275px;
+  background-position: -414px -230px;
   width: 20px;
   height: 20px;
 }
@@ -1333,7 +1472,6 @@ textarea {
   border: 1px solid #8fb055;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
   border-radius: 5px;
-  padding-left: 40px;
   padding: 10px 0;
   margin: 0 auto;
   margin-top: 10px;
@@ -1344,8 +1482,12 @@ textarea {
   background: linear-gradient(to top, #8bc729, #9fda33);
 }
 @media (max-width: 1000px) {
+  .call-master {
+    padding: 20px 25px;
+  }
   .call-master__title {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 25px;
     margin-bottom: 20px;
   }
   .call-master__input {
@@ -1354,14 +1496,22 @@ textarea {
 }
 @media (max-width: 850px) {
   .call-master {
-    padding: 20px 25px;
+    padding: 15px 20px;
+  }
+  .call-master__input {
+    margin-bottom: 8px;
   }
   .call-master__title {
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 23px;
     margin-bottom: 15px;
   }
   .call-master__errorMsg {
     font-size: 13px;
+  }
+  .call-master__btn {
+    font-size: 15px;
+    margin-top: 8px;
   }
 }
 .popup-report {
@@ -1512,7 +1662,7 @@ label[for=report-message] {
   width: 35px;
   height: 32px;
   background-image: url('../img/index-sprite.png');
-  background-position: -309px -182px;
+  background-position: -384px -122px;
   left: -37px;
   top: 20px;
 }
@@ -1804,7 +1954,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   left: 3px;
   background-image: url('../img/index-sprite.png');
-  background-position: -289px -231px;
+  background-position: -384px -154px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1815,7 +1965,7 @@ This must be run when you have at least 2 sprites.
   margin-top: -22px;
   right: 3px;
   background-image: url(../img/index-sprite.png);
-  background-position: -267px -77px;
+  background-position: -409px -154px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -1825,7 +1975,7 @@ This must be run when you have at least 2 sprites.
   top: 5px;
   right: 5px;
   background-image: url(../img/index-sprite.png);
-  background-position: -309px -275px;
+  background-position: -416px -198px;
   width: 18px;
   height: 20px;
   text-indent: -9999px;
@@ -1862,4 +2012,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+html * {
+  max-height: 1000000px;
 }
