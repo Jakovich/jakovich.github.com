@@ -17,6 +17,9 @@
 .description-item--last:before {
   display: none;
 }
+.reviews__title {
+  font-size: 47px;
+}
 .prices__item--last {
   margin-right: 0;
 }
