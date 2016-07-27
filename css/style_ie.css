@@ -1,3 +1,6 @@
+.intro__title {
+  font-size: 43px;
+}
 .intro__title-row {
   background-image: url('../img/bg-opacity.png');
 }
