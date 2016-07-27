@@ -19,6 +19,7 @@
 }
 .reviews__title {
   font-size: 41px;
+  top: -65px;
   left: 17%;
   right: 17%;
 }
@@ -27,6 +28,12 @@
 }
 .prices__name {
   font-size: 24px;
+}
+@media (max-width: 1300px) {
+  .reviews__title {
+    font-size: 41px;
+    top: -65px;
+  }
 }
 @media (max-width: 1180px) {
   .reviews__title {
@@ -37,5 +44,13 @@
   .advantages__title {
     font-size: 20px;
     width: 155px;
+  }
+}
+@media (max-width: 1020px) {
+  .reviews__title {
+    font-size: 37px;
+    left: 25%;
+    right: 25%;
+    max-width: 450px;
   }
 }
