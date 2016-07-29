@@ -530,7 +530,13 @@ textarea {
   }
 }
 .advantages {
-  background-color: #e6d8c1;
+  background-color: #f0eade;
+  background-image: url('../img/adv-bg.jpg');
+  background-position: center center;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/price-bg.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/price-bg.jpg', sizingMethod='scale')";
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .advantages__wrapper {
   max-width: 1180px;
@@ -919,9 +925,8 @@ textarea {
   }
 }
 .intro {
-  background-color: #e4d6c0;
+  background-color: #a48455;
   background-image: url('../img/intro-bg.jpg');
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 35px 0;
@@ -1017,9 +1022,6 @@ textarea {
 .description {
   background-color: #603023;
   background-image: url('../img/describe-bg.jpg');
-  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/describe-bg.jpg', sizingMethod='scale')";*/
-  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -1120,6 +1122,7 @@ textarea {
 @media (max-width: 1080px) {
   .description {
     background-image: url('../img/describe-bg-md.jpg');
+    background-size: cover;
   }
   .description__title {
     width: 230px;
@@ -1151,6 +1154,7 @@ textarea {
 @media (max-width: 970px) {
   .description {
     background-image: url('../img/describe-bg-sm.jpg');
+    background-size: cover;
   }
   .description__title {
     width: 195px;
