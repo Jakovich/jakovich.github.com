@@ -530,7 +530,7 @@ textarea {
   }
 }
 .advantages {
-  background-color: #f0eade;
+  background-color: #f6f0e2;
   background-image: url('../img/adv-bg.jpg');
   background-position: top center;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/adv-bg.jpg', sizingMethod='scale');
@@ -1401,7 +1401,7 @@ textarea {
   }
 }
 .about {
-  background-color: #f7efe4;
+  background-color: #f7f1d9;
 }
 .about__wrapper {
   max-width: 1180px;
@@ -1425,6 +1425,9 @@ textarea {
 .about__text a {
   color: #603023;
 }
+.about__text a:hover {
+  color: #cc6e54;
+}
 .about .about__link {
   width: 200px;
   text-align: center;
@@ -1446,6 +1449,7 @@ textarea {
 .about .about__link:hover {
   background-color: #dfa549;
   background: linear-gradient(to top, #d59e47, #e5a94b);
+  color: #ffffff;
 }
 .about__contacts {
   text-align: center;
@@ -1465,7 +1469,7 @@ textarea {
   }
 }
 .reviews {
-  background-color: #f7efe4;
+  background-color: #f7f1d9;
 }
 .reviews__wrapper {
   max-width: 1180px;
@@ -1501,15 +1505,12 @@ textarea {
   margin-right: 5.2%;
   margin-bottom: 40px;
   width: 21%;
+}
+.reviews__image a {
+  display: block;
   position: relative;
 }
-.reviews__image img {
-  width: 100%;
-}
-.reviews__image:nth-child(4n) {
-  margin-right: 0;
-}
-.reviews__image:before {
+.reviews__image a:before {
   position: absolute;
   content: '';
   width: 24px;
@@ -1517,7 +1518,17 @@ textarea {
   background-image: url('../img/plus.png');
   left: 50%;
   margin-left: -12px;
-  top: 40%;
+  top: 45%;
+}
+.reviews__image a:hover {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+.reviews__image img {
+  width: 100%;
+}
+.reviews__image:nth-child(4n) {
+  margin-right: 0;
 }
 .reviews__name {
   color: #603023;
@@ -1554,7 +1565,7 @@ textarea {
   }
 }
 .contacts {
-  background-color: #f7efe4;
+  background-color: #f7f1d9;
 }
 .contacts__wrapper {
   max-width: 1180px;
@@ -1567,7 +1578,7 @@ textarea {
   text-align: left;
   color: #603023;
   border-bottom: 2px dashed #603023;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .contacts__content {
   padding-bottom: 30px;
@@ -1582,6 +1593,7 @@ textarea {
   width: 50%;
 }
 .contacts__map {
+  margin-top: 25px;
   width: 80%;
   min-height: 300px;
   background-image: url('../img/map.jpg');
@@ -1601,7 +1613,7 @@ textarea {
   padding-right: 20px;
 }
 .contacts__bottom {
-  padding-top: 40px;
+  padding-top: 38px;
   border-top: 2px dashed #603023;
   text-align: center;
   font-size: 34px;
@@ -1618,22 +1630,21 @@ textarea {
   .contacts__title {
     font-size: 37px;
   }
-  .contacts__map {
-    width: 95%;
-  }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .contacts__map {
     width: 95%;
   }
 }
 .contacts-form__title {
-  text-align: center;
+  text-align: left;
   color: #603023;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   font-style: italic;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: 16px;
+  padding: 0;
 }
 .contacts-form__explic {
   font-size: 19px;
@@ -1648,7 +1659,7 @@ textarea {
 .contacts-form__input {
   display: block;
   padding: 5px 5px;
-  margin-top: 5px;
+  margin-top: 9px;
   width: 170px;
   font-size: 14px;
   font-style: italic;
@@ -1727,10 +1738,10 @@ label[for=contacts-message] {
 }
 @media (max-width: 1000px) {
   .contacts-form__input {
-    width: 150px;
+    width: 135px;
   }
   .contacts-form__errorMsg {
-    left: 160px;
+    left: 150px;
   }
 }
 .call-master {
@@ -2282,8 +2293,8 @@ This must be run when you have at least 2 sprites.
 }
 #cboxClose {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 12px;
+  right: 12px;
   background-image: url(../img/index-sprite.png);
   background-position: -416px -198px;
   width: 18px;
