@@ -393,12 +393,9 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   position: relative;
+  transition: all 0.5s ease;
 }
-.main-nav__item a:hover {
-  color: #d69f47;
-  position: relative;
-}
-.main-nav__item a:hover:before {
+.main-nav__item a:before {
   position: absolute;
   content: '';
   left: -3px;
@@ -406,6 +403,15 @@ textarea {
   height: 5px;
   background-color: #d69f47;
   bottom: -16px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.main-nav__item a:hover {
+  color: #d69f47;
+  position: relative;
+}
+.main-nav__item a:hover:before {
+  opacity: 1;
 }
 .main-nav__item--active a {
   color: #d69f47;
@@ -455,6 +461,7 @@ textarea {
   padding: 12px 0;
   border-radius: 5px;
   border: 1px solid #c99f5c;
+  transition: all 1s ease;
 }
 .call-request__link:hover {
   background-color: #dfa549;
@@ -1273,18 +1280,6 @@ textarea {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 15px;
-  /*position: relative;
-  &:before {
-    position: absolute;
-    content: '';
-    left: 95px;
-    top: 155px;
-    background-image: url('../img/index-sprite.png');
-    background-position: @icon-loupe-offset-x @icon-loupe-offset-y;
-    width: @icon-loupe-width;
-    height: @icon-loupe-height;
-    z-index: 10;
-  }*/
 }
 .reviews-portfolio__image {
   display: inline-block;
@@ -1294,7 +1289,7 @@ textarea {
   height: 200px;
   position: relative;
 }
-.reviews-portfolio__image a:hover:before {
+.reviews-portfolio__image a:before {
   position: absolute;
   content: '';
   right: 5px;
@@ -1304,10 +1299,18 @@ textarea {
   width: 32px;
   height: 32px;
   z-index: 10;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.reviews-portfolio__image a:hover:before {
+  opacity: 1;
 }
 .reviews-portfolio__image a:hover img {
+  transition: 0.2s -webkit-filter linear;
+  transition: 0.2s filter ease;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 .reviews-portfolio__link {
   font-size: 16px;
@@ -1518,7 +1521,7 @@ textarea {
   display: block;
   position: relative;
 }
-.reviews__image a:hover:before {
+.reviews__image a:before {
   position: absolute;
   content: '';
   width: 24px;
@@ -1528,10 +1531,18 @@ textarea {
   margin-left: -12px;
   top: 45%;
   z-index: 5;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.reviews__image a:hover:before {
+  opacity: 1;
 }
 .reviews__image a:hover img {
+  transition: 0.5s -webkit-filter linear;
+  transition: 0.5s filter ease;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 .reviews__image img {
   width: 100%;
@@ -1758,7 +1769,7 @@ textarea {
   position: relative;
   display: inline-block;
 }
-.portfolio__img-sm a:hover:before {
+.portfolio__img-sm a:before {
   position: absolute;
   content: '';
   right: 5%;
@@ -1768,10 +1779,18 @@ textarea {
   width: 32px;
   height: 32px;
   z-index: 10;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.portfolio__img-sm a:hover:before {
+  opacity: 1;
 }
 .portfolio__img-sm a:hover img {
+  transition: 0.5s -webkit-filter linear;
+  transition: 0.5s filter ease;
   -webkit-filter: blur(3px);
           filter: blur(3px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 .portfolio__img-sm:first-child {
   margin-left: 0;
