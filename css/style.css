@@ -373,20 +373,25 @@ textarea {
 }
 .main-nav__items {
   list-style: none;
-  padding: 10px 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
   margin: 0;
   font-size: 0;
 }
 .main-nav__item {
   display: inline-block;
   vertical-align: top;
-  padding: 7px 3.7%;
+  padding: 0 3.7%;
   border-left: 1px solid #744b40;
 }
 .main-nav__item:first-child {
   border-left: none;
 }
 .main-nav__item a {
+  padding-top: 7px;
+  padding-bottom: 12px;
+  display: inline-block;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
@@ -402,9 +407,9 @@ textarea {
   right: -3px;
   height: 5px;
   background-color: #d69f47;
-  bottom: -16px;
+  bottom: -5px;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .main-nav__item a:hover {
   color: #d69f47;
@@ -424,7 +429,7 @@ textarea {
   right: -3px;
   height: 5px;
   background-color: #d69f47;
-  bottom: -16px;
+  bottom: -5px;
   opacity: 1;
 }
 .call-request__number {
@@ -439,8 +444,8 @@ textarea {
   content: '';
   width: 30px;
   height: 33px;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -230px;
+  background-image: url('../img/common-sprite.png');
+  background-position: -60px -32px;
   left: -35px;
   top: 3px;
 }
@@ -876,7 +881,7 @@ textarea {
   width: 24px;
   height: 24px;
   background-image: url('../img/index-sprite.png');
-  background-position: -384px -263px;
+  background-position: -384px -122px;
 }
 .prices__link {
   text-align: center;
@@ -1315,8 +1320,8 @@ textarea {
   content: '';
   right: 5px;
   bottom: 5px;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -198px;
+  background-image: url('../img/common-sprite.png');
+  background-position: -60px 0px;
   width: 32px;
   height: 32px;
   z-index: 10;
@@ -1458,6 +1463,7 @@ textarea {
 }
 .about__text a {
   color: #603023;
+  transition: all 0.3s linear;
 }
 .about__text a:hover {
   color: #cc6e54;
@@ -1554,7 +1560,8 @@ textarea {
   content: '';
   width: 24px;
   height: 24px;
-  background-image: url('../img/plus.png');
+  background-image: url('../img/common-sprite.png');
+  background-position: -35px -44px;
   left: 50%;
   margin-left: -12px;
   top: 45%;
@@ -1784,6 +1791,9 @@ textarea {
   display: table;
   clear: both;
 }
+.portfolio__item--hidden {
+  display: none;
+}
 .portfolio__left-images {
   float: left;
   width: 49%;
@@ -1809,8 +1819,8 @@ textarea {
   content: '';
   right: 5%;
   bottom: 6%;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -198px;
+  background-image: url('../img/common-sprite.png');
+  background-position: -60px 0px;
   width: 32px;
   height: 32px;
   z-index: 10;
@@ -1843,8 +1853,8 @@ textarea {
   content: '';
   right: 4%;
   bottom: 4%;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -198px;
+  background-image: url('../img/common-sprite.png');
+  background-position: -60px 0px;
   width: 32px;
   height: 32px;
   z-index: 10;
@@ -2123,12 +2133,12 @@ label[for=contacts-message] {
   z-index: 5;
 }
 .call-master label[for=input-name]:before {
-  background-position: -408px -263px;
+  background-position: -384px -146px;
   width: 16px;
   height: 20px;
 }
 .call-master label[for=input-phone]:before {
-  background-position: -414px -230px;
+  background-position: -408px -122px;
   width: 20px;
   height: 20px;
 }
@@ -2359,8 +2369,8 @@ label[for=report-message] {
   content: '';
   width: 35px;
   height: 32px;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -122px;
+  background-image: url('../img/common-sprite.png');
+  background-position: 0px 0px;
   left: -37px;
   top: 20px;
 }
@@ -2425,6 +2435,53 @@ label[for=report-message] {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
 
@@ -2561,9 +2618,6 @@ This must be run when you have at least 2 sprites.
 #colorbox {
   outline: 0;
 }
-#cboxContent {
-  overflow: hidden;
-}
 .cboxIframe {
   background: #fff;
 }
@@ -2624,8 +2678,8 @@ This must be run when you have at least 2 sprites.
   top: 50%;
   margin-top: -22px;
   left: 3px;
-  background-image: url('../img/index-sprite.png');
-  background-position: -384px -154px;
+  background-image: url('../img/common-sprite.png');
+  background-position: 0px -32px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -2635,8 +2689,8 @@ This must be run when you have at least 2 sprites.
   top: 50%;
   margin-top: -22px;
   right: 3px;
-  background-image: url(../img/index-sprite.png);
-  background-position: -409px -154px;
+  background-image: url(../img/common-sprite.png);
+  background-position: -35px 0px;
   width: 25px;
   height: 44px;
   text-indent: -9999px;
@@ -2645,8 +2699,8 @@ This must be run when you have at least 2 sprites.
   position: absolute;
   top: 12px;
   right: 12px;
-  background-image: url(../img/index-sprite.png);
-  background-position: -416px -198px;
+  background-image: url(../img/common-sprite.png);
+  background-position: -92px 0px;
   width: 18px;
   height: 20px;
   text-indent: -9999px;
