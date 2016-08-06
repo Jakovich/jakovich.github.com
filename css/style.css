@@ -425,6 +425,7 @@ textarea {
   height: 5px;
   background-color: #d69f47;
   bottom: -16px;
+  opacity: 1;
 }
 .call-request__number {
   font-size: 25px;
@@ -455,17 +456,23 @@ textarea {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #e9ae4f;
-  background: linear-gradient(to top, #e9ae4f, #fab952);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
   text-align: center;
   padding: 12px 0;
   border-radius: 5px;
   border: 1px solid #c99f5c;
-  transition: all 1s ease;
 }
 .call-request__link:hover {
   background-color: #dfa549;
-  background: linear-gradient(to top, #d59e47, #e5a94b);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 @media (max-width: 1000px) {
   .call-request__number {
@@ -877,7 +884,11 @@ textarea {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #e9ae4f;
-  background: linear-gradient(to top, #e9ae4f, #fab952);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
   margin: 0 20px;
   color: #ffffff;
@@ -890,7 +901,10 @@ textarea {
 }
 .prices__link:hover {
   background-color: #dfa549;
-  background: linear-gradient(to top, #d59e47, #e5a94b);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 @media (max-width: 960px) {
   .prices {
@@ -1116,12 +1130,19 @@ textarea {
   border-radius: 10px;
   width: 100%;
   background-color: #e9ae4f;
-  background: linear-gradient(to top, #e9ae4f, #fab952);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 94px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
 }
 .description__link:hover {
   background-color: #dfa549;
-  background: linear-gradient(to top, #d59e47, #e5a94b);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 94px;
+  background-position: 0 -47px;
 }
 @media (max-width: 1080px) {
   .description {
@@ -1300,14 +1321,14 @@ textarea {
   height: 32px;
   z-index: 10;
   opacity: 0;
+  filter: alpha(opacity=20);
   transition: all 0.3s ease;
 }
 .reviews-portfolio__image a:hover:before {
   opacity: 1;
 }
 .reviews-portfolio__image a:hover img {
-  transition: 0.2s -webkit-filter linear;
-  transition: 0.2s filter ease;
+  transition: 0.3s filter ease, 0.3s -webkit-filter linear;
   -webkit-filter: blur(3px);
           filter: blur(3px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
@@ -1448,7 +1469,11 @@ textarea {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #e9ae4f;
-  background: linear-gradient(to top, #e9ae4f, #fab952);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
   margin: 0 auto;
   color: #ffffff;
@@ -1461,7 +1486,10 @@ textarea {
 }
 .about .about__link:hover {
   background-color: #dfa549;
-  background: linear-gradient(to top, #d59e47, #e5a94b);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
   color: #ffffff;
 }
 .about__contacts {
@@ -1539,7 +1567,7 @@ textarea {
 }
 .reviews__image a:hover img {
   transition: 0.5s -webkit-filter linear;
-  transition: 0.5s filter ease;
+  transition: 0.5s filter ease, 0.5s -webkit-filter linear;
   -webkit-filter: blur(3px);
           filter: blur(3px);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
@@ -1725,7 +1753,11 @@ textarea {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #e9ae4f;
-  background: linear-gradient(to top, #e9ae4f, #fab952);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   box-shadow: 0 1.5px 2px rgba(255, 255, 255, 0.3) inset;
   margin: 0 20px;
   color: #ffffff;
@@ -1737,7 +1769,10 @@ textarea {
 }
 .portfolio__link:hover {
   background-color: #dfa549;
-  background: linear-gradient(to top, #d59e47, #e5a94b);
+  background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 .portfolio__item {
   text-align: left;
@@ -1780,17 +1815,16 @@ textarea {
   height: 32px;
   z-index: 10;
   opacity: 0;
+  filter: alpha(opacity=20);
   transition: all 0.3s ease;
 }
 .portfolio__img-sm a:hover:before {
   opacity: 1;
 }
 .portfolio__img-sm a:hover img {
-  transition: 0.5s -webkit-filter linear;
-  transition: 0.5s filter ease;
+  transition: 0.3s filter ease, 0.3s -webkit-filter linear;
   -webkit-filter: blur(3px);
           filter: blur(3px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
 }
 .portfolio__img-sm:first-child {
   margin-left: 0;
@@ -1804,7 +1838,7 @@ textarea {
 .portfolio__img-big {
   position: relative;
 }
-.portfolio__img-big a:hover:before {
+.portfolio__img-big a:before {
   position: absolute;
   content: '';
   right: 4%;
@@ -1814,8 +1848,15 @@ textarea {
   width: 32px;
   height: 32px;
   z-index: 10;
+  opacity: 0;
+  filter: alpha(opacity=20);
+  transition: all 0.3s ease;
+}
+.portfolio__img-big a:hover:before {
+  opacity: 1;
 }
 .portfolio__img-big a:hover img {
+  transition: 0.3s filter ease, 0.3s -webkit-filter linear;
   -webkit-filter: blur(3px);
           filter: blur(3px);
 }
@@ -1841,7 +1882,11 @@ textarea {
   display: block;
   margin: 0 auto;
   background-color: #d7c5ad;
-  background: linear-gradient(to top, #d9c3a9, #f0eeed);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   cursor: pointer;
   padding: 12px 30px;
   width: 213px;
@@ -1857,7 +1902,10 @@ textarea {
 }
 .portfolio__more:hover {
   background-color: #ddba92;
-  background: linear-gradient(to top, #ddba92, #ece3d5);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 @media (max-width: 1150px) {
   .portfolio__text {
@@ -1971,7 +2019,11 @@ label[for=contacts-message] {
   display: block;
   margin: 0 auto;
   background-color: #d7c5ad;
-  background: linear-gradient(to top, #d9c3a9, #f0eeed);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   cursor: pointer;
   padding: 12px 30px;
   width: 213px;
@@ -1986,7 +2038,10 @@ label[for=contacts-message] {
 }
 .contacts-form__btn:hover {
   background-color: #ddba92;
-  background: linear-gradient(to top, #ddba92, #ece3d5);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 .contacts-form__bottom {
   text-align: center;
@@ -2047,6 +2102,7 @@ label[for=contacts-message] {
   padding-left: 40px;
   position: relative;
   border: 1px solid #d7c9b1;
+  transition: all 0.3s linear;
 }
 .call-master__input:focus {
   border: 1px solid #603023;
@@ -2088,7 +2144,11 @@ label[for=contacts-message] {
 }
 .call-master__btn {
   background-color: #84b72c;
-  background: linear-gradient(to top, #7bad29, #8fc42f);
+  background: linear-gradient(to top, #7bad29 0%, #8fc42f 50%, #8bc729 50%, #9fda33 100%);
+  background-repeat: repeat;
+  background-size: 100% 80px;
+  background-position: 0 -40px;
+  transition: all 0.3s linear;
   display: block;
   width: 100%;
   color: #ffffff;
@@ -2103,10 +2163,14 @@ label[for=contacts-message] {
   margin: 0 auto;
   margin-top: 10px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .call-master__btn:hover {
   background-color: #9bc64e;
-  background: linear-gradient(to top, #8bc729, #9fda33);
+  background: linear-gradient(to top, #7bad29 0%, #8fc42f 50%, #8bc729 50%, #9fda33 100%);
+  background-repeat: repeat;
+  background-size: 100% 80px;
+  background-position: 0 0;
 }
 @media (max-width: 1000px) {
   .call-master {
@@ -2250,7 +2314,11 @@ label[for=report-message] {
   display: block;
   margin: 0 auto;
   background-color: #d7c5ad;
-  background: linear-gradient(to top, #d9c3a9, #f0eeed);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 0;
+  transition: all 0.3s linear;
   cursor: pointer;
   padding: 12px 30px;
   width: 213px;
@@ -2265,7 +2333,10 @@ label[for=report-message] {
 }
 .popup-report__btn:hover {
   background-color: #ddba92;
-  background: linear-gradient(to top, #ddba92, #ece3d5);
+  background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+  background-repeat: repeat;
+  background-size: 100% 88px;
+  background-position: 0 -44px;
 }
 .popup-report__bottom {
   text-align: center;
