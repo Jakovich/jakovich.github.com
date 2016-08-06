@@ -1,3 +1,33 @@
+/*
+ стили для версий ie9 и меньше
+*/
+@font-face {
+  font-family: 'PT SansIe';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/pts55f_w.eot');
+}
+@font-face {
+  font-family: 'PT SansIe';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../fonts/pts56f_w.eot');
+}
+@font-face {
+  font-family: 'PT SansIe';
+  src: url('../fonts/pts75f_w.eot');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PT SansIe';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../fonts/pts76f_w.eot');
+}
+body {
+  font-family: "PT SansIe", "Arial", sans-serif;
+}
 .intro__title {
   font-size: 43px;
 }
@@ -32,15 +62,7 @@
 .reviews__image--forth {
   margin-right: 0;
 }
-@media (max-width: 1000px) {
-  .reviews__image--forth {
-    margin-right: 6%;
-  }
-  .reviews__image--third {
-    margin-right: 0;
-  }
-}
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
   .reviews-portfolio__title {
     font-size: 41px;
     top: -65px;
@@ -48,7 +70,7 @@
 }
 @media (max-width: 1180px) {
   .reviews-portfolio__title {
-    font-size: 36px;
+    font-size: 35px;
   }
 }
 @media (max-width: 1130px) {
@@ -56,12 +78,18 @@
     font-size: 20px;
     width: 155px;
   }
-}
-@media (max-width: 1020px) {
   .reviews-portfolio__title {
     font-size: 37px;
     left: 25%;
     right: 25%;
     max-width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .reviews__image--forth {
+    margin-right: 6%;
+  }
+  .reviews__image--third {
+    margin-right: 0;
   }
 }
