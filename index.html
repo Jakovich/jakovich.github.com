@@ -25,11 +25,16 @@
     </style>
      
     <script>
-      document.write('<link rel="stylesheet" href="css/style.min.css">');
+      window.onload = function() {
+        document.write('<link rel="stylesheet" href="css/style.min.css">');
+      }
+      
     </script>
     <!--[if lt IE 9]>
       <script>
+       window.onload = function() {
         document.write('<link rel="stylesheet" href="css/style_ie.min.css">');
+        }
       </script>
     <![endif]-->
     
