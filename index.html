@@ -1,170 +1,1005 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <script>
-      if(screen.width < '750'){
-        document.write('<meta name="viewport" content="width=750">');
-      } else {
-        document.write('<meta name="viewport" content="width=device-width; initial-scale=1.0">');
-      }
-    </script>
-    
-    <meta name="keywords" content="ремонт, Ремонтстрой, ремонт под ключ, ремонт в Москве, сделать ремонт, качественный ремонт, Ремонтсрой">
-    <meta name="description" content="Компания РЕМОНТСТРОЙ выполняет качественный ремонт любой сложности квартир, офисов и коттеджей под ключ. Недорого и с гарантией, специалисты высочайшего уровня воплотят в жизнь все ваши пожелания">
-    <title>РемонтСтрой - ремонт квартир и офисов в Москве и Подмосковье</title>
-    <!--[if lt IE 9]>
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+    if (screen.width < '750') {
+      document.write('<meta name="viewport" content="width=750">');
+    } else {
+      document.write('<meta name="viewport" content="width=device-width; initial-scale=1.0">');
+    }
+
+  </script>
+
+  <meta name="keywords" content="ремонт, Ремонтстрой, ремонт под ключ, ремонт в Москве, сделать ремонт, качественный ремонт, Ремонтсрой">
+  <meta name="description" content="Компания РЕМОНТСТРОЙ выполняет качественный ремонт любой сложности квартир, офисов и коттеджей под ключ. Недорого и с гарантией, специалисты высочайшего уровня воплотят в жизнь все ваши пожелания">
+  <title>РемонтСтрой - ремонт квартир и офисов в Москве и Подмосковье</title>
+  <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
     
-    <link rel="stylesheet" href="css/style.min.css">
-    <!--[if lt IE 9]>
+    .page-header__slogan p,
+    body {
+      margin: 0;
+    }
+    
+    .page-header__logo img,
+    header,
+    main,
+    nav,
+    section {
+      display: block;
+    }
+    
+    a {
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin: .67em 0;
+    }
+    
+    img {
+      border-style: none;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    button,
+    input,
+    textarea {
+      font: inherit;
+      margin: 0;
+    }
+    
+    button,
+    input {
+      overflow: visible;
+    }
+    
+    button {
+      text-transform: none;
+    }
+    
+    [type=submit],
+    button {
+      -webkit-appearance: button;
+    }
+    
+    [type=submit]::-moz-focus-inner,
+    button::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+    
+    [type=submit]:-moz-focusring,
+    button:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+    
+    textarea {
+      overflow: auto;
+    }
+    
+    ::-webkit-input-placeholder {
+      color: inherit;
+      opacity: .54;
+    }
+    
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+    }
+    
+    .main-nav {
+      text-align: center;
+    }
+    
+    .main-nav__items {
+      list-style: none;
+      padding: 10px 0 5px;
+      margin: 0;
+      font-size: 0;
+    }
+    
+    .main-nav__item {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 3.7%;
+      border-left: 1px solid #744b40;
+    }
+    
+    .main-nav__item:first-child {
+      border-left: none;
+    }
+    
+    .main-nav__item a {
+      padding-top: 7px;
+      padding-bottom: 12px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      position: relative;
+    }
+    
+    .main-nav__item a:before {
+      position: absolute;
+      content: '';
+      left: -3px;
+      right: -3px;
+      height: 5px;
+      background-color: #d69f47;
+      bottom: -5px;
+    }
+    
+    .main-nav__item a:before {
+      opacity: 0;
+    }
+    
+    .call-request__number {
+      font-size: 25px;
+      color: #603023;
+      font-weight: 700;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    
+    .call-request__number:before {
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 33px;
+      background-image: url(../img/common-sprite.png);
+      background-position: -60px -32px;
+      left: -35px;
+      top: 3px;
+    }
+    
+    .call-request__number span {
+      font-weight: 400;
+      color: #9c7a5c;
+    }
+    
+    .call-request__link {
+      background: linear-gradient(to top, #d59e47 0%, #e5a94b 50%, #e5a94b 50%, #fab952 100%);
+      background-repeat: repeat;
+      background-size: 100% 88px;
+    }
+    
+    .call-request__link {
+      font-weight: 700;
+      font-size: 16px;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 1.5px 2px rgba(255, 255, 255, .3) inset;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 5px;
+      border: 1px solid #c99f5c;
+      background-color: #e9ae4f;
+      background-position: 0 0;
+    }
+    
+    @media (max-width:1000px) {
+      .call-request__number {
+        font-size: 21px;
+      }
+      .call-request__link {
+        padding: 8px 0;
+        font-size: 14px;
+      }
+    }
+    
+    .page-header__wrapper {
+      max-width: 1180px;
+      min-width: 720px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .page-header__first-row {
+      padding: 17px 0;
+      background-color: #e4d6c0;
+    }
+    
+    .intro__wrapper:after,
+    .page-header__first-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .page-header__second-row {
+      background-color: #603023;
+      border-bottom: 4px solid #d69f47;
+    }
+    
+    .page-header__logo {
+      float: left;
+      width: 372px;
+      margin-right: 2.8%;
+      margin-top: 9px;
+    }
+    
+    .page-header__slogan {
+      float: left;
+      color: #9c7a5c;
+      font-size: 18px;
+      font-style: italic;
+      width: 225px;
+      padding: 18px 2.7%;
+      margin-top: 3px;
+      border-left: 2px solid #9c7a5c;
+    }
+    
+    .page-header__call {
+      float: right;
+    }
+    
+    @media (min-width:900px) and (max-width:1100px) {
+      .page-header__logo {
+        width: 300px;
+        margin-top: 15px;
+      }
+    }
+    
+    @media (max-width:900px) {
+      .page-header__logo {
+        width: 250px;
+        margin-top: 20px;
+      }
+      .page-header__slogan {
+        font-size: 17px;
+        padding: 16px 2.7%;
+      }
+    }
+    
+    .intro {
+      background-color: #a48455;
+      background-image: url(../img/intro-bg.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 35px 0;
+    }
+    
+    .intro__wrapper {
+      max-width: 1180px;
+      min-width: 720px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .intro__title {
+      float: left;
+      width: 760px;
+      color: #e1c78c;
+      font-size: 46px;
+      margin-top: 0;
+      position: relative;
+      font-weight: 700;
+    }
+    
+    .intro__title:after {
+      position: absolute;
+      content: '';
+      background-image: url(../img/index-sprite.png);
+      width: 199px;
+      height: 140px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      right: -35px;
+      bottom: -155px;
+    }
+    
+    .intro__title .intro__title-row {
+      background-color: rgba(0, 0, 0, .4);
+      display: inline-block;
+      padding: 5px 20px 5px 13px;
+      margin: 0 0 10px;
+    }
+    
+    .intro__title .intro__title-wh {
+      color: #fff;
+      font-weight: 400;
+    }
+    
+    .intro__form {
+      float: right;
+      width: 300px;
+    }
+    
+    @media (max-width:1150px) {
+      .intro__title {
+        font-size: 40px;
+        width: 670px;
+      }
+      .intro__form {
+        width: 280px;
+      }
+    }
+    
+    @media (max-width:1000px) {
+      .intro {
+        background-image: url(../img/intro-bg-md.jpg);
+        padding: 30px 0;
+      }
+      .intro__title {
+        font-size: 32px;
+        width: 545px;
+      }
+      .intro__form {
+        width: 255px;
+      }
+    }
+    
+    @media (max-width:850px) {
+      .intro {
+        background-image: url(../img/intro-bg-sm.jpg);
+        background-size: cover;
+        padding: 20px 0;
+      }
+      .intro__title {
+        font-size: 27px;
+        width: 470px;
+      }
+      .intro__title:after {
+        right: -10px;
+        bottom: -90px;
+        width: 110px;
+        height: 77px;
+        background-position: -199px 0;
+      }
+      .intro__form {
+        width: 235px;
+      }
+    }
+    
+    .call-master {
+      background-color: #f2eadc;
+      border-radius: 5px;
+      text-align: center;
+      padding: 25px 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+    }
+    
+    .call-master__title {
+      color: #603023;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .call-master__input {
+      width: 80%;
+      border-radius: 5px;
+      outline: none;
+      margin-bottom: 10px;
+      padding: 10px 0 10px 40px;
+      position: relative;
+      border: 1px solid #d7c9b1;
+    }
+    
+    .call-master label {
+      display: block;
+      position: relative;
+    }
+    
+    .call-master label:before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: -40px;
+      background-image: url(../img/index-sprite.png);
+      z-index: 5;
+    }
+    
+    .call-master label[for=input-name]:before {
+      background-position: -384px -146px;
+      width: 16px;
+      height: 20px;
+    }
+    
+    .call-master label[for=input-phone]:before {
+      background-position: -408px -122px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .call-master__btn {
+      background: linear-gradient(to top, #7bad29 0%, #8fc42f 50%, #8bc729 50%, #9fda33 100%);
+      background-repeat: repeat;
+      background-size: 100% 80px;
+    }
+    
+    .call-master__btn {
+      display: block;
+      width: 100%;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      outline: none;
+      border: 1px solid #8fb055;
+      box-shadow: 0 1.5px 2px rgba(255, 255, 255, .3) inset;
+      border-radius: 5px;
+      padding: 10px 0;
+      margin: 10px auto 0;
+      background-color: #84b72c;
+      background-position: 0 -40px;
+    }
+    
+    @media (max-width:1000px) {
+      .call-master {
+        padding: 20px 25px;
+      }
+      .call-master__title {
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 20px;
+      }
+      .call-master__input {
+        font-size: 15px;
+      }
+    }
+    
+    @media (max-width:850px) {
+      .call-master {
+        padding: 15px 20px;
+      }
+      .call-master__input {
+        margin-bottom: 8px;
+      }
+      .call-master__title {
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 15px;
+      }
+      .call-master__btn {
+        font-size: 15px;
+        margin-top: 8px;
+      }
+    }
+    
+    .advantages {
+      background-color: #f6f0e2;
+      background-image: url(../img/adv-bg.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+    
+    .advantages__wrapper {
+      max-width: 1180px;
+      min-width: 720px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    
+    .advantages__items {
+      text-align: center;
+      padding: 45px 8% 0;
+    }
+    
+    .advantages__items:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .advantages__item {
+      padding-top: 120px;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 28%;
+      margin-bottom: 43px;
+      margin-right: 5.5%;
+    }
+    
+    .advantages__item:nth-child(3n) {
+      margin-right: 0;
+    }
+    
+    .advantages__item:before {
+      content: '';
+      position: absolute;
+      background-image: url(../img/index-sprite.png);
+      top: 0;
+      left: 50%;
+    }
+    
+    .advantages__item--experience:before {
+      margin-left: -42.5px;
+      background-position: -85px -140px;
+      width: 85px;
+      height: 91px;
+    }
+    
+    .advantages__item--garanty:before {
+      margin-left: -42.5px;
+      background-position: -170px -140px;
+      width: 85px;
+      height: 86px;
+    }
+    
+    .advantages__item--clean,
+    .advantages__item--team {
+      margin-right: 0;
+    }
+    
+    .advantages__item--team:before {
+      top: 10px;
+      margin-left: -42.5px;
+      background-position: 0 -231px;
+      width: 85px;
+      height: 77px;
+    }
+    
+    .advantages__item--time:before {
+      margin-left: -30.5px;
+      background-position: -309px -91px;
+      width: 61px;
+      height: 91px;
+    }
+    
+    .advantages__item--price:before {
+      margin-left: -42.5px;
+      background-position: 0 -140px;
+      width: 85px;
+      height: 91px;
+    }
+    
+    .advantages__item--clean:before {
+      margin-left: -37.5px;
+      background-position: -309px 0;
+      width: 75px;
+      height: 91px;
+    }
+    
+    .advantages__title {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      color: #603023;
+      text-transform: uppercase;
+      margin: 0 auto;
+    }
+    
+    .advantages__text {
+      margin-top: 10px;
+      color: gray;
+      text-align: center;
+      font-size: 16px;
+    }
+    
+    @media (max-width:1130px) {
+      .advantages__item {
+        padding-top: 90px;
+        margin-bottom: 30px;
+      }
+      .advantages__text {
+        font-size: 14px;
+      }
+      .advantages__title {
+        font-size: 20px;
+        width: 140px;
+      }
+      .advantages__items {
+        padding: 40px 8% 20px;
+      }
+      .advantages__item--experience:before {
+        margin-left: -34px;
+        background-position: -153px -231px;
+        width: 68px;
+        height: 73px;
+      }
+      .advantages__item--garanty:before {
+        margin-left: -34px;
+        background-position: -221px -231px;
+        width: 68px;
+        height: 69px;
+      }
+      .advantages__item--team:before {
+        margin-left: -34px;
+        background-position: -199px -77px;
+        width: 68px;
+        height: 62px;
+      }
+      .advantages__item--time:before {
+        margin-left: -24.5px;
+        background-position: -255px -140px;
+        width: 49px;
+        height: 73px;
+      }
+      .advantages__item--price:before {
+        margin-left: -34px;
+        background-position: -85px -231px;
+        width: 68px;
+        height: 73px;
+      }
+      .advantages__item--clean:before {
+        margin-left: -30px;
+        background-position: 0 -308px;
+        width: 60px;
+        height: 73px;
+      }
+    }
+    
+    @media (max-width:900px) {
+      .advantages {
+        background-image: url(../img/adv-bg-sm.jpg);
+      }
+      .advantages__item {
+        padding-top: 68px;
+        margin-bottom: 20px;
+      }
+      .advantages__title {
+        font-size: 19px;
+      }
+      .advantages__items {
+        padding: 30px 8% 13px;
+      }
+      .advantages__item--experience:before {
+        margin-left: -28.5px;
+        background-position: -289px -231px;
+        width: 57px;
+        height: 61px;
+      }
+      .advantages__item--garanty:before {
+        margin-left: -28.5px;
+        background-position: -117px -308px;
+        width: 57px;
+        height: 58px;
+      }
+      .advantages__item--team:before {
+        margin-left: -28.5px;
+        background-position: -174px -308px;
+        width: 57px;
+        height: 52px;
+      }
+      .advantages__item--time:before {
+        margin-left: -20.5px;
+        background-position: -384px -61px;
+        width: 41px;
+        height: 61px;
+      }
+      .advantages__item--price:before {
+        margin-left: -28.5px;
+        background-position: -60px -308px;
+        width: 57px;
+        height: 61px;
+      }
+      .advantages__item--clean:before {
+        margin-left: -25px;
+        background-position: -384px 0;
+        width: 50px;
+        height: 61px;
+      }
+    }
+    
+    .popup-report {
+      display: none;
+      position: fixed;
+      top: 100px;
+      width: 330px;
+      height: 440px;
+      padding: 10px 100px;
+      left: 50%;
+      margin-left: -265px;
+      z-index: 20;
+    }
+    
+    .popup-report__bg {
+      background-color: #6a2911;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 130px;
+      right: 130px;
+      z-index: -1;
+    }
+    
+    .popup-report__bg:after,
+    .popup-report__bg:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 230px solid transparent;
+      border-bottom: 230px solid transparent;
+    }
+    
+    .popup-report__bg:before {
+      left: -140px;
+      border-right: 140px solid #6a2911;
+    }
+    
+    .popup-report__bg:after {
+      right: -140px;
+      border-left: 140px solid #6a2911;
+    }
+    
+    .popup-report__close {
+      position: absolute;
+      width: 29px;
+      height: 29px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #9c7a5c;
+      color: #9c7a5c;
+      font-size: 38px;
+      right: 150px;
+      top: 10px;
+    }
+    
+    .popup-report__title {
+      text-align: center;
+      text-transform: uppercase;
+      color: #e1c78c;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    
+    .popup-report__explic {
+      font-size: 19px;
+      margin-top: 0;
+      text-align: center;
+      color: #9c7a5c;
+      margin-bottom: 15px;
+    }
+    
+    .popup-report__name-wrapper {
+      float: left;
+      width: 38%;
+    }
+    
+    .popup-report__input {
+      display: block;
+      padding: 5px;
+      margin-top: 5px;
+      width: 100%;
+      font-size: 14px;
+      font-style: italic;
+      color: #d69346;
+    }
+    
+    .popup-report__phone-wrapper {
+      float: right;
+      width: 45%;
+      margin-bottom: 10px;
+    }
+    
+    label[for=report-message] {
+      display: block;
+      clear: both;
+    }
+    
+    .popup-report__message {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      font-size: 14px;
+      font-style: italic;
+      color: #d69346;
+    }
+    
+    .popup-report__btn {
+      background: linear-gradient(to top, #dcb383 0%, #d9c3a9 50%, #d9c3a9 50%, #f0eeed 100%);
+      background-repeat: repeat;
+      background-size: 100% 88px;
+    }
+    
+    .popup-report__btn {
+      display: block;
+      padding: 12px 30px;
+      width: 213px;
+      color: #603023;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 35px auto 0;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+      background-color: #d7c5ad;
+      background-position: 0 0;
+    }
+    
+    .popup-report__bottom {
+      text-align: center;
+      color: #9c7a5c;
+      font-style: italic;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    
+    .popup-report__bottom span {
+      color: #fff;
+      font-weight: 700;
+    }
+    
+    .popup-report__form label {
+      color: #e1c78c;
+      font-size: 13px;
+      position: relative;
+    }
+    
+    body {
+      font-family: "PT Sans", "Arial", sans-serif;
+      min-width: 750px;
+    }
+    
+    html * {
+      max-height: 1000000px;
+    }
+
+  </style>
+  
+  <!--[if lt IE 9]>
       <link rel="stylesheet" href="css/style_ie.min.css">
     <![endif]-->
-    
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="page-header__first-row">
-        <div class="page-header__wrapper">
-          <div class="page-header__logo">
-           
-            <a href="#">
-             <picture>
-               <source media="(max-width:900px)" srcset="img/logo_sm.png">
-                <source media="(max-width:1100px)" srcset="img/logo_md.png">
-                
-                <img src="img/logo.png" alt="РемонтСтрой">
-              </picture>
-              
-            </a>
-          </div>
-          <div class="page-header__slogan">
-            <p>Ремонт квартир и офисов в&nbsp;Москве и Подмосковье</p>
-          </div>
-          <div class="page-header__call">
-            <div class="call-request">
-              <div class="call-request__number"><span>+7 (495)</span> 374-50-10</div>
-              <a class="call-request__link basic-btn" href="#">Заказать звонок</a>
-            </div>
+
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__first-row">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+
+          <a href="#">
+            <picture>
+              <source media="(max-width:900px)" srcset="img/logo_sm.png">
+              <source media="(max-width:1100px)" srcset="img/logo_md.png">
+
+              <img src="img/logo.png" alt="РемонтСтрой">
+            </picture>
+
+          </a>
+        </div>
+        <div class="page-header__slogan">
+          <p>Ремонт квартир и офисов в&nbsp;Москве и Подмосковье</p>
+        </div>
+        <div class="page-header__call">
+          <div class="call-request">
+            <div class="call-request__number"><span>+7 (495)</span> 374-50-10</div>
+            <a class="call-request__link basic-btn" href="#">Заказать звонок</a>
           </div>
         </div>
       </div>
-      
-      <div class="page-header__second-row">
-        <div class="page-header__wrapper">
-          <nav class="main-nav">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="about.html">Кто мы</a></li>
-              <li class="main-nav__item"><a href="portfolio.html">Наши работы</a></li>
-              <li class="main-nav__item"><a href="prices.html">Наши цены</a></li>
-              <li class="main-nav__item"><a href="reviews.html">Отзывы</a></li>
-              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
+    </div>
+
+    <div class="page-header__second-row">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="about.html">Кто мы</a></li>
+            <li class="main-nav__item"><a href="portfolio.html">Наши работы</a></li>
+            <li class="main-nav__item"><a href="prices.html">Наши цены</a></li>
+            <li class="main-nav__item"><a href="reviews.html">Отзывы</a></li>
+            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    
-    <main>
-      <section class="intro">
-        <div class="intro__wrapper">
-          <h1 class="intro__title">
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="intro__wrapper">
+        <h1 class="intro__title">
             <span class="intro__title-row">КАЧЕСТВЕННЫЙ РЕМОНТ</span>
             <span class="intro__title-row"><span class="intro__title-wh">КВАРТИР И ОФИСОВ</span> "ПОД КЛЮЧ"</span>
           </h1>
-          <div class="intro__form">
-            <form class="call-master" method="POST" action="report.php" name="call-master">
-              <div class="call-master__title">Вызвать мастера и рассчитать смету БЕСПЛАТНО!</div>
-              <input class="call-master__input" id="input-name" type="text" name="name" placeholder="Ваше имя">
-              <label for="input-name"> </label>
-              <input class="call-master__input" id="input-phone" type="tel"  name="phone" placeholder="Ваш номер телефона">
-              <label for="input-phone"> </label>
-              <button class="call-master__btn" type="submit">Вызвать мастера</button>
-            </form>
+        <div class="intro__form">
+          <form class="call-master" method="POST" action="report.php" name="call-master">
+            <div class="call-master__title">Вызвать мастера и рассчитать смету БЕСПЛАТНО!</div>
+            <input class="call-master__input" id="input-name" type="text" name="name" placeholder="Ваше имя">
+            <label for="input-name"> </label>
+            <input class="call-master__input" id="input-phone" type="tel" name="phone" placeholder="Ваш номер телефона">
+            <label for="input-phone"> </label>
+            <button class="call-master__btn" type="submit">Вызвать мастера</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <div class="advantages__items">
+          <div class="advantages__item advantages__item--experience">
+            <h3 class="advantages__title">7 летний опыт</h3>
+            <p class="advantages__text">Мы помогаем Вам делать качественный ремонт с&nbsp;2008&nbsp;года</p>
+          </div>
+          <div class="advantages__item advantages__item--garanty">
+            <h3 class="advantages__title">Гарантия 3&nbsp;года</h3>
+            <p class="advantages__text">Вы получаете 36 месячную гарантию на все работы по нашему договору</p>
+          </div>
+          <div class="advantages__item advantages__item--team">
+            <h3 class="advantages__title">6&nbsp;постоянных бригад</h3>
+            <p class="advantages__text">Опытных мастера, работающие в сфере ремонта более 10 лет</p>
+          </div>
+          <div class="advantages__item advantages__item--time">
+            <h3 class="advantages__title">Соблюдаем сроки</h3>
+            <p class="advantages__text">И контролируем наших мастеров полностью на всех этапах работ</p>
+          </div>
+          <div class="advantages__item advantages__item--price">
+            <h3 class="advantages__title">Доступные цены</h3>
+            <p class="advantages__text">Наши цены за такое высокое качество Вас сильно обрадуют</p>
+          </div>
+          <div class="advantages__item advantages__item--clean">
+            <h3 class="advantages__title">Уборка после ремонта</h3>
+            <p class="advantages__text">В конце работы Вы получаете полностью готовое помещение</p>
           </div>
         </div>
-      </section>
-        
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <div class="advantages__items">
-            <div class="advantages__item advantages__item--experience">
-              <h3 class="advantages__title">7 летний опыт</h3>
-              <p class="advantages__text">Мы помогаем Вам делать качественный ремонт с&nbsp;2008&nbsp;года</p>
-            </div>
-            <div class="advantages__item advantages__item--garanty">
-              <h3 class="advantages__title">Гарантия 3&nbsp;года</h3>
-              <p class="advantages__text">Вы получаете 36 месячную гарантию на все работы по нашему договору</p>
-            </div>
-            <div class="advantages__item advantages__item--team">
-              <h3 class="advantages__title">6&nbsp;постоянных бригад</h3>
-              <p class="advantages__text">Опытных мастера, работающие в сфере ремонта более 10 лет</p>
-            </div>
-            <div class="advantages__item advantages__item--time">
-              <h3 class="advantages__title">Соблюдаем сроки</h3>
-              <p class="advantages__text">И контролируем наших мастеров полностью на всех этапах работ</p>
-            </div>
-            <div class="advantages__item advantages__item--price">
-              <h3 class="advantages__title">Доступные цены</h3>
-              <p class="advantages__text">Наши цены за такое высокое    качество Вас сильно обрадуют</p>
-            </div>
-            <div class="advantages__item advantages__item--clean">
-              <h3 class="advantages__title">Уборка после ремонта</h3>
-              <p class="advantages__text">В конце работы Вы получаете полностью готовое помещение</p>
-            </div>
-          </div>
-        </div>
-      </section>
-       
-      <section class="reviews-portfolio">
-        <div class="reviews-portfolio__border">
+      </div>
+    </section>
+
+    <section class="reviews-portfolio">
+      <div class="reviews-portfolio__border">
         <div class="reviews-portfolio__wrapper">
           <h2 class="reviews-portfolio__title">Наши работы и&nbsp;отзывы&nbsp;о&nbsp;нас</h2>
           <div class="reviews-portfolio__items">
             <div class="reviews-portfolio__item reviews-portfolio__item--left">
               <ul class="reviews-portfolio__images">
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-1.jpg" alt="Примеры наших работ" width="145" height="200">
-                  </a>                 
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                   
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-2.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                   
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-3.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                   
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-4.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                 
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-5.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                  
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-6.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
-                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">                  
+                  <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-7.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
                   <a href="portfolio.html" title="Перейти на страницу с примерам работ">
                     <img src="img/exmpl-8.jpg" alt="Пример нашей работы" width="145" height="200">
-                  </a>                  
+                  </a>
                 </li>
               </ul>
               <a class="reviews-portfolio__link" href="#">Посмотреть другие работы</a>
@@ -181,27 +1016,27 @@
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
                   </a>
                 </li>
-                <li class="reviews-portfolio__image">        
+                <li class="reviews-portfolio__image">
                   <a href="reviews.html" title="Перейти на страницу с отзывами">
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
-                  </a>  
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
                   <a href="reviews.html" title="Перейти на страницу с отзывами">
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
                   </a>
                 </li>
-                <li class="reviews-portfolio__image">               
+                <li class="reviews-portfolio__image">
                   <a href="reviews.html" title="Перейти на страницу с отзывами">
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
-                  </a>         
+                  </a>
                 </li>
                 <li class="reviews-portfolio__image">
                   <a href="reviews.html" title="Перейти на страницу с отзывами">
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
                   </a>
                 </li>
-                <li class="reviews-portfolio__image">     
+                <li class="reviews-portfolio__image">
                   <a href="reviews.html" title="Перейти на страницу с отзывами">
                     <img src="img/feedback-1.jpg" alt="Отзыв о нашей работе" width="145" height="200">
                   </a>
@@ -215,148 +1050,151 @@
               <a class="reviews-portfolio__link" href="#">Посмотреть все отзывы</a>
             </div>
           </div>
-          <div class="reviews-portfolio__contacts">Позвоните нам по телефону 
-            <span class="reviews-portfolio__city-code">(495)</span> 
+          <div class="reviews-portfolio__contacts">Позвоните нам по телефону
+            <span class="reviews-portfolio__city-code">(495)</span>
             <span class="reviews-portfolio__tel">374-5010</span>
           </div>
         </div>
-        </div>
-      </section> 
-            
-      <section class="description">
-        <div class="description__wrapper">
-          <h2 class="description__title">Как мы делаем <b>качественный ремонт</b> для Вас:</h2>
-          <ol class="description__items">
-            <li class="description-item">Получаем от Вас <span>звонок или заявку</span> и обговариваем удобное время встречи</li>
-            <li class="description-item description-item--even">Мастер <span>выезжает на Ваш  объект</span> и согласовывает все детали предстоящего ремонта</li>
-            <li class="description-item">Мы <span>производим для Вас рассчеты</span> всех работ и материалов в смете</li>
-            <li class="description-item description-item--even">На основании сметы <span>заключаем официальный договор</span> со всеми условиями и гарантией</li>
-            <li class="description-item">Приступаем <span>к работе с полным контролем</span> и поэтапным отчетом</li>
-            <li class="description-item description-item--even">Перед финальной сдачей производим полную <span>уборку и подготовку помещения</span></li>
-            <li class="description-item">Вы принимаете <span>готовый ремонт "под ключ"</span></li>
-            <li class="description-item description-item--last"><a class="description__link basic-btn" href="#">Оставить заявку</a></li>
-          </ol>
-          
-        </div>
-      </section>
-        
-      <section class="prices">
-        <div class="prices__wrapper">
-          <h2 class="prices__title">Наши цены</h2>
-          <div class="prices__items">
-            <article class="prices__item">
-              <h3 class="prices__name">Косметический ремонт</h3>
-              <div class="prices__amount">цена от <span>1900 руб/м2</span></div>
-              <ul class="prices__explic">
-                <li>Обновление интерьера помещения.</li>
-                <li>Повышение стоимости апартаментов перед продажей.</li>
-                <li>Смена арендатора съемной квартиры.</li>
-                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
-              </ul>
-              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
-            </article>
-            <article class="prices__item">
-              <h3 class="prices__name">Капитальный ремонт</h3>
-              <div class="prices__amount">цена от <span>3900 руб/м2</span></div>
-              <ul class="prices__explic">
-                <li>Обновление интерьера помещения.</li>
-                <li>Повышение стоимости апартаментов перед продажей.</li>
-                <li>Смена арендатора съемной квартиры.</li>
-                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
-              </ul>
-              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
-            </article>
-            <article class="prices__item prices__item--last">
-              <h3 class="prices__name">Эксклюзивный ремонт</h3>
-              <div class="prices__amount">цена от <span>5900 руб/м2</span></div>
-              <ul class="prices__explic">
-                <li>Обновление интерьера помещения.</li>
-                <li>Повышение стоимости апартаментов перед продажей.</li>
-                <li>Смена арендатора съемной квартиры.</li>
-                <li>Прорыв водопровода или возгорание проводки и т.д.</li>
-              </ul>
-              <a class="prices__link basic-btn" href="#">Оставить заявку</a>
-            </article>
-          </div>
-        </div>
-      </section>
-        
-      <section class="reasons">
-       <div class="reasons__wrapper">
-         <h2 class="reasons__title">Почему вы поручите делать ремонт нашим&nbsp;мастерам?</h2>
-         <div class="reasons__text">
-           <p>Мы не знаем, <b>захотите ли Вы прочитать этот текст</b>, ведь Вы уже столько раз пытались читать никому не нужные рекламные тексты на сайтах, а мы могли бы поступить также как и все остальные наши коллеги по цеху, просто заказать и написать здесь кучу хвалебных речей о нашей компании, но скорее всего, что Вы уже видели это сотни раз подряд.</p>
-           <p>Да и давайте будем честны: Вам не нужны почетные грамоты нашей или какой либо другой строительной компании, а Вам нужны просто напросто <b>мастера, которые приедут и сделают ремонт квартиры или офиса</b> <i>в адекватные сроки, отличного качества и по разумной цене.</i> Вас мучает всего лишь один вопрос: <b>"Как мне правильно выбрать мастеров, которые мне сделают ремонт?"</b> И все, точка. Все остальное для Вас не важно, да и не нужно.</p>
-           <p>Но, что-то нам нужно написать о том: <i>кто мы? почему мы любим делать ремонты? как давно мы занимаемся ремонтами? какие объекты мы делали? какие у них с нами были проблемы? что говорят о нас клиенты?</i> Мы долго думали и решили, что самым лучшим и честным будет мой личный рассказ, как собственника компании о том, как я стал заниматься ремонтом и прошел путь от разнорабочего до <b>владельца компании "РемонтСтрой"</b>.</p>
-           <p>В 2000 году, на стыке тысячелетий, мне предложили работу простым разнорабочим в срочном проекте по созданию официального представительства одной из крупных мировых компаний. Мы приехали в старое заброшенное заводское помещение и приступили к работе. Разбитые окна и двери, обшарпанные стены, повсюду мусор и хлам. Я сложно представлял себе, как мы это помещение превратим в сказку из дизайн-проекта.</p>         
-           <p>Работа была очень тяжелой, но каждый день в конце смены, меня радовало, что это помещение становится чуть лучше. Хотя и ежедневная зарплата тоже не сильно огорчала. Как то почти при завершении мне попалась арматура в колонне которую нужно было извлечь полностью. Я провозился три часа, но она не поддавалась. Я предложил своему бригадиру оставить как есть, все равно эту колонну будем обшивать.</p>
-           <p>Он отозвал меня в сторону и сказал такую фразу: <i>"Здесь мы делаем ремонт, а не халтуру". - "У меня нет к тебе претензий, ты можешь выбрать: либо забрать зарплату за сегодня и искать место, где можно делать халтуру или завершить дело до конца и остаться с нами делать "настоящий ремонт".</i> Я остался. И решил для себя навсегда, что нужно делать только <b>"настоящий ремонт"</b>. Вот это я и пронес с собой в будущее, это и послужило основной РемонтСтроя и всего его колллектива.</p>
-         </div>
-         <div class="reasons__contacts">
-           Есть вопросы? Звоните нам: <span>(495) <b>374-5010</b></span>
-         </div>
-       </div>
-      </section>
-    </main>
-    
-    <footer class="page-footer">
-      <div class="page-footer__first-row">
-        <div class="page-footer__wrapper"> 
-          <nav class="main-nav main-nav--footer">
-            <ul class="main-nav__items">
-              <li class="main-nav__item"><a href="about.html">Кто мы</a></li>
-              <li class="main-nav__item"><a href="portfolio.html">Наши работы</a></li>
-              <li class="main-nav__item"><a href="prices.html">Наши цены</a></li>
-              <li class="main-nav__item"><a href="reviews.html">Отзывы</a></li>
-              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="description__wrapper">
+        <h2 class="description__title">Как мы делаем <b>качественный ремонт</b> для Вас:</h2>
+        <ol class="description__items">
+          <li class="description-item">Получаем от Вас <span>звонок или заявку</span> и обговариваем удобное время встречи</li>
+          <li class="description-item description-item--even">Мастер <span>выезжает на Ваш  объект</span> и согласовывает все детали предстоящего ремонта</li>
+          <li class="description-item">Мы <span>производим для Вас рассчеты</span> всех работ и материалов в смете</li>
+          <li class="description-item description-item--even">На основании сметы <span>заключаем официальный договор</span> со всеми условиями и гарантией</li>
+          <li class="description-item">Приступаем <span>к работе с полным контролем</span> и поэтапным отчетом</li>
+          <li class="description-item description-item--even">Перед финальной сдачей производим полную <span>уборку и подготовку помещения</span></li>
+          <li class="description-item">Вы принимаете <span>готовый ремонт "под ключ"</span></li>
+          <li class="description-item description-item--last"><a class="description__link basic-btn" href="#">Оставить заявку</a></li>
+        </ol>
+
+      </div>
+    </section>
+
+    <section class="prices">
+      <div class="prices__wrapper">
+        <h2 class="prices__title">Наши цены</h2>
+        <div class="prices__items">
+          <article class="prices__item">
+            <h3 class="prices__name">Косметический ремонт</h3>
+            <div class="prices__amount">цена от <span>1900 руб/м2</span></div>
+            <ul class="prices__explic">
+              <li>Обновление интерьера помещения.</li>
+              <li>Повышение стоимости апартаментов перед продажей.</li>
+              <li>Смена арендатора съемной квартиры.</li>
+              <li>Прорыв водопровода или возгорание проводки и т.д.</li>
             </ul>
-          </nav>
+            <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+          </article>
+          <article class="prices__item">
+            <h3 class="prices__name">Капитальный ремонт</h3>
+            <div class="prices__amount">цена от <span>3900 руб/м2</span></div>
+            <ul class="prices__explic">
+              <li>Обновление интерьера помещения.</li>
+              <li>Повышение стоимости апартаментов перед продажей.</li>
+              <li>Смена арендатора съемной квартиры.</li>
+              <li>Прорыв водопровода или возгорание проводки и т.д.</li>
+            </ul>
+            <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+          </article>
+          <article class="prices__item prices__item--last">
+            <h3 class="prices__name">Эксклюзивный ремонт</h3>
+            <div class="prices__amount">цена от <span>5900 руб/м2</span></div>
+            <ul class="prices__explic">
+              <li>Обновление интерьера помещения.</li>
+              <li>Повышение стоимости апартаментов перед продажей.</li>
+              <li>Смена арендатора съемной квартиры.</li>
+              <li>Прорыв водопровода или возгорание проводки и т.д.</li>
+            </ul>
+            <a class="prices__link basic-btn" href="#">Оставить заявку</a>
+          </article>
         </div>
       </div>
-      
-      <div class="page-footer__second-row">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__copyright">
-            <p>
-              «РемонтСтрой» &ndash; Ремонт квартир и офисов в Москве и Подмосковье<br>
-              129110, г. Москва, Проспект Мира, д. 68, строение 3, офис 10Б<br>
-              &#x24B8; 2008-2015 Все права защищены
-            </p>
-          </div>
-          <div class="page-footer__call">
-            <div class="call-request">
-              <div class="call-request__number">+7 (495) 374-50-10</div>
-              <a class="call-request__link basic-btn" href="#">Заказать звонок</a>
-            </div>
-          </div>
+    </section>
+
+    <section class="reasons">
+      <div class="reasons__wrapper">
+        <h2 class="reasons__title">Почему вы поручите делать ремонт нашим&nbsp;мастерам?</h2>
+        <div class="reasons__text">
+          <p>Мы не знаем, <b>захотите ли Вы прочитать этот текст</b>, ведь Вы уже столько раз пытались читать никому не нужные рекламные тексты на сайтах, а мы могли бы поступить также как и все остальные наши коллеги по цеху, просто заказать и написать здесь кучу хвалебных речей о нашей компании, но скорее всего, что Вы уже видели это сотни раз подряд.</p>
+          <p>Да и давайте будем честны: Вам не нужны почетные грамоты нашей или какой либо другой строительной компании, а Вам нужны просто напросто <b>мастера, которые приедут и сделают ремонт квартиры или офиса</b> <i>в адекватные сроки, отличного качества и по разумной цене.</i> Вас мучает всего лишь один вопрос: <b>"Как мне правильно выбрать мастеров, которые мне сделают ремонт?"</b> И все, точка. Все остальное для Вас не важно, да и не нужно.</p>
+          <p>Но, что-то нам нужно написать о том: <i>кто мы? почему мы любим делать ремонты? как давно мы занимаемся ремонтами? какие объекты мы делали? какие у них с нами были проблемы? что говорят о нас клиенты?</i> Мы долго думали и решили, что самым лучшим и честным будет мой личный рассказ, как собственника компании о том, как я стал заниматься ремонтом и прошел путь от разнорабочего до <b>владельца компании "РемонтСтрой"</b>.</p>
+          <p>В 2000 году, на стыке тысячелетий, мне предложили работу простым разнорабочим в срочном проекте по созданию официального представительства одной из крупных мировых компаний. Мы приехали в старое заброшенное заводское помещение и приступили к работе. Разбитые окна и двери, обшарпанные стены, повсюду мусор и хлам. Я сложно представлял себе, как мы это помещение превратим в сказку из дизайн-проекта.</p>
+          <p>Работа была очень тяжелой, но каждый день в конце смены, меня радовало, что это помещение становится чуть лучше. Хотя и ежедневная зарплата тоже не сильно огорчала. Как то почти при завершении мне попалась арматура в колонне которую нужно было извлечь полностью. Я провозился три часа, но она не поддавалась. Я предложил своему бригадиру оставить как есть, все равно эту колонну будем обшивать.</p>
+          <p>Он отозвал меня в сторону и сказал такую фразу: <i>"Здесь мы делаем ремонт, а не халтуру". - "У меня нет к тебе претензий, ты можешь выбрать: либо забрать зарплату за сегодня и искать место, где можно делать халтуру или завершить дело до конца и остаться с нами делать "настоящий ремонт".</i> Я остался. И решил для себя навсегда, что нужно делать только <b>"настоящий ремонт"</b>. Вот это я и пронес с собой в будущее, это и послужило основной РемонтСтроя и всего его колллектива.</p>
+        </div>
+        <div class="reasons__contacts">
+          Есть вопросы? Звоните нам: <span>(495) <b>374-5010</b></span>
         </div>
       </div>
-    </footer>
-    
-    <div class="popup-report">
-     `<div class="popup-report__bg"></div>
-      <div class="popup-report__close">x</div>
-      <h3 class="popup-report__title">Оформить заявку</h3>
-      <p class="popup-report__explic">Заполните форму и мы с Вами обязательно свяжемся</p>
-      <form class="popup-report__form" method="POST" action="report.php" name="report">
-        <div class="popup-report__name-wrapper">
-          <label for="report-name">Имя:</label>
-          <input class="popup-report__input" type="text" name="name" id="report-name" placeholder="Введите свое имя">   
-        </div>
-        <div class="popup-report__phone-wrapper">
-          <label for="report-phone">Телефон:</label>
-          <input class="popup-report__input" type="text" name="phone" id="report-phone" placeholder="Ваш номер телефона">
-        </div>
-        <label for="report-message">Текст сообщения:</label>
-        <textarea class="popup-report__message" name="message_order" id="report-message" cols="30" rows="3" placeholder="Напишите здесь текст сообщения"></textarea>
-        <button class="popup-report__btn" type="submit">Отправить</button>
-      </form>
-      <p class="popup-report__bottom">Не любите отправлять заявки?<br>тогда звоните +7(495) <span>374-5010</span></p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__first-row">
+      <div class="page-footer__wrapper">
+        <nav class="main-nav main-nav--footer">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="about.html">Кто мы</a></li>
+            <li class="main-nav__item"><a href="portfolio.html">Наши работы</a></li>
+            <li class="main-nav__item"><a href="prices.html">Наши цены</a></li>
+            <li class="main-nav__item"><a href="reviews.html">Отзывы</a></li>
+            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="js/vendor/lib.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/index.min.js"></script>
-  </body>
+
+    <div class="page-footer__second-row">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__copyright">
+          <p>
+            «РемонтСтрой» &ndash; Ремонт квартир и офисов в Москве и Подмосковье
+            <br> 129110, г. Москва, Проспект Мира, д. 68, строение 3, офис 10Б
+            <br> &#x24B8; 2008-2015 Все права защищены
+          </p>
+        </div>
+        <div class="page-footer__call">
+          <div class="call-request">
+            <div class="call-request__number">+7 (495) 374-50-10</div>
+            <a class="call-request__link basic-btn" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup-report">
+    `
+    <div class="popup-report__bg"></div>
+    <div class="popup-report__close">x</div>
+    <h3 class="popup-report__title">Оформить заявку</h3>
+    <p class="popup-report__explic">Заполните форму и мы с Вами обязательно свяжемся</p>
+    <form class="popup-report__form" method="POST" action="report.php" name="report">
+      <div class="popup-report__name-wrapper">
+        <label for="report-name">Имя:</label>
+        <input class="popup-report__input" type="text" name="name" id="report-name" placeholder="Введите свое имя">
+      </div>
+      <div class="popup-report__phone-wrapper">
+        <label for="report-phone">Телефон:</label>
+        <input class="popup-report__input" type="text" name="phone" id="report-phone" placeholder="Ваш номер телефона">
+      </div>
+      <label for="report-message">Текст сообщения:</label>
+      <textarea class="popup-report__message" name="message_order" id="report-message" cols="30" rows="3" placeholder="Напишите здесь текст сообщения"></textarea>
+      <button class="popup-report__btn" type="submit">Отправить</button>
+    </form>
+    <p class="popup-report__bottom">Не любите отправлять заявки?
+      <br>тогда звоните +7(495) <span>374-5010</span></p>
+  </div>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="js/vendor/lib.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/index.min.js"></script>
+</body>
+
 </html>
