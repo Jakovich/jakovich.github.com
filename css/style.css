@@ -2322,6 +2322,11 @@ label[for=contacts-message] {
   cursor: pointer;
   right: 150px;
   top: 10px;
+  transition: all 0.3s linear;
+}
+.popup-report__close:hover {
+  border-color: #e1c78c;
+  color: #e1c78c;
 }
 .popup-report__title {
   text-align: center;
