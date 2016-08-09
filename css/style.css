@@ -436,7 +436,7 @@ textarea {
   opacity: 1;
 }
 /*
-Блок заказать звонок в шапке и подвале страниц
+Блок "заказать звонок" в шапке и подвале страниц
 */
 .call-request__number {
   font-size: 25px;
@@ -639,6 +639,7 @@ textarea {
 @media (max-width: 850px) {
   .intro {
     background-image: url('../img/intro-bg-sm.jpg');
+    background-size: cover;
     padding: 20px 0;
   }
   .intro__title {
@@ -1750,6 +1751,9 @@ textarea {
 .reviews__name {
   color: #603023;
   font-style: italic;
+}
+.reviews__name span {
+  display: block;
 }
 .reviews__contacts {
   text-align: center;
