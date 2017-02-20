@@ -1,36 +1,43 @@
-"use strict";
-(function() {
-var personalNav = document.querySelector(".personal-nav");
-var codeItem = personalNav.querySelector(".personal-nav__item--code");
-var codePopupFriend = personalNav.querySelector(".popup--friend");
-var codePopupLock = personalNav.querySelector(".popup--lock");
-var personalItems = personalNav.querySelectorAll(".personal-nav__item");
+$(document).ready(function() {
 
-codeItem.onmouseover = function() {
-  codePopupFriend.style.display = "block";
-};
+  //show/hide questions
+  $('.faq__question').on('click', function(event){
+  var currentItem = $(event.target).closest('.faq__item');
+  var answer = currentItem.find('.faq__answer');
+  answer.slideToggle(300);
+  currentItem.toggleClass('faq__item').toggleClass('faq__item faq__item--active');
+  });
 
-codeItem.onmouseout = function() {
-  codePopupFriend.style.display = "none";
-};
+  //show/hide additional info in section info
+  $('.info__addit-btn').on('click', function(event){
+    $('.info__addit').slideToggle(300);
+  })
 
-for (var i = 0; i < personalItems.length; i++ ) {
-  removeDotes(personalItems[i]);
-  if (personalItems[i].classList.contains("personal__item--active")) {
-    addDotes(personalItems[i]);
-  }
-}
+  $('.info__btn--more').on('click', function(event){
+    $('.info__addit').slideToggle(300);
+  })
 
-function addDotes(item) {
-    var spanDot = document.createElement("span");
-    spanDot.className = "personal__item--dot";
-    item.appendChild(spanDot);
-}
+  //add class active for services__item when add burron is clicked
+  $('.services__btn').on('mousedown', function(event){
+    var currentItem = $(event.target).closest('.services__item');
+    currentItem.addClass('services__item--focus');
+  });
 
-function removeDotes(item) {
-    if (item.classList.contains("personal__item--dot")){
-      item.classList.remove("personal__item--dot");
+  $('.services__btn').on('mouseup', function(event){
+    var currentItem = $(event.target).closest('.services__item');
+    currentItem.removeClass('services__item--focus');
+    $(this).blur();
+  });
+
+  //add/delete select class for services-items
+  $('.services__btn').on('click', function(event){
+    var currentBtn = $(this);
+    var currentItem = $(event.target).closest('.services__item');
+    if (currentItem.hasClass('services__item--select')) {
+      currentBtn.text('Установить');
+    } else {
+      currentBtn.text('Установлено');
     }
-}
-
-})();
+    currentItem.toggleClass('services__item').toggleClass('services__item services__item--select');
+  });
+});
