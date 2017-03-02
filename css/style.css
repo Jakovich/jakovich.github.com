@@ -1180,6 +1180,8 @@ template {
   -ms-flex-preferred-size: 43%;
       flex-basis: 43%;
   text-align: left;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
 }
 .bancs__check {
   cursor: pointer;
