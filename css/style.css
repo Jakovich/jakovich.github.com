@@ -740,13 +740,14 @@ template {
   text-decoration: none;
 }
 .info-short__link:hover {
-  opacity: 0.8;
-  color: #4f5a67;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
   text-decoration: none;
 }
 .info-short__link:focus {
   opacity: 1;
-  color: #4f5a67;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
   text-decoration: none;
 }
 .tooltip-info {
@@ -766,7 +767,6 @@ template {
   margin-left: 1%;
   color: #00ab8a;
   font-size: 16px;
-  border-bottom: 1.5px dashed #00ab8a;
   position: relative;
 }
 .tooltip-info__icon svg {
@@ -822,7 +822,6 @@ template {
   font-weight: 500;
   font-size: 16px;
   color: #333333;
-  border-bottom: 1.5px dashed #333333;
 }
 .tooltip-info__control {
   text-align: right;
@@ -1099,19 +1098,21 @@ template {
   line-height: 16px;
   font-weight: 300;
   color: #4f5a67;
-  opacity: 0.8;
-  text-decoration: none;
-  border-bottom: 1px dashed #4f5a67;
-}
-.bancs__exp:hover {
   opacity: 1;
   text-decoration: none;
-  color: #4f5a67;
+  border-bottom: 1px dashed #4f5a67;
+  transition: all 0.2s ease;
+}
+.bancs__exp:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-color: #1a1a1a;
 }
 .bancs__exp:focus {
   opacity: 1;
   text-decoration: none;
-  color: #4f5a67;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 .bancs__body .bancs__documents {
   font-size: 14px;
@@ -1122,19 +1123,21 @@ template {
   display: inline-block;
   font-weight: 500;
   color: #4f5a67;
-  opacity: 0.8;
+  opacity: 1;
   text-decoration: none;
   border-bottom: 2px dashed #4f5a67;
+  transition: all 0.2s ease;
 }
 .bancs__documents-list:hover {
   text-decoration: none;
-  opacity: 1;
-  color: #4f5a67;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 .bancs__documents-list:focus {
   text-decoration: none;
   opacity: 1;
-  color: #4f5a67;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 .bancs__body .bancs__percent {
   font-weight: 500;
@@ -1424,9 +1427,10 @@ template {
   transition: all 0.2s ease;
   font-size: 15px;
   color: #00ab8a;
+  border-bottom: 1px dashed #00ab8a;
 }
 .services__more a:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 .services-btn {
   font-weight: 400;
@@ -1603,6 +1607,12 @@ template {
 .credit-calcul__terms {
   display: -ms-flexbox;
   display: flex;
+}
+.credit-calcul__term--noactive {
+  position: relative;
+}
+.credit-calcul__term--noactive:hover .question-tooltip__body {
+  display: block;
 }
 .credit-calcul__title {
   font-size: 20px;
@@ -2104,6 +2114,11 @@ template {
 .question-tooltip--inside {
   right: -25px;
 }
+.question-tooltip--label {
+  left: -330px;
+  bottom: 20px;
+  top: auto;
+}
 .question-tooltip--left .question-tooltip__body {
   left: auto;
   right: 15px;
@@ -2168,7 +2183,7 @@ template {
   cursor: pointer;
   background-color: #00ab8a;
   color: #ffffff;
-  padding: 14px 0;
+  padding: 12px 0;
   width: 100%;
   text-align: center;
   position: relative;
@@ -2176,13 +2191,18 @@ template {
   border: none;
   outline: none;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 .step-btn:hover {
   background-color: #33bca1;
+  text-decoration: none;
+  color: #ffffff;
 }
 .step-btn:focus {
   background-color: #039c7f;
   outline: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 .step-btn__icon {
   position: absolute;
@@ -2203,10 +2223,12 @@ template {
 }
 .step-btn--prev:hover {
   background-color: #d9d9d9;
+  color: #333333;
 }
 .step-btn--prev:focus {
   background-color: #e6e6e6;
   outline: none;
+  color: #333333;
 }
 .step-btn--prev .step-btn__icon {
   right: auto;
