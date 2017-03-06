@@ -38,8 +38,6 @@ $(document).ready(function() {
 
     //show short check
 
-
-
     $(window).scroll(function(){
         //element['fade'+ ($(this).scrollTop() > 400 ? 'In': 'Out')](500);
         if ($(this).scrollTop() > 350) {
@@ -64,6 +62,7 @@ $(document).ready(function() {
 
     $('[data-modal]').on('click', function(evt){
         evt.preventDefault();
+        evt.stopPropagation();
         var currentPopup = $('[data-rel="' + this.dataset.modal + '"]');
         showPopup(currentPopup);
     });
