@@ -3,14 +3,19 @@ $(document).ready(function() {
     //show/hide additional info in CASCO
     $('.casco-options__show').click(function(evt) {
         evt.preventDefault();
+        var itemsStatus = $('.casco-options__status');
         if ($(this).hasClass('casco-options__show--more')) {
             $(this).text('Меньше параметров');
+            itemsStatus.show(0);
         } else {
             $(this).text('Все параметры');
+            itemsStatus.hide(0);
         }
 
         $(this).toggleClass('casco-options__show--more').toggleClass('casco-options__show--less');
-        $(this).closest('.casco-options').find('.casco-option__addit').slideToggle(300);
+        $(this).closest('.casco-options').find('.casco-option__item--addit').slideToggle(300);
+
+
     });
 
     //switch casco/osago
