@@ -2513,6 +2513,9 @@ template {
       flex-grow: 1;
   margin-left: 10px;
 }
+.insurance-info {
+  display: none;
+}
 .radio-inputs__item {
   /*  input~label {
     &::after,&::before{
