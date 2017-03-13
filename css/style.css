@@ -445,11 +445,12 @@ template {
   list-style: none;
   padding: 0 8px;
   padding-top: 3px;
-  margin: 0;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  max-width: 330px;
 }
 .main-nav__item a {
   font-size: 14px;
