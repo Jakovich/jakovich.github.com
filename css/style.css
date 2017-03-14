@@ -3918,7 +3918,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 }
 .popup-pat__items {
   overflow-y: scroll;
-  height: 550px;
+  height: 500px;
 }
 .popup-pat__title {
   padding: 15px 20px;
