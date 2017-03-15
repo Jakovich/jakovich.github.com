@@ -317,7 +317,9 @@
                             </div>
 
                             <div class="payment-summary__item-addit">
-                                текст
+                                <div class="payment-summary__sale">
+                                    <span class="payment-summary__sale-icon"><svg><use xlink:href="/img/svgsprites/payment.svg#percent"/></svg></span>
+                                </div>
                             </div>
                         </div>
                         <div class="payment-summary__item">
@@ -386,7 +388,7 @@
                    <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия для угонщикап.</p>
                </div>
                </div>
-               <a href="#" class="payment-options__help-name">Пакет страховой</a>
+               <a href="#" data-modal="pat" class="payment-options__help-name">Пакет страховой</a>
                     </div>
                             </div>
                             <a href="#" class="payment-options__pat"><img src="img/PAT/PAT-logo.jpg" data-modal="pat" alt="РАТ" width="125" height="46"></a>
@@ -536,10 +538,14 @@
     </div>
 
     <div class="popup-pat" data-rel="pat">
-
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+        <span class="close-btn__icon">
+            <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+        </span>
+      </button>
+      <div class="popup-pat__content">
         <div class="popup-pat__title">
-            <div class="popup-pat__selected"> Выбрано: <span>Самый необходимый набор</span></div>
-            <button class="popup-pat__close" data-action="close">Скрыть пакеты</button>
+            Выбрано: <span>Самый необходимый набор</span>
         </div>
         <div class="popup-pat__items">
             <div class="popup-pat__item popup-pat__item--select">
@@ -549,7 +555,7 @@
                             <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
                             <img src="img/PAT/PAT_min.png" alt="">
                         </div>
-                        <div class="popup-pat__price">2500 Р</div>
+
                     </div>
                     <div class="popup-pat__info">
                         <div class="popup-pat__info-header">
@@ -557,7 +563,8 @@
                                 <h6 class="popup-pat__name">Самый необходимый набор</h6>
                                 <p class="popup-pat__expl">Самый необходимый набор услуг для каждого автомобилиста</p>
                             </div>
-                            <div class="popup-pat__btn">
+                            <div class="popup-pat__info-control">
+                                <div class="popup-pat__price">2500 Р</div>
                                 <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
                             </div>
                         </div>
@@ -591,7 +598,7 @@
                             <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
                             <img src="img/PAT/PAT_solo.png" alt="">
                         </div>
-                        <div class="popup-pat__price">4400 Р</div>
+
                     </div>
                     <div class="popup-pat__info">
                         <div class="popup-pat__info-header">
@@ -599,8 +606,9 @@
                                 <h6 class="popup-pat__name">Базовый пакет</h6>
                                 <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
                             </div>
-                            <div class="popup-pat__btn">
-                                <button class="services-btn services-btn--padding">Выбрать</button>
+                            <div class="popup-pat__info-control">
+                                <div class="popup-pat__price">2500 Р</div>
+                                <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
                             </div>
                         </div>
                         <div class="popup-pat__info-body">
@@ -635,7 +643,7 @@
                             <span class="popup-pat__check"><svg><use xlink:href="/img/svgsprites/general.svg#check-circle"/></svg></span>
                             <img src="img/PAT/PAT_capris.png" alt="">
                         </div>
-                        <div class="popup-pat__price">5500 Р</div>
+
                     </div>
                     <div class="popup-pat__info">
                         <div class="popup-pat__info-header">
@@ -643,8 +651,9 @@
                                 <h6 class="popup-pat__name">Расширенный пакет</h6>
                                 <p class="popup-pat__expl">Универсальное решение для большинства водителей.</p>
                             </div>
-                            <div class="popup-pat__btn">
-                                <button class="services-btn services-btn--padding">Выбрать</button>
+                            <div class="popup-pat__info-control">
+                                <div class="popup-pat__price">2500 Р</div>
+                                <button class="services-btn services-btn--select services-btn--padding">Выбрано</button>
                             </div>
                         </div>
                         <div class="popup-pat__info-body">
@@ -672,7 +681,7 @@
                 </div>
             </div>
         </div>
-
+</div>
 
     </div>
 

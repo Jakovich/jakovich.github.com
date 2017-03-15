@@ -1530,13 +1530,21 @@ template {
   color: #1a1a1a;
 }
 .services__sale {
-  font-weight: 300;
-  opacity: 0.6;
+  margin-top: 8px;
+  font-weight: 400;
+  opacity: 0.85;
   font-size: 14px;
   color: #4f5a67;
 }
-.services__sale span {
-  font-weight: 500;
+.services__sale-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 2px;
+  margin-right: 3px;
+}
+.services__sale-icon svg {
+  width: 16px;
+  height: 16px;
 }
 .services__price {
   font-size: 20px;
@@ -2048,6 +2056,11 @@ template {
 }
 .options__banc-icon img {
   vertical-align: top;
+}
+.options__banc-icon--middle {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 }
 .options__info {
   text-align: center;
@@ -2843,6 +2856,10 @@ template {
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
 }
+.payment-summary__sale-icon svg {
+  width: 42px;
+  height: 38px;
+}
 .payment-options {
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -3329,11 +3346,12 @@ template {
   background-image: url('../img/insurance/driver-item--active.svg');
 }
 .casco-options {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .casco-options__control {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
+  padding: 0 20px;
 }
 .casco-options__title {
   font-size: 18px;
@@ -3350,10 +3368,23 @@ template {
 .casco-options__status {
   display: none;
 }
+.casco-options__calcul {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+@media (max-width: 992px) {
+  .casco-options__calcul {
+    width: 100%;
+  }
+}
 .casco-options__show {
   display: inline-block;
   border: none;
   outline: none;
+  margin: 12px 0;
+  padding: 0;
   transition: all 0.2s ease;
   font-size: 15px;
   background-color: transparent;
@@ -3580,6 +3611,19 @@ template {
   font-weight: 500;
   color: #4f5a67;
   text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.upload__text::after {
+  position: absolute;
+  content: '';
+  width: 81px;
+  height: 106px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+  background-image: url('../img/general/drop.svg');
 }
 .upload__control {
   display: -ms-flexbox;
@@ -3844,13 +3888,15 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   z-index: 45;
 }
 .popup-descr__content {
+  height: 100%;
+  overflow-y: auto;
+}
+.popup-descr__content-wrp {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   padding: 20px 30px;
   padding-bottom: 10px;
-  overflow-y: auto;
-  height: 100%;
 }
 .popup-descr__header {
   display: -ms-flexbox;
@@ -3928,10 +3974,12 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
+  display: none;
+}
+.popup-pat__content {
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   background-color: #ffffff;
-  display: none;
 }
 .popup-pat__items {
   overflow-y: scroll;
@@ -3939,14 +3987,6 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 }
 .popup-pat__title {
   padding: 15px 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-}
-.popup-pat__selected {
   font-size: 22px;
   font-weight: 300;
   color: #4f5a67;
@@ -3979,7 +4019,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   background-color: rgba(128, 141, 155, 0.1);
 }
 .popup-pat__item--select .popup-pat__price {
-  font-weight: 400;
+  opacity: 1;
 }
 .popup-pat__item--select .popup-pat__check {
   display: block;
@@ -4003,8 +4043,11 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 .popup-pat__price {
   font-size: 20px;
   color: #1a1a1a;
-  margin-top: 5px;
-  font-weight: 300;
+  opacity: 0.8;
+  margin-top: -20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: right;
 }
 .popup-pat__info-header {
   display: -ms-flexbox;
@@ -4020,6 +4063,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 }
 .popup-pat__name {
   font-size: 18px;
+  margin-top: 0;
 }
 .popup-pat__expl {
   font-size: 16px;
@@ -4317,8 +4361,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #4f5a67;
-  opacity: 0.5;
+  background-color: rgba(79, 90, 103, 0.5);
   z-index: 40;
 }
 body {
@@ -4328,6 +4371,7 @@ body {
 }
 body.popup {
   overflow: hidden;
+  height: 100vh;
 }
 .main-title {
   font-weight: 300;
