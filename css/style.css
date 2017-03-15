@@ -1176,7 +1176,11 @@ template {
       align-items: center;
 }
 .financial__icon-content img {
-  display: block;
+  width: 100%;
+}
+.financial__icon-hexagon {
+  width: 100%;
+  position: absolute;
 }
 .financial__icon--insurance {
   -ms-flex-preferred-size: 24%;
