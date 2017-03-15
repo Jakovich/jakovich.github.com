@@ -3836,8 +3836,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   width: 600px;
   max-width: 95%;
   position: fixed;
-  height: 585px;
-  max-height: 85%;
+  height: 85%;
   top: 100px;
   left: 50%;
   -ms-transform: translateX(-50%);
