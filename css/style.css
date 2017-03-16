@@ -3890,6 +3890,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 .popup-descr__content {
   height: 100%;
   overflow-y: auto;
+  border-radius: 5px;
 }
 .popup-descr__content-wrp {
   background-color: #ffffff;
@@ -3974,19 +3975,30 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
+  height: 85%;
   display: none;
 }
 .popup-pat__content {
-  border-radius: 5px;
+  height: 100%;
+}
+.popup-pat__items {
+  overflow-y: auto;
+  height: 85%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.popup-pat__items-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   background-color: #ffffff;
 }
-.popup-pat__items {
-  overflow-y: scroll;
-  height: 500px;
-}
 .popup-pat__title {
   padding: 15px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
   font-size: 22px;
   font-weight: 300;
   color: #4f5a67;
