@@ -2210,6 +2210,61 @@ template {
   margin-top: 0;
   top: auto;
 }
+.login-form__input {
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: 2px solid #808d9b;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.login-form__field {
+  border: none;
+}
+.login-form__field {
+  position: relative;
+}
+.login-form__field::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: rgba(26, 26, 26, 0.2);
+  left: -45px;
+  right: -45px;
+  top: 18px;
+  z-index: 10;
+}
+.login-form__legend {
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  width: auto;
+  padding: 5px 20px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 11;
+  margin-bottom: 5px;
+}
+.login-form__submit {
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+.login-form__radio {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.login-form__exp {
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+}
 .question-tooltip {
   position: absolute;
   top: 50%;
@@ -2572,6 +2627,12 @@ template {
 .radio-inputs__item input:checked ~ label::after {
   display: block;
 }
+.radio-inputs--flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
 .radio-inputs__item--trade input:checked ~ label {
   font-weight: 300;
   border: 2px solid #00ab8a;
@@ -2626,19 +2687,27 @@ template {
   opacity: 0.4;
   top: 3px;
 }
+.radio-inputs__label--login {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+.radio-inputs__label--login::after,
+.radio-inputs__label--login::before {
+  opacity: 1;
+}
 .radio-inputs__label--trade {
   border: 2px solid rgba(255, 255, 255, 0.75);
   margin-bottom: 0;
   border-radius: 5px;
-  padding: 18px 20px;
-  padding-left: 70px;
+  padding: 18px 20px 18px 70px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
   z-index: 2;
 }
-.radio-inputs__label--trade::before,
-.radio-inputs__label--trade::after {
+.radio-inputs__label--trade::after,
+.radio-inputs__label--trade::before {
   top: 50%;
   opacity: 1;
   -ms-transform: translateY(-50%);
@@ -3522,6 +3591,17 @@ template {
   background-color: rgba(79, 90, 103, 0.1);
   color: #00ab8a;
 }
+.step-btn--gradient {
+  background: #00ab8a;
+  background: linear-gradient(to top, #00ab8a, #55c6b0);
+  text-transform: none;
+  padding: 15px 0;
+  font-size: 21px;
+  border: 1px solid #007B57;
+}
+.step-btn--gradient:hover {
+  opacity: 0.8;
+}
 .checkbox-main {
   font-size: 16px;
   font-weight: 300;
@@ -3605,6 +3685,19 @@ template {
   width: 36px;
   height: 33px;
   padding: 0;
+}
+.social__btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px;
+  transition: all 0.2s ease;
+}
+.social__btn svg {
+  width: 60px;
+  height: 60px;
+}
+.social__btn:hover {
+  opacity: 0.8;
 }
 .upload__text {
   font-size: 18px;
@@ -4130,6 +4223,48 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 .popup-pat__show--less:hover {
   color: #00ab8a;
   border-color: #00ab8a;
+}
+.popup-login {
+  position: fixed;
+  width: 550px;
+  top: 100px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  z-index: 45;
+  display: none;
+}
+.popup-login__content {
+  background-color: #ffffff;
+  background-image: url('../img/payment/bg-popup.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 40px 40px;
+  padding-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 5px;
+}
+.popup-login__info {
+  background-image: url('../img/payment/bg-auto.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.popup-login__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.popup-logn__text {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px 0;
+  text-align: left;
+}
+.popup-logn__text span {
+  color: #00ab8a;
+  font-weight: 500;
 }
 .popup-refusing {
   display: none;
