@@ -246,13 +246,37 @@
         <section class="services">
             <div class="container-fluid">
 
-                <div class="tooltip-info tooltip-info--active">
+                <div class="tooltip-info">
                     <div class="row">
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
-                        <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                    </span> При сдаче в trade-in автомобиля марки Mitsubishi cкидка на автобили любой марки
-                            <div class="tooltip-info__price">55 000 Р
+                        <svg width="3" height="19"><use xlink:href="/img/svgsprites/general.svg#attention"/></svg>
+                    </span>Программа <span>$название-шага</span> может  дать вам скидку
+                            <div class="tooltip-info__price">32 000 Р
+                                <div class="question-tooltip question-tooltip--inside">
+                                    <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                    <div class="question-tooltip__body">
+                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                            для угонщикап.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 tooltip-info__control">
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tooltip-info tooltip-info--warning">
+                    <div class="row">
+
+                        <div class="tooltip-info__text col-sm-8">
+                            <span class="tooltip-info__icon">
+                                    <svg width="21.5" height="21.5"><use xlink:href="/img/svgsprites/general.svg#refusing"/></svg>
+                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
+                            <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
                                     <div class="question-tooltip__body">
@@ -263,9 +287,38 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен trade-in</button>
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
                         </div>
+
+
+                    </div>
+                </div>
+                <div class="tooltip-info tooltip-info--success">
+                    <div class="row">
+
+                        <div class="tooltip-info__text col-sm-8">
+                            <span class="tooltip-info__icon">
+                                    <svg width="21.3" height="15"><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
+                            <div class="tooltip-info__price">32 000 Р
+                                <div class="question-tooltip question-tooltip--inside">
+                                    <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                    <div class="question-tooltip__body">
+                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                            для угонщикап.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 tooltip-info__control">
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -679,13 +732,26 @@
 
     </footer>
 
-    <div class="popup-refusing" data-rel="refusing">
-        <h4 class="popup-refusing__title">Отказаться от кредита?</h4>
-        <p class="popup-refusing__text">Отказываясь от кредита, вы поступаете очень неправильно, к тому же вы теряете скидку в <span>14 647  Р</span></p>
-        <div class="popup-refusing__btn-wrp">
-            <button class="popup-refusing__btn" data-action="close">Оставить как есть</button>
+    <div class="popup-confirm" data-rel="refusing">
+            <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+            <span class="close-btn__icon">
+                <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+            </span>
+          </button>
+            <div class="popup-confirm__content">
+                <p class="popup-confirm__title">Жаль, что у вас нет машины для обмена...</p>
+                <p class="popup-confirm__subtitle">Оформив Trade-in вы можете получить скидку на автомобиль до <span>90 000 Р</span> </p>
+                <div class="popup-confirm__img">
+                    <img src="img/popup-confirm/auto.jpg" alt="">
+                    <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#trade-in"/></svg>
+                </div>
+                <p class="popup-confirm__exp">Потерю скидки за трэйд-ин вы компенсируете на следующих шага</p>
+                <div class="popup-confirm__control">
+                    <button class="popup-confirm__btn popup-confirm__btn--gray">НЕ ХОЧУ TRADE-IN</button>
+                    <button class="popup-confirm__btn">ОФОРМИТЬ TRADE-IN</button>
+                </div>
+            </div>
         </div>
-    </div>
 
     <div class="popup-credit" data-rel="credit">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>

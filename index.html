@@ -243,8 +243,8 @@
                     <div class="row">
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
-                        <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                     </span> Установите <a href="#" class="tooltip-info__service">оборудование</a> чтобы получить скидку до
+                        <svg width="3" height="19"><use xlink:href="/img/svgsprites/general.svg#attention"/></svg>
+                    </span>Программа <span>$название-шага</span> может  дать вам скидку
                             <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
@@ -258,18 +258,17 @@
 
                         </div>
                         <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn">Снять все оборудование</button>
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
                         </div>
                     </div>
                 </div>
-
-                <div class="tooltip-info tooltip-info--active">
+                <div class="tooltip-info tooltip-info--warning">
                     <div class="row">
 
                         <div class="tooltip-info__text col-sm-8">
                             <span class="tooltip-info__icon">
-                                    <svg><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
-                                 </span> Установлен <a href="#" class="tooltip-info__service">1 комплект оборудования</a> дает вам скидку
+                                    <svg width="21.5" height="21.5"><use xlink:href="/img/svgsprites/general.svg#refusing"/></svg>
+                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
                             <div class="tooltip-info__price">32 000 Р
                                 <div class="question-tooltip question-tooltip--inside">
                                     <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
@@ -283,7 +282,33 @@
                         </div>
 
                         <div class="col-sm-4 tooltip-info__control">
-                            <button class="tooltip-info__btn">Снять все оборудование</button>
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="tooltip-info tooltip-info--success">
+                    <div class="row">
+
+                        <div class="tooltip-info__text col-sm-8">
+                            <span class="tooltip-info__icon">
+                                    <svg width="21.3" height="15"><use xlink:href="/img/svgsprites/general.svg#check"/></svg>
+                                </span> Вы отказались от  <span>$название-шага</span>, и теряете скидку
+                            <div class="tooltip-info__price">32 000 Р
+                                <div class="question-tooltip question-tooltip--inside">
+                                    <button class="question-tooltip__btn"><svg><use xlink:href="/img/svgsprites/general.svg#question"/></svg></button>
+                                    <div class="question-tooltip__body">
+                                        <h4 class="question-tooltip__title">Комплект «Защита автомобиля» Outlander Максимальный</h4>
+                                        <p class="question-tooltip__text">Замок капота PROSECURITY LOCK (МЕХАНИКА) универсал обеспечивает Недоступность моторного отсека, что является важным элементом защиты автомобиля от угона. Защита подкапотного пространствасоздает серьезные препятствия
+                                            для угонщикап.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 tooltip-info__control">
+                            <button class="tooltip-info__btn" data-modal="refusing">Мне не нужен <span>$текущий-шаг</span></button>
                         </div>
 
 
@@ -643,7 +668,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="page-bottom">
@@ -746,6 +770,212 @@
         </div>
 
     </footer>
+
+    <div class="popup-equipment" data-rel="equipment">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+              <span class="close-btn__icon">
+                  <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+              </span>
+            </button>
+            <div class="popup-equipment__content">
+                <p class="popup-equipment__title"> Установленное оборудование<span>(3)</span></p>
+                <div class="services__items">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select" data-modal="description">
+                                <div class="services__content ">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/protect-optim.svg" alt="">
+
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">
+                                                Комплект &#171;Защита автомобиля&#187; Оптимальный Pajero Sport <div class="services__title-icon">
+                                                <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                <div class="services__title-tooltip">
+                                                    Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                </div>
+                                            </div></h3>
+                                            <div class="services__details">
+                                                <p>Защита рулевых тяг + комплект крепежа UAZ Patriot V-все (2014)</p>
+                                                <p>Обработка рамы</p>
+                                                <p>Сетка для бампера</p>
+                                                <p>Обработка днища и скрытых полостей</p>
+                                                <p>Защита КПП+РК+комплект крепежа UAZ Patriot V-все (2013-2014)</p>
+                                                <p>Защита топливного бака УАЗ Патриот С 2016 г</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>11 123 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">42 800 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select services__item--drill" data-modal="description">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/treatment.svg" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Комплект &#171;Обработка салона и стекол&#187;
+                                                <div class="services__title-icon">
+                                                    <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                    <div class="services__title-tooltip">
+                                                        Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                    </div>
+                                                </div>
+                                            </h3>
+                                            <div class="services__details">
+                                                <p>Обработка салона Bari-Tools</p>
+                                                <p>Обработка всех стекол( Антидождь, антигрязь)</p>
+                                            </div>
+                                            <p class="services__sale"><span class="services__sale-icon"><svg><use xlink:href="/img/svgsprites/services.svg#sale"/></svg></span> Скидка за комплект: <span>5 414 Р</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">17 370 Р</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+
+                                    </div>
+                                </div>
+                                <div class="services__more"><a href="#" data-modal="description">Подробное описание</a></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="services__item services__item--select" data-modal="description">
+                                <div class="services__content">
+
+                                    <div class="services__info">
+                                        <div class="services__icon">
+                                            <img src="img/services/window.png" alt="">
+                                        </div>
+                                        <div class="services__text">
+                                            <h3 class="services__title">Обработка салона «BariTools» <div class="services__title-icon">
+                                                <svg><use xlink:href="/img/svgsprites/services.svg#drill"/></svg>
+                                                <div class="services__title-tooltip">
+                                                    Не демонтируемое оборудование. Будьте бдительны. Установку этого оборудования отменить не получится.
+                                                </div>
+                                            </div></h3>
+                                            <div class="services__category">Категория: Защита автомобиля</div>
+                                            <div class="services__details">
+                                                <p>Водоотталкивающее средство KillAqua имеет следующие характеристики: - защищает стекло от любой жидкости, снега, льда - снижает расход жидкости омывателя, щеток очистителя, облегчает очистку от воды, грязи,
+                                                    льда в любое время года - действует более года с момента нанесения - создает водо-, насекомо- и грязеотталкивающий эффект - устойчиво к ультрафиолетовым лучам, к механическим и химическим воздействиям.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="services__control">
+                                        <p class="services__price">14 860- P</p>
+                                        <p class="services__exp">Цена комплекта с установкой</p>
+                                        <button class="services-btn services-btn--select">Установлено</button>
+                                    </div>
+                                </div>
+                                <div class="services__more"><a href="#" data-modal="description">Подробное описание</a></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+              <span class="close-btn__icon">
+                  <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+              </span>
+            </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Вы хотите отказаться от дополнительного оборудования?</p>
+            <p class="popup-confirm__subtitle">Без установки дополнительного оборудования вы теряете скидку до <span>45 000 Р</span> </p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-refuse"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Установить дополнительное оборудование на сумму более 45&nbsp;000&nbsp;Р и получить скидку?</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--red">НЕ УСТАНАВЛИВАТЬ</button>
+                <button class="popup-confirm__btn">УСТАНОВИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                    <span class="close-btn__icon">
+                        <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                    </span>
+                  </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Автомобиль станет дороже, изменится стоимость кредита</p>
+            <p class="popup-confirm__subtitle">Вы сняли дополнительное оборудование, цена на автомибиль увеличится на <span>26 456 Р</span> </p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-credit"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Убрать дополнительное оборудование и пересчитать кредит?</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--red">ПЕРЕСЧИТАТЬ КРЕДИТ</button>
+                <button class="popup-confirm__btn">ОТМЕНИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--warning" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                          <span class="close-btn__icon">
+                              <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                          </span>
+                        </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Этот автомобиль станет дороже!</p>
+            <p class="popup-confirm__subtitle">Вы сняли дополнительное оборудование, цена на автомобиль увеличится <span>28 382 Р</span> </p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-increase"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Потерю скидки за <span>$текущий-шаг</span> вы компенсируете на следующих шагах</p>
+            <div class="popup-confirm__control">
+                <button class="popup-confirm__btn popup-confirm__btn--red">ПУСТЬ ДОРОЖАЕТ</button>
+                <button class="popup-confirm__btn">ОТМЕНИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-confirm popup-confirm--success" data-rel="refusing">
+        <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
+                                <span class="close-btn__icon">
+                                    <svg><use xlink:href="/img/svgsprites/general.svg#close"/></svg>
+                                </span>
+                              </button>
+        <div class="popup-confirm__content">
+            <p class="popup-confirm__title">Этот автомобиль стал дешевле!</p>
+            <p class="popup-confirm__subtitle">Вы установили дополнительное оборудование и цена на автомибиль была снижена на <span>28 382 Р</span> </p>
+            <div class="popup-confirm__img">
+                <img src="img/popup-confirm/auto.jpg" alt="">
+                <svg class="popup-confirm__icon"><use xlink:href="/img/svgsprites/popup-confirm.svg#equip-decrease"/></svg>
+            </div>
+            <p class="popup-confirm__exp">Вы можете убрать оборудование, но стоимость автомобиля увеличится на <span>$скидка-за-до</span>.</p>
+            <div class="popup-confirm__control">
+
+                <button class="popup-confirm__btn popup-confirm__btn--full">ОТЛИЧНО</button>
+            </div>
+        </div>
+    </div>
 
     <div class="popup-descr" data-rel="description">
         <button class="close-btn" data-action="close"><span class="close-btn__text">Закрыть</span>
