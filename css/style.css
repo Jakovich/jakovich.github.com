@@ -4691,7 +4691,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   color: #ffffff;
 }
 .popup-confirm {
-  position: fixed;
+  position: absolute;
   width: 550px;
   top: 120px;
   left: 50%;
@@ -4820,7 +4820,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   width: 100%;
 }
 .popup-success {
-  position: fixed;
+  position: absolute;
   width: 550px;
   top: 120px;
   left: 50%;
@@ -4885,7 +4885,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   color: #00ab8a;
 }
 .popup-equipment {
-  position: fixed;
+  position: absolute;
   width: 945px;
   max-width: 100%;
   top: 120px;
@@ -4893,11 +4893,11 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   z-index: 45;
-  display: none;
 }
 .popup-equipment__content {
   background-color: #ffffff;
   padding: 25px 40px 28px;
+  padding-bottom: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
   text-align: left;
   border-radius: 5px;
@@ -5081,7 +5081,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   border-color: #00ab8a;
 }
 .popup-login {
-  position: fixed;
+  position: absolute;
   width: 550px;
   top: 80px;
   left: 50%;
@@ -5185,7 +5185,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
   background-color: #ffffff;
   padding: 22px 30px;
   border-radius: 5px;
-  position: fixed;
+  position: absolute;
   top: 100px;
   z-index: 45;
   width: 600px;
@@ -5260,14 +5260,16 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 .popup-insurance .radio-inputs__label:after {
   opacity: 1;
 }
-.popup-insurance_content {
+.popup-insurance__content {
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+.popup-insurance__content-wrp {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-  padding: 20px 30px 10px;
-  padding-bottom: 30px;
-  overflow-y: auto;
-  height: 100%;
+  padding: 20px 30px 30px;
 }
 .popup-insurance__title {
   display: -ms-flexbox;
@@ -5412,7 +5414,7 @@ input::-moz-placeholder          {color:#999999; opacity: 1;}/* Firefox 19+ */
 }
 .popup-offer__body {
   overflow-y: scroll;
-  height: 69%;
+  height: calc(100% - 170px);
   padding: 0 40px;
 }
 .popup-offer__title {
