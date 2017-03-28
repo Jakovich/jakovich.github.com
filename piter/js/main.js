@@ -14,4 +14,4 @@
     menu.classList.remove("main-nav__items-wrp--active");
   });
 
-})();
+})()

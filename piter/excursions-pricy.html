@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Питер экскурсии</title>
+    <!--link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")-->
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -12,10 +13,10 @@
             <div class="main-nav__logo"><a href="index.html"><img src="img/logo.svg" width="68" height="53"></a></div>
             <div class="main-nav__items-wrp">
               <ul class="main-nav__items">
-                <li><a href="#">Прислать историю</a></li>
-                <li><a href="#">Регистрация</a></li>
-                <li><a href="#">Экскурсии дешево</a></li>
-                <li><a href="#">Экскурсии дорого</a></li>
+                <li class="main-nav__item"><a href="#">Прислать историю</a></li>
+                <li class="main-nav__item"><a href="#">Регистрация</a></li>
+                <li class="main-nav__item"><a href="excursions-cheap.html">Экскурсии дешево</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="#">Экскурсии дорого</a></li>
               </ul>
               <button class="main-nav__close"><img src="img/icon-close.svg" width="30"></button>
             </div>
@@ -52,51 +53,53 @@
           </h4><a href="#">Войти в учетную запись</a>
         </div>
         <div class="form__input-wrp">
-          <input class="form__input" type="text" placeholder="Имя" name="name" id="name">
+          <input class="form__input" type="text" placeholder="Имя" required name="name" id="name">
         </div>
         <div class="form__input-wrp">
-          <input class="form__input" type="text" placeholder="Телефон" name="tel" id="tel">
+          <input class="form__input" type="text" data-valid="phone" required name="tel" id="tel" placeholder="+7 (___) ___-__-__">
         </div>
         <div class="form__input-wrp">
-          <input class="form__input form__input--date" type="text" placeholder="Желаемая дата">
+          <label class="form__date-wrp">
+            <input class="form__input form__input--date" type="text" data-valid="date" placeholder="Желаемая дата">
+          </label>
         </div>
         <div class="form__input-wrp form__input-wrp--full">
           <label for="coment">Примечание</label>
-          <textarea class="form__input" name="comment" id="coment"></textarea>
+          <textarea class="form__input" name="comment" id="coment" rows="4"></textarea>
         </div>
         <div class="form__btn-wrp">
-          <button class="form__btn" type="submit">Отправить</button>
+          <button class="form__btn" type="submit" data-valid="submit">Отправить</button>
         </div>
       </form>
     </main>
     <div class="page-bottom">
       <div class="page-bottom__row"><a class="page-bottom__link" href="#"><img src="img/page-bottom/buildings.jpg">
           <p class="page-bottom__title page-bottom__title--dark">Здания</p>
-          <div class="page-bottom__exp">
+          <div class="page-bottom__exp"> 
             <p>Невский проспект, дом&nbsp;12</p>
           </div></a><a class="page-bottom__link" href="#"><img src="img/page-bottom/peoples.jpg">
           <p class="page-bottom__title page-bottom__title--light">Люди</p>
-          <div class="page-bottom__exp">
+          <div class="page-bottom__exp"> 
             <p>Фёдор Шаляпин</p>
           </div></a></div>
       <div class="page-bottom__row"><a class="page-bottom__link" href="#"><img src="img/page-bottom/places.jpg">
           <p class="page-bottom__title">Места</p>
-          <div class="page-bottom__exp">
+          <div class="page-bottom__exp"> 
             <p>Контент из раздела Места</p>
           </div></a><a class="page-bottom__link" href="#"><img src="img/page-bottom/routs.jpg">
           <div class="page-bottom__title">Маршруты</div>
-          <div class="page-bottom__exp">
+          <div class="page-bottom__exp"> 
             <p>Контент из раздела Маршруты</p>
           </div></a></div>
       <div class="page-bottom__row"><a class="page-bottom__link" href="#"><img src="img/page-bottom/stories.jpg">
           <p class="page-bottom__title page-bottom__title--exlight">Истории</p>
-          <div class="page-bottom__exp">
+          <div class="page-bottom__exp"> 
             <p>Контент из раздела Истории</p>
           </div></a><a class="page-bottom__link page-bottom__link--small" href="#"><img src="img/page-bottom/book.jpg">
-          <div class="page-bottom__exp page-bottom__exp--bold">
+          <div class="page-bottom__exp page-bottom__exp--bold"> 
             <p>Купить книгу</p>
           </div></a><a class="page-bottom__link page-bottom__link--small" href="#"><img src="img/page-bottom/connect.jpg">
-          <div class="page-bottom__exp page-bottom__exp--bold">
+          <div class="page-bottom__exp page-bottom__exp--bold">        
             <p>Связаться с&nbsp;авторами</p>
           </div></a></div>
     </div>
@@ -135,5 +138,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="vendor/inputmask/jquery.maskedinput.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/form.min.js"></script>
 </html>
