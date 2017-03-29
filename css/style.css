@@ -1008,6 +1008,9 @@ template {
   visibility: hidden;
   margin-bottom: -1px;
 }
+.filters__item--selected label {
+  padding-right: 9px;
+}
 .filters__item input:checked ~ label {
   border-color: #cccccc;
   font-weight: 500;
@@ -1018,6 +1021,20 @@ template {
 }
 .filters__item input:checked ~ label:hover {
   border-color: #cccccc;
+}
+.filters__choice {
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  background: #00ab8a;
+  background: linear-gradient(to top, #00ab8a, #55c6b0);
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 23px;
+  font-weight: 500;
+  margin-left: 3px;
 }
 .financial {
   margin-top: 15px;
