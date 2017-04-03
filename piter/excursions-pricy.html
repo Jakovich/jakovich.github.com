@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Питер экскурсии</title>
-    <!--link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")-->
+    <meta charset="UTF-8">
+    <title>Экскурсии дорого | Экскурсии для людей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -13,14 +15,22 @@
             <div class="main-nav__logo"><a href="index.html"><img src="img/logo.svg" width="68" height="53"></a></div>
             <div class="main-nav__items-wrp">
               <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="#">Прислать историю</a></li>
-                <li class="main-nav__item"><a href="#">Регистрация</a></li>
-                <li class="main-nav__item"><a href="excursions-cheap.html">Экскурсии дешево</a></li>
-                <li class="main-nav__item main-nav__item--active"><a href="#">Экскурсии дорого</a></li>
+                <li class="main-nav__item"><a href="/history-add.html" title="Прислать историю">Прислать историю</a></li>
+                <li class="main-nav__item"><a href="#" title="Регистрация">Регистрация</a></li>
+                <li class="main-nav__item"><a href="/excursions-cheap.html" title="Экскурсии дешево">Экскурсии дешево</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="#" title="Экскурсии дорого">Экскурсии дорого</a></li>
               </ul>
-              <button class="main-nav__close"><img src="img/icon-close.svg" width="30"></button>
+              <button class="nav-close" data-close="main-nav">
+                    <svg>
+                      <use xlink:href="img/svgsprites/general-sprite.svg#icon-close"></use>
+                    </svg>
+              </button>
             </div>
-            <button class="main-nav__toggle"><img src="img/icon-menu.svg" width="30"></button>
+            <button class="nav-toggle" data-nav="main-nav">
+                  <svg>
+                    <use xlink:href="img/svgsprites/general-sprite.svg#icon-menu"></use>
+                  </svg>
+            </button>
           </div>
         </div>
       </nav>
@@ -31,20 +41,20 @@
   </body>
   <div class="wrapper">
     <main class="main-content">
-      <div class="excursions-describe">
-        <div class="excursions-describe__text-wrp excursions-describe__text-wrp--full">
-          <h2 class="excursions-describe__title">Экскурсии дорого</h2>
-          <div class="excursions-describe__image excursions-describe__image--float"><img src="img/excursions-pricy.jpg"></div>
-          <p class="excursions-describe__text">Если вы нанимаете меня персональным гидом, то эта услуга будет стоить от 4000 до 5000 руб/час, включая мой личный автомобиль. Если подобная цена вам не подходит, то вы можете присоединиться к моим групповым экскурсиям.</p>
-          <p class="excursions-describe__text">Особенность рынка частных гидов в России заключается в отсутствии рынка как такового. Но есть немало людей, которым бы хотелось нанять себе персонального экскурсовода, и чтобы они при этом не уснули. Поиск такого специалиста - лотерея. В отличие от 98,75% гидов в Петербурге и Москве, вы можете сразу же ознакомиться с моим форматом подачи информации, и решить, подходит он вам или нет.</p>
-          <p class="excursions-describe__text">Если вы нанимаете меня персональным гидом, то эта услуга будет стоить от 4000 до 5000 руб/час, включая мой личный автомобиль. Если подобная цена вам не подходит, то вы можете присоединиться к моим групповым экскурсиям.</p>
-          <p class="excursions-describe__text">Особенность рынка частных гидов в России заключается в отсутствии рынка как такового. Но есть немало людей, которым бы хотелось нанять себе персонального экскурсовода, и чтобы они при этом не уснули. Поиск такого специалиста - лотерея. В отличие от 98,75% гидов в Петербурге и Москве, вы можете сразу же ознакомиться с моим форматом подачи информации, и решить, подходит он вам или нет.</p>
-          <p class="excursions-describe__text">Мой персональный автомобиль для туров по городу - Mazda 5, в котором помимо гида может размещаться до 6 человек. Если вам нужна авторская экскурсия по Петербургу или Москве для большой группы, то помимо стоимости услуг персонального гида будет учитываться стоимость аренды транспорта. Также авторская экскурсия может быть уместна во время свадеб и корпоративных мероприятий.</p>
-          <p class="excursions-describe__text">Тема экскурсии может быть предложена вами, мной, может быть выбрана совместна. Главное, чтобы вы понимали, что поскольку это индивидуальная экскурсия, то мы можем менять маршрут в зависимости от ваших пожеланий прямо во время нашего тура по городу. Выбирая себе частного гида, вы выбираете не поводыря с заученными текстами, а собеседника, задача которого увлечь вас историей и культурой двух столиц. Поэтому я продаю знания и впечатления. Моя задача, чтобы после моих экскурсий вы не только остались бы довольны самим туром, но и вынесли определенный багаж знаний, для чего я использую собственную методику.</p>
-          <p class="excursions-describe__text excursions-describe__text--italic">Если, выбирая гида по Петербургу или Москве, вы остановили свой выбор на мне, то можете связаться со мной любым удобным для вас способом:</p>
-          <p class="excursions-describe__contact">+7 (921) 448-18-69</p>
-          <p class="excursions-describe__contact"> <a href="mailto:pavelperetz@gmail.com">pavelperetz@gmail.com</a></p>
-          <p class="excursions-describe__contact"> <a href="https://vk.com/p.peretz">https://vk.com/p.peretz</a></p>
+      <div class="describe">
+        <div class="describe__text-wrp describe__text-wrp--full">
+          <h2 class="describe__title">Экскурсии дорого</h2>
+          <div class="describe__image describe__image--float"><img src="img/excursions-pricy.jpg"></div>
+          <p class="describe__text">Если вы нанимаете меня персональным гидом, то эта услуга будет стоить от 4000 до 5000 руб/час, включая мой личный автомобиль. Если подобная цена вам не подходит, то вы можете присоединиться к моим групповым экскурсиям.</p>
+          <p class="describe__text">Особенность рынка частных гидов в России заключается в отсутствии рынка как такового. Но есть немало людей, которым бы хотелось нанять себе персонального экскурсовода, и чтобы они при этом не уснули. Поиск такого специалиста - лотерея. В отличие от 98,75% гидов в Петербурге и Москве, вы можете сразу же ознакомиться с моим форматом подачи информации, и решить, подходит он вам или нет.</p>
+          <p class="describe__text">Если вы нанимаете меня персональным гидом, то эта услуга будет стоить от 4000 до 5000 руб/час, включая мой личный автомобиль. Если подобная цена вам не подходит, то вы можете присоединиться к моим групповым экскурсиям.</p>
+          <p class="describe__text">Особенность рынка частных гидов в России заключается в отсутствии рынка как такового. Но есть немало людей, которым бы хотелось нанять себе персонального экскурсовода, и чтобы они при этом не уснули. Поиск такого специалиста - лотерея. В отличие от 98,75% гидов в Петербурге и Москве, вы можете сразу же ознакомиться с моим форматом подачи информации, и решить, подходит он вам или нет.</p>
+          <p class="describe__text">Мой персональный автомобиль для туров по городу - Mazda 5, в котором помимо гида может размещаться до 6 человек. Если вам нужна авторская экскурсия по Петербургу или Москве для большой группы, то помимо стоимости услуг персонального гида будет учитываться стоимость аренды транспорта. Также авторская экскурсия может быть уместна во время свадеб и корпоративных мероприятий.</p>
+          <p class="describe__text">Тема экскурсии может быть предложена вами, мной, может быть выбрана совместна. Главное, чтобы вы понимали, что поскольку это индивидуальная экскурсия, то мы можем менять маршрут в зависимости от ваших пожеланий прямо во время нашего тура по городу. Выбирая себе частного гида, вы выбираете не поводыря с заученными текстами, а собеседника, задача которого увлечь вас историей и культурой двух столиц. Поэтому я продаю знания и впечатления. Моя задача, чтобы после моих экскурсий вы не только остались бы довольны самим туром, но и вынесли определенный багаж знаний, для чего я использую собственную методику.</p>
+          <p class="describe__text describe__text--italic">Если, выбирая гида по Петербургу или Москве, вы остановили свой выбор на мне, то можете связаться со мной любым удобным для вас способом:</p>
+          <p class="describe__contact">+7 (921) 448-18-69</p>
+          <p class="describe__contact"> <a href="mailto:pavelperetz@gmail.com">pavelperetz@gmail.com</a></p>
+          <p class="describe__contact"> <a href="https://vk.com/p.peretz">https://vk.com/p.peretz</a></p>
         </div>
       </div>
       <form class="form" name="pricy-excursion" action="/" method="post">
@@ -64,7 +74,7 @@
           </label>
         </div>
         <div class="form__input-wrp form__input-wrp--full">
-          <label for="coment">Примечание</label>
+          <label class="form__label" for="coment">Примечание</label>
           <textarea class="form__input" name="comment" id="coment" rows="4"></textarea>
         </div>
         <div class="form__btn-wrp">

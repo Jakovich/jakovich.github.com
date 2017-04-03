@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Питер экскурсии</title>
+    <meta charset="UTF-8">
+    <title>Экскурсии дешево | Экскурсии для людей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -12,14 +15,22 @@
             <div class="main-nav__logo"><a href="index.html"><img src="img/logo.svg" width="68" height="53"></a></div>
             <div class="main-nav__items-wrp">
               <ul class="main-nav__items">
-                <li class="main-nav__item"><a href="#">Прислать историю</a></li>
-                <li class="main-nav__item"><a href="#">Регистрация</a></li>
-                <li class="main-nav__item main-nav__item--active"><a href="#">Экскурсии дешево</a></li>
-                <li class="main-nav__item"><a href="excursions-pricy.html">Экскурсии дорого</a></li>
+                <li class="main-nav__item"><a href="/history-add.html" title="Прислать историю">Прислать историю</a></li>
+                <li class="main-nav__item"><a href="#" title="Регистрация">Регистрация</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="#" title="Экскурсии дешево">Экскурсии дешево</a></li>
+                <li class="main-nav__item"><a href="/excursions-pricy.html" title="Экскурсии дорого">Экскурсии дорого</a></li>
               </ul>
-              <button class="main-nav__close"><img src="img/icon-close.svg" width="30"></button>
+              <button class="nav-close" data-close="main-nav">
+                    <svg>
+                      <use xlink:href="img/svgsprites/general-sprite.svg#icon-close"></use>
+                    </svg>
+              </button>
             </div>
-            <button class="main-nav__toggle"><img src="img/icon-menu.svg" width="30"></button>
+            <button class="nav-toggle" data-nav="main-nav">
+                  <svg>
+                    <use xlink:href="img/svgsprites/general-sprite.svg#icon-menu"></use>
+                  </svg>
+            </button>
           </div>
         </div>
       </nav>
@@ -30,19 +41,20 @@
   </body>
   <div class="wrapper">
     <main class="main-content">
-      <div class="excursions-describe">
-        <h2 class="excursions-describe__title">Экскурсии дешево</h2>
-        <div class="excursions-describe__content">
+      <div class="describe">
+        <h2 class="describe__title">Экскурсии дешево</h2>
+        <div class="describe__content">
           <div class="excursion-describe__image"><img src="img/excursions-cheap.jpg"></div>
-          <div class="excursions-describe__text-wrp">
-            <p class="excursions-describe__text">На сегодняшний день в моем арсенале более 100 авторских маршрутов по Петербургу и пригородам. Также регулярно проводятся экскурсии в Москве. В холодное время года в двух столица проходят неформальные лекции.</p>
-            <p class="excursions-describe__text">Средняя продолжительность пешей экскурсии по Петербургу или Москве - 1,5 часа. Стоимость - 500 руб. Поскольку у меня как гида большой опыт экскурсий для детей от десяти лет и старше, то вы можете брать их с собой.</p>
-            <p class="excursions-describe__text">Весной, летом и осенью экскурсии в Петербурге проходят, как правило, каждое воскресенье в 15:00. В Москве проходят две экскурсии: в 13:00 и в 16:00 обычно в субботу, но не чаще двух раз в месяц. Для удобства пользователей анонсы экскурсий по Петербургу и Москве вывешиваются в VK, где вы можете вступить в <a href="#">группу</a>, и в FB, где вы можете подписаться на мою <a href="#">страницу</a>.</p>
-            <p class="excursions-describe__text">С форматом экскурсий и манерой подачи меня как гида вы можете ознакомиться, посмотрев любое видео на эту тему на моем канале в соответствующем плейлисте. Если вы хотите заказать индивидуальную экскурсию и нанять меня как гида частного, то можете перейти в раздел <a href="excursions-pricy.html">"Экскурсии дорого"</a>.</p>
+          <div class="describe__text-wrp">
+            <p class="describe__text">На сегодняшний день в моем арсенале более 100 авторских маршрутов по Петербургу и пригородам. Также регулярно проводятся экскурсии в Москве. В холодное время года в двух столица проходят неформальные лекции.</p>
+            <p class="describe__text">Средняя продолжительность пешей экскурсии по Петербургу или Москве - 1,5 часа. Стоимость - 500 руб. Поскольку у меня как гида большой опыт экскурсий для детей от десяти лет и старше, то вы можете брать их с собой.</p>
+            <p class="describe__text">Весной, летом и осенью экскурсии в Петербурге проходят, как правило, каждое воскресенье в 15:00. В Москве проходят две экскурсии: в 13:00 и в 16:00 обычно в субботу, но не чаще двух раз в месяц. Для удобства пользователей анонсы экскурсий по Петербургу и Москве вывешиваются в VK, где вы можете вступить в <a href="#">группу</a>, и в FB, где вы можете подписаться на мою <a href="#">страницу</a>.</p>
+            <p class="describe__text">С форматом экскурсий и манерой подачи меня как гида вы можете ознакомиться, посмотрев любое видео на эту тему на моем канале в соответствующем плейлисте. Если вы хотите заказать индивидуальную экскурсию и нанять меня как гида частного, то можете перейти в раздел <a href="excursions-pricy.html">"Экскурсии дорого"</a>.</p>
           </div>
         </div>
       </div>
       <form class="form" name="cheap-excursion" action="/" method="post">
+        <!--include includes/form-cheap.pug-->
         <div class="form__title">
           <h4>Записаться на экскурсию
           </h4><a href="#">Войти в учетную запись</a>
@@ -61,7 +73,7 @@
           </select>
         </div>
         <div class="form__input-wrp form__input-wrp--full">
-          <label for="coment">Примечание</label>
+          <label class="form__label" for="coment">Примечание</label>
           <textarea class="form__input" name="comment" id="coment" rows="4"></textarea>
         </div>
         <div class="form__btn-wrp">

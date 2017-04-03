@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Здания | Экскурсии для людей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="wrapper">
+          <div class="main-nav__content">
+            <div class="main-nav__logo"><a href="index.html"><img src="img/logo.svg" width="68" height="53"></a></div>
+            <div class="main-nav__items-wrp">
+              <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="/history-add.html" title="Прислать историю">Прислать историю</a></li>
+                <li class="main-nav__item"><a href="#" title="Регистрация">Регистрация</a></li>
+                <li class="main-nav__item"><a href="/excursions-cheap.html" title="Экскурсии дешево">Экскурсии дешево</a></li>
+                <li class="main-nav__item"><a href="/excursions-pricy.html" title="Экскурсии дорого">Экскурсии дорого</a></li>
+              </ul>
+              <button class="nav-close" data-close="main-nav">
+                    <svg>
+                      <use xlink:href="img/svgsprites/general-sprite.svg#icon-close"></use>
+                    </svg>
+              </button>
+            </div>
+            <button class="nav-toggle" data-nav="main-nav">
+                  <svg>
+                    <use xlink:href="img/svgsprites/general-sprite.svg#icon-menu"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper">
+        <h1 class="main-title">Экскурсии для людей</h1>
+      </div>
+    </header>
+    <div class="wrapper">
+      <nav class="page-nav">
+        <div class="page-nav__items-wrp">
+          <ul class="page-nav__items">
+            <li class="page-nav__item page-nav__item--active"><a href="#" title="Здания">Здания</a></li>
+            <li class="page-nav__item"><a href="#" title="Люди">Люди</a></li>
+            <li class="page-nav__item"><a href="#" title="Места">Места</a></li>
+            <li class="page-nav__item"><a href="#" title="Маршруты">Маршруты</a></li>
+            <li class="page-nav__item"><a href="history-add.html" title="Истории">Истории</a></li>
+          </ul>
+          <button class="nav-close" data-close="page-nav">
+                <svg>
+                  <use xlink:href="img/svgsprites/general-sprite.svg#icon-close"></use>
+                </svg>
+          </button>
+        </div>
+        <div class="page-nav__user"><span class="page-nav__user-icon">
+                <svg>
+                  <use xlink:href="img/svgsprites/general-sprite.svg#user"></use>
+                </svg></span><a class="page-nav__login" href="#">Войти</a></div>
+        <button class="nav-toggle" data-nav="page-nav">
+              <svg>
+                <use xlink:href="img/svgsprites/general-sprite.svg#icon-menu"></use>
+              </svg>
+        </button>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <h2 class="page-title">Невский проспект, дом 8</h2>
+      <div class="intro intro--flex">
+        <div class="intro__map" id="building-map"></div>
+        <div class="intro__slider">
+          <div class="carousel">
+            <div class="carousel__stage">
+              <div class="carousel__content carousel__content--stage" data-jcarousel="true">
+                <ul>
+                  <li><img src="img/building-1.jpg"></li>
+                  <li><img src="img/building-2.jpg"></li>
+                  <li><img src="img/building-3.jpg"></li>
+                  <li><img src="img/building-4.jpg"></li>
+                  <li><img src="img/building-5.jpg"></li>
+                  <li><img src="img/building-1.jpg"></li>
+                  <li><img src="img/building-2.jpg"></li>
+                  <li><img src="img/building-3.jpg"></li>
+                </ul><a class="prev prev-stage" href="#" data-jcarouselcontrol="true"><span> 
+                              <svg>
+                                <use xlink:href="img/svgsprites/general-sprite.svg#arrow-left"></use>
+                              </svg></span></a><a class="next next-stage" href="#" data-jcarouselcontrol="true"><span> 
+                              <svg>
+                                <use xlink:href="img/svgsprites/general-sprite.svg#arrow-right"></use>
+                              </svg></span></a>
+              </div>
+            </div>
+            <div class="carousel__navigation"><a class="prev prev-navigation" href="#" data-jcarouselcontrol="true"> 
+                          <svg>
+                            <use xlink:href="img/svgsprites/general-sprite.svg#arrow-left"></use>
+                          </svg></a><a class="next next-navigation" href="#" data-jcarouselcontrol="true"> 
+                          <svg>
+                            <use xlink:href="img/svgsprites/general-sprite.svg#arrow-right"></use>
+                          </svg></a>
+              <div class="carousel__content carousel__content--thimb" data-jcarousel="true">
+                <ul>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-1.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-2.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-3.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-4.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-5.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-1.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-2.jpg);"></span></li>
+                  <li data-jcarouselcontrol="true"><span style="background-image: url(img/building-3.jpg);"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main-content">
+        <div class="info">
+          <h3 class="info__title info__title--blue">Экскурсия по Петербургу: Сан-Галли - изобретатель русской батареи</h3>
+          <p class="info__epigraph">
+            Я сижу у батареи,<br>
+            В батарее руки грею,<br>
+            Грею ноги, грею нос,<br>
+            Бр – рр! Я здорово замерз!<br>
+          </p>
+        </div>
+        <p class="info__text">Это отрывок из стихотворения Агнии Барто, который знает не только любой гид по Петербургу, но и любой турист. Посвящение батарее.</p>
+        <p class="info__text">Действительно, какое дивное изобретение человечества, особенно для северной столицы. Нам должен быть приятен тот факт, что это наша, отечественная придумка. Правда изобрел ее человек не совсем русский, точнее, совсем нерусский.</p>
+        <p class="info__text">Вопреки всем его достижениям, всему тому, что он сделал для Российской империи, для некоторых подданных этой империи его фамилия в какой-то момент стала вражеским атрибутом.</p>
+        <p class="info__text">В мае 1915 года в Москве прошли так называемые немецкие погромы. На улице Кузнецкий мост били витрины магазинов. Досталось и Пассажу Сан-Галли.</p>
+        <p class="info__text">Как петербургский гид я произношу эту фамилию на французский манер с ударением на последний слог, как Сан-Суси, но она немецкая. А еще точнее – немецко-итальянская.</p>
+        <p class="info__text info__text--bold">Как петербургский гид я произношу эту фамилию на французский манер с ударением на последний слог, как Сан-Суси, но она немецкая. А еще точнее – немецко-итальянская.</p>
+        <p class="info__text">Во время экскурсии по Петербургу загляните на Лиговский проспект д. 62, где эти батареи изготовлялись. А продавались они на Невском в доме №8.</p>
+        <p class="info__text">Франц приехал в российскую столицу из захолустного немецкого Штеттина, ныне это польский город Шецин. Поскольку в Петербурге всегда было немало немцев, Франц, пользуясь рекомендациями матушки, довольно быстро осваивается на берегах Невы и устраивается в контору завода Берда. Именно на этом предприятии был в свое произведен первый в России пароход. Попросите вашего гида организовать вам экскурсию вдоль реки Пряжки, и вы увидите то место, где это некогда случилось.</p>
+        <p class="info__text">Получив непыльную и хорошо оплачиваемую работу Франц начинает кутить и крутить любовные романы. А потом, насытившись успехами бурной молодости, берется за ум, и совершает три действия: принимает православие, женится и, взяв кредит, основывает механическую чугунно-литейную мастерскую.</p>
+        <p class="info__text">Там-то и появился на свет первый в мире чугунный радиатор, герой нашей экскурсии по Невскому проспекту. Сначала его окрестили словом, ласкающим наш слух&nbsp;– «хайцкёрпер» (горячая коробка), но потом Сан-Галли нашел более подходящее название&nbsp;– батарея.</p>
+        <p class="info__text info__text--bold">Помимо этого Сан-Галли прославился литыми конструкциями и деталями, которые мы можем наблюдать по всему городу, и во время экскурсии по Петербургу вы их сможете увидеть: перила Троицкого моста, ворота Зимнего дворца, решетка Таврического сада, фонари, балконы.</p>
+        <p class="info__text">Франц Сан-Галли построил для своих рабочих дома, снабженные водопроводом, школу, вокруг были сады, прорезанные аллеями. Немудрено, что на его фабрике не было забастовок.</p>
+        <p class="info__text">Ну и напоследок история от петербургского гида о туалетах. Общественных, городских. Их не было в XIX в. А потребность, как вы понимаете, была. Кому же мы обязаны их появлением? Францу Сан-Галли.</p>
+        <p class="info__text">Он был членом Городской Думы, кстати, за эту общественную нагрузку денег тогда не платили. И вот известная в столице куртизанка Дуняша, отправляется на тот свет, оставив после себя немалую сумму денег. Царь отдал их Думе на нужды сирот. Но думцы возмутились, как это так, грязные деньги на благотворительные цели! Не допустим. Больше всех протестовали бывшие Дуняшины клиенты.</p>
+        <p class="info__text">Александр III логично спросил: «Что же мне их собакам отдать?» И тогда прозвучал голос разума. Сан-Галли предложил оборудовать в городе сеть общественных уборных, новшество невиданное для России.</p>
+        <p class="info__text">Соломоново решении было принято. На заводе Сан-Галли эти ватерклозеты и изготовили. <span class="info__bold-span">Над Францем Карловичем за это немало глумились, мол ничем не брезгует.</span></p>
+        <blockquote class="info__blockquote">Но он не обращал внимания, парируя: «завод может все сделать, и я поддерживал эту репутацию, принимая всякие заказы, как бы трудны они ни были».</blockquote>
+        <p class="info__text">Спасибо вам, Франц Карлович, за вашу итальянскую фантазию, немецкую дисциплинированность и русскую смекалку и за то, что во время экскурсии по Петербургу любому гиду теперь есть, что рассказать.</p>
+        <div class="paginator"><a class="paginator__item paginator__item--prev" href="#"><span class="paginator__icon">
+                      <svg>
+                        <use xlink:href="img/svgsprites/general-sprite.svg#paginator"></use>
+                      </svg></span><span class="paginator__text">Невский пр-т,<br> дом 7</span></a><a class="paginator__item paginator__item--next" href="#"><span class="paginator__text">Невский пр-т,<br> дом 9</span><span class="paginator__icon">
+                      <svg>
+                        <use xlink:href="img/svgsprites/general-sprite.svg#paginator"></use>
+                      </svg></span></a></div>
+        <div class="comment">
+          <div class="comment__meta"><img class="comment__avatar" src="img/avatar.jpg" width="95" height="95">
+            <div class="comment__metadata">
+              <p><span class="comment__meta-icon">
+                          <svg>
+                            <use xlink:href="img/svgsprites/general-sprite.svg#user"></use>
+                          </svg></span><span class="comment__author">Ольга Потапова</span></p>
+              <p><span class="comment__meta-icon">
+                          <svg>
+                            <use xlink:href="img/svgsprites/general-sprite.svg#comment-date"></use>
+                          </svg></span><span class="comment__date">11 апреля 2017 в 12:36</span></p>
+            </div>
+          </div>
+          <div class="comment__content">В 1843 году Санкт-Петербургскому филиалу фирмы требовался молодой помощник и таким образом 19-летний Франц-Фридрих оказался в России. Его жалование составляло 100 рублей ассигнациями или 50 рублей золотом.</div><a class="comment__reply" href="#"> <span class="comment__reply-icon">
+                      <svg>
+                        <use xlink:href="img/svgsprites/general-sprite.svg#reply"></use>
+                      </svg></span>Ответить</a>
+        </div>
+        <form class="form" name="comment" action="/" method="post">
+          <div class="form__title">
+            <h4>Оставить комментарий</h4><a href="#">Вы вошли как Евгений. Выйти?</a>
+          </div>
+          <div class="form__input-wrp form__input-wrp--full">
+            <label class="form__label form__label--dark" for="coment">Комментарий</label>
+            <textarea class="form__input form__input--comment" name="comment" id="coment" rows="6" required></textarea>
+          </div>
+          <div class="form__btn-wrp">
+            <button class="form__btn" type="submit" data-valid="submit">Отправить</button>
+          </div>
+        </form>
+      </main>
+      <div class="page-bottom">
+        <div class="page-bottom__row"><a class="page-bottom__link" href="#"><img src="img/page-bottom/buildings.jpg">
+            <p class="page-bottom__title page-bottom__title--dark">Здания</p>
+            <div class="page-bottom__exp"> 
+              <p>Невский проспект, дом&nbsp;12</p>
+            </div></a><a class="page-bottom__link" href="#"><img src="img/page-bottom/buildings_3.jpg">
+            <p class="page-bottom__title page-bottom__title--dark">Здания</p>
+            <div class="page-bottom__exp"> 
+              <p>Невский проспект, дом&nbsp;13</p>
+            </div></a></div>
+        <div class="page-bottom__row"><a class="page-bottom__link" href="#"><img src="img/page-bottom/buildings_2.jpg">
+            <p class="page-bottom__title page-bottom__title--dark">Здания</p>
+            <div class="page-bottom__exp"> 
+              <p>Невский проспект, дом&nbsp;14</p>
+            </div></a><a class="page-bottom__link" href="#"><img src="img/page-bottom/buildings_1.jpg">
+            <p class="page-bottom__title page-bottom__title--dark">Здания</p>
+            <div class="page-bottom__exp"> 
+              <p>Невский проспект, дом&nbsp;15</p>
+            </div></a></div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="wrapper">
+        <div class="main-footer__content">
+          <div class="main-footer__social">
+            <div class="social"><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#fb"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#youtube"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#inst"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#vimeo"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#vk"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#google"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#linkedin"></use>
+                    </svg></a><a class="social__item" href="#">
+                    <svg>
+                      <use xlink:href="img/svgsprites/social-sprite.svg#twitter"></use>
+                    </svg></a></div>
+          </div>
+          <div class="main-footer__copyright">Санкт-Петербург, 2017</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="vendor/jCarousel/jquery.jcarousel.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/carousel.min.js"></script>
+    <script src="js/map-building.min.js"></script>
+  </body>
+</html>
