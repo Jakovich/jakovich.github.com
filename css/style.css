@@ -721,8 +721,6 @@ template {
   right: 0;
   z-index: 38;
   /**/
-  height: 100%;
-  overflow-y: auto;
 }
 .info--fixed .info__full {
   padding: 5px 0;
