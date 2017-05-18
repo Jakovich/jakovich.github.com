@@ -800,6 +800,29 @@ th.table__action {
   border-bottom: 10px solid transparent;
   border-right: 10px solid #018EAA;
 }
+.note--submit {
+  right: 10px;
+  display: none;
+  top: -90px;
+  padding: 15px 20px;
+}
+.note--submit::before {
+  left: 15px;
+  bottom: -20px;
+  top: auto;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  -moz-transform: scale(0.9999);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFEE2E;
+  position: absolute;
+}
+[data-valid="date-note"] {
+  display: none;
+}
 .note__title {
   font-size: 18px;
   line-height: 22px;
@@ -1216,14 +1239,23 @@ h3.form__block-title--popup {
 .form__input--date {
   padding-right: 55px;
 }
-.common-btn__wrapper {
-  text-align: right;
-  padding: 20px 0;
-}
-.common-btn__wrapper--left {
-  text-align: left;
-}
 .common-btn {
+  padding: 20px 0;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+}
+.common-btn__wrapper {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+.common-btn__wrapper--rectangle {
+  margin-left: 0;
+  margin-right: auto;
+}
+.common-btn__submit {
   color: #ffffff;
   background-color: #018EAA;
   border: none;
@@ -1233,7 +1265,6 @@ h3.form__block-title--popup {
   height: 45px;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1247,7 +1278,7 @@ h3.form__block-title--popup {
   margin-right: 25px;
   transition: all 0.2s ease;
 }
-.common-btn::before {
+.common-btn__submit::before {
   right: -25px;
   top: 0;
   content: '';
@@ -1260,16 +1291,38 @@ h3.form__block-title--popup {
   border-left: 25px solid #018EAA;
   position: absolute;
 }
-.common-btn:hover {
+.common-btn__submit:hover {
   opacity: 0.8;
 }
-.common-btn--rectangle {
+.common-btn__submit--rectangle {
   border-radius: 4px;
   margin-left: 0;
   margin-right: auto;
 }
-.common-btn--rectangle:before {
+.common-btn__submit--rectangle:before {
   display: none;
+}
+@keyframes error {
+  0% {
+    transform: translateX(-80px);
+  }
+  20% {
+    transform: translateX(80px);
+  }
+  60% {
+    transform: translateX(-40px);
+  }
+  90% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.common-btn__submit--error {
+  animation-name: error;
+  animation-duration: 0.3s;
+  animation-delay: 0;
 }
 .payment {
   margin-left: -30px;
@@ -2010,6 +2063,7 @@ a.ui-button:active,
   left: 0;
   right: 0;
   overflow-y: auto;
+  display: none;
   z-index: 100;
 }
 .popup-visitor {

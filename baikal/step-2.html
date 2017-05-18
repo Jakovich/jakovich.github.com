@@ -359,8 +359,13 @@
             <p class="rules__text">Отправляя эту анкету вы принимаете правила посещения и соглашаетесь на обработку и хранение персональных данных.</p>
           </div>
         </fieldset>
-        <div class="common-btn__wrapper">
-          <button class="common-btn" type="submit">Проверить и оплатить</button>
+        <div class="common-btn">
+          <div class="common-btn__wrapper">
+            <button class="common-btn__submit" type="submit">Проверить и оплатить</button>
+            <div class="note note--submit">
+              <p class="note__title">Сначала выберите маршрут</p>
+            </div>
+          </div>
         </div>
       </form>
       <!--footer-->
@@ -447,9 +452,9 @@
           <div class="form__row">
                 <div class="form__select-wrp">
                   <label class="form__label-select" for="type-document">Вид документа</label>
-                  <select class="form__select" nam="type-document" id="type-document">
-                    <option value="passport">Паспорт</option>
-                    <option value="student-doc">Студенческий</option>
+                  <select class="form__select" name="type-document" id="type-document" data-valid="type-document">
+                    <option value="passport" data-valid="passport">Паспорт</option>
+                    <option value="student-doc" data-valid="student-doc">Студенческий</option>
                   </select>
                 </div>
                 <div class="form__input-wrp">
@@ -466,9 +471,9 @@
             <div class="form__row">
                   <div class="form__select-wrp">
                     <label class="form__label-select" for="country">Страна</label>
-                    <select class="form__select" nam="country" id="country">
-                      <option value="russia">Россия</option>
-                      <option value="armenia">Армения</option>
+                    <select class="form__select" name="country" id="country" data-valid="country">
+                      <option value="russia" data-valid="russia">Россия</option>
+                      <option value="armenia" data-valid="armenia">Армения</option>
                     </select>
                   </div>
                   <div class="form__input-wrp">
@@ -493,9 +498,9 @@
             <div class="form__row">
                   <div class="form__select-wrp">
                     <label class="form__label-select" for="exemption">Льгота</label>
-                    <select class="form__select" nam="exemption" id="exemption">
-                      <option value="student">Студент, −50%</option>
-                      <option value="else">Что-то еще</option>
+                    <select class="form__select" name="exemption" id="exemption" data-valid="exemption">
+                      <option value="student" data-valid="student">Студент, −50%</option>
+                      <option value="else" data-valid="else">Что-то еще</option>
                     </select>
                   </div>
               <div class="note note--input note--left">
@@ -504,8 +509,13 @@
               </div>
             </div>
           </div>
-              <div class="common-btn__wrapper common-btn__wrapper--left">
-                <button class="common-btn common-btn--rectangle" type="submit">Добавить</button>
+              <div class="common-btn">
+                <div class="common-btn__wrapper common-btn__wrapper--rectangle">
+                  <button class="common-btn__submit common-btn__submit--rectangle" type="submit">Добавить</button>
+                  <div class="note note--submit">
+                    <p class="note__title">Сначала выберите маршрут</p>
+                  </div>
+                </div>
               </div>
         </form>
       </div>

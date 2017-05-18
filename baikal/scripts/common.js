@@ -31,58 +31,22 @@ $(document).ready(function() {
 
 
     $('.form__input').blur(function(){
-      checkComplet($(this));
-    })
+      var self = $(this);
+      setTimeout(function(){
+        checkComplet(self);
+      },100)
 
-
-    $('[data-valid=date]').change(function(){
-      checkComplet($(this));
     })
 
     function checkComplet(elem) {
-      var self = elem;
-      //timeout нужен из-за того, что datepicker вводит данные с задержкой
-      setTimeout(function(){
-        if(self.val() !== '') {
-          self.addClass('form__input--completed');
+        if(elem.val() !== '') {
+          elem.addClass('form__input--completed');
         } else {
-          self.removeClass('form__input--completed');
+          elem.removeClass('form__input--completed');
         }
       }
-      ,100)
-    }
 
-    if ($('[data-valid=date]').length) {
 
-        jQuery(function($) {
-            $.datepicker.regional['ru'] = {
-                closeText: 'Закрыть',
-                prevText: '&#x3c;',
-                nextText: '&#x3e;',
-                currentText: 'Сегодня',
-                monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-                    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
-                ],
-                monthNamesShort: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-                    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
-                ],
-                dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-                dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-                dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-                weekHeader: 'Нед',
-                dateFormat: 'dd.mm.yy',
-                firstDay: 1,
-                isRTL: false,
-                showMonthAfterYear: false,
-                yearSuffix: ''
-            };
-            $.datepicker.setDefaults($.datepicker.regional['ru']);
-        });
-
-        $('[data-valid=date]').datepicker();
-        //show/hide date note
-
-    }
 
     //show/hide popup-visitor//show/hide popup
     function getScrollbarWidth() {

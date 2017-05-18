@@ -452,7 +452,7 @@
                         <input class="form__input form__input--date" name="date-to" id="date-to" data-valid="date">
                         <label class="form__label-input" for="date-to">Дата посещения по</label>
                       </div>
-            <div class="note note--input">
+            <div class="note note--input" data-valid="date-note">
               <p class="note__title">Посещения дольше 30 дней рассматриваем индивидуально</p>
               <p class="note__text">Заполните анкету до конца и отправьте, мы напишем вам в течение суток. Обычно всем разрешаем :-)</p>
             </div>
@@ -473,10 +473,10 @@
               <div class="form__row">
                             <div class="form__select-wrp">
                               <label class="form__label-select" for="type-transport">Тип траспортного средства</label>
-                              <select class="form__select" nam="type-transport" id="type-transport">
-                                <option value="auto">Автомобиль</option>
-                                <option value="boat">Маломерное судно</option>
-                                <option value="snowmobile">Снегоход</option>
+                              <select class="form__select" name="type-transport" id="type-transport" data-valid="type-transport">
+                                <option value="auto" data-valid="auto">Автомобиль</option>
+                                <option value="boat" data-valid="boat">Маломерное судно</option>
+                                <option value="snowmobile" data-valid="snowmobile">Снегоход</option>
                               </select>
                             </div>
                             <div class="form__input-wrp">
@@ -488,29 +488,16 @@
                               <label class="form__label-input" for="boat-count">Планируемое количество причаливаний</label>
                             </div>
               </div>
-              <div class="form__row">
-                            <div class="form__select-wrp">
-                              <label class="form__label-select" for="type-transport-2">Тип траспортного средства</label>
-                              <select class="form__select" nam="type-transport-2" id="type-transport-2">
-                                <option value="auto">Автомобиль</option>
-                                <option value="boat">Маломерное судно</option>
-                                <option value="snowmobile">Снегоход</option>
-                              </select>
-                            </div>
-                            <div class="form__input-wrp">
-                              <input class="form__input" name="transport-number-2" id="transport-number-2">
-                              <label class="form__label-input" for="transport-number-2">Регистрационный номер</label>
-                            </div>
-                            <div class="form__input-wrp">
-                              <input class="form__input" name="boat-count-2" id="boat-count-2" data-valid="boat-count">
-                              <label class="form__label-input" for="boat-count-2">Планируемое количество причаливаний</label>
-                            </div>
-              </div>
                           <button class="add-btn">Добавить транспортное средство</button>
             </div>
           </div>
-          <div class="common-btn__wrapper">
-            <button class="common-btn" type="submit">Добавить посетителей</button>
+          <div class="common-btn">
+            <div class="common-btn__wrapper">
+              <button class="common-btn__submit" type="submit">Добавить посетителей</button>
+              <div class="note note--submit">
+                <p class="note__title">Сначала выберите маршрут</p>
+              </div>
+            </div>
           </div>
         </fieldset>
       </form>
@@ -544,4 +531,5 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/jquery/jquery-ui.min.js"></script>
   <script src="scripts/common.min.js"></script>
+  <script src="scripts/step-1-valid.min.js"></script>
 </html>
